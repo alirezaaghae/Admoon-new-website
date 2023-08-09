@@ -127,3 +127,11 @@
                 </div>
             </div>
         </footer>
+<script src="assets/js/jquery-3.6.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="assets/OwlCarousel/dist/owl.carousel.min.js"></script>
+<script src="assets/gsap-public/minified/gsap.min.js"></script>
+<script src="assets/js/script.js" defer="defer"></script>
+</body>
+
+</html>
