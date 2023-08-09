@@ -1,0 +1,1084 @@
+/* responsive */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* desktop */
+  body{}
+  .wrapper{}
+  .wrapper>.container{}
+  .wrapper>.container>header{}
+  .wrapper>.container>header>.topNavbar{}
+  .wrapper>.container>header>.topNavbar>.logo{}
+  .wrapper>.container>header>.topNavbar>.logo>img{}
+  .wrapper>.container>header>.topNavbar>.nav{}
+  .wrapper>.container>header>.topNavbar>.nav>nav{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a span{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a:hover span{}
+  .wrapper>.container>header>.topNavbar>.dropdown{}
+  .wrapper>.container>header>.topNavbar>.dropdown:hover{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title .dropdown-check{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title .dropdown-copy{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select .dropdown-scrim{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option .dropdown-check{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option .dropdown-copy{}
+  .wrapper>.container>header>.content{}
+  .wrapper>.container>header>.content>.title{
+  padding-right: 100px;
+  width: 60%;
+}
+  .wrapper>.container>header>.content>.title h1{}
+  .wrapper>.container>header>.content>.title h1 strong{}
+  .wrapper>.container>header>.content>.title p{}
+  .wrapper .form-input{}
+  .wrapper .form-input .top-label{}
+  .wrapper .form-input .top-label input{}
+  .wrapper .form-input .top-label label{}
+  .wrapper .form-input form{}
+  .wrapper .form-input form .inputs{
+}
+  .wrapper .form-input form .inputs .Email-input{}
+  .wrapper .form-input form .inputs .Email-input input{
+}
+  .wrapper .form-input form .inputs .Name-input{}
+  .wrapper .form-input form .inputs .Name-input input{}
+  .wrapper .form-input form .inputs .phone-input{}
+  .wrapper .form-input form .next_button{}
+.wrapper .form-input form .next_button:hover{}
+.wrapper>.container>header>.content .image{width: 60%;}
+.wrapper>.container>header>.content .image .header-vector{}
+.wrapper>.container>main{}
+.wrapper #sec_1{}
+h2.bigTitle{}
+.content .head{}
+.content .head h3{}
+.content .head p{}
+.wrapper #sec_1{}
+.wrapper #sec_1>div>.items{}
+.wrapper #sec_1>div>.items>.item.first{}
+.wrapper #sec_1>div>.items>.item.first>.content{}
+.wrapper #sec_1>div>.items>.item.first>.content>.head{}
+.wrapper #sec_1>div>.items>.item.first>.content>.head h3{}
+.wrapper #sec_1>div>.items>.item.first>.content>.head p{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li{
+  margin-right: 40px;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li.active{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li .icon{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(1) .icon::after{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(2) .icon::after{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(3) .icon::after{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(4) .icon::after{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(5) .icon::after{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li .icon img{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>.line{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>.line::after{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>.line .dot{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li.item{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li.active{} 
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li>h4{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea{
+  height: 330px;
+  overflow: scroll;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li.item{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li.active{} 
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p strong{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p ul{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p ul li{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p span{}
+.wrapper #sec_1>div>.items>.item.first>.animated-json{}
+.wrapper #sec_1>div>.items>.item.first>.animated-json .vector{}
+.wrapper #sec_1>div>.items>.item.second{}
+.wrapper #sec_1>div>.items>.item.second>.content{}
+.wrapper #sec_1>div>.items>.item.second>.content>.head{}
+.wrapper #sec_1>div>.items>.item.second>.content>.head h3{}
+.wrapper #sec_1>div>.items>.item.second>.content>.head p{}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items{}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li.item{}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box{}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>img{}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>h5{}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>p{}
+.wrapper #sec_1>div>.items>.item.second>.animated-json{}
+.wrapper #sec_1>div>.items>.item.second>.animated-json .vector{}
+.wrapper #sec_1>div>.items>.item.third{}
+.wrapper #sec_1>div>.items>.item.third>.content{}
+.wrapper #sec_1>div>.items>.item.third>.content .head{}
+.wrapper #sec_1>div>.items>.item.third>.content .head h3{}
+.wrapper #sec_1>div>.items>.item.third>.content .head p{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li.item{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .icon{
+  width: 20%;
+}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .text{
+  width: 80%;
+}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .icon img{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .text h5{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .text p{}
+.wrapper #sec_1>div>.items>.item.third>.animated-json{}
+.wrapper #sec_1>div>.items>.item.third>.animated-json .vector{}
+.wrapper #sec_1 .vertical-line{}
+.wrapper #sec_1 .vertical-line::after{content: '';}
+.wrapper .center-form{}
+.wrapper .center-form>.text{}
+.wrapper .center-form>.text h6{}
+.wrapper .center-form>.text p{}
+.wrapper .center-form>.form-section{}
+
+
+.form-input.center{}
+.form-input.center .top-label{}
+.form-input.center .top-label input{}
+.form-input.center .top-label label{}
+.form-input.center form{}
+.form-input.center form .inputs{
+  width: 75%;
+}
+.form-input.center form .inputs .Email-input{}
+.form-input.center form .inputs .Email-input input{}
+.form-input.center form .inputs .Name-input{}
+.form-input.center form .inputs .Name-input input{}
+.form-input.center form .inputs .phone-input{}
+.form-input.center form .inputs .phone-input input{}
+.form-input.center form .inputs .budget-input{}
+.form-input.center form .next_button{
+  width: 24%;
+}
+.form-input.center form .next_button:hover{}
+.wrapper #sec_2{}
+.wrapper #sec_2 h2{}
+.wrapper #sec_2>div>.texts{}
+.wrapper #sec_2>div>.texts>ul{}
+.wrapper #sec_2>div>.texts>ul>li{}
+.wrapper #sec_2>div>.texts>ul>li>h3{}
+.wrapper #sec_2>div>.texts>ul>li>p{}
+.wrapper #sec_2>div>.texts>ul>li>p ul{}
+.wrapper #sec_2>div>.texts>ul>li>p ul li{}
+.wrapper #sec_2>div>.animated-vector{
+  display: flex;
+  align-items: center;
+}
+.wrapper #sec_2>div>.animated-vector .vector{}
+
+.wrapper #sec_3{}
+.wrapper #sec_3 h2{}
+.wrapper #sec_3>.content{}
+.wrapper #sec_3>.content>ul.items{}
+.wrapper #sec_3>.content>ul.items>li.item{}
+.wrapper #sec_3>.content>ul.items>li.item .box{}
+.wrapper #sec_3>.content>ul.items>li.item .box .bgColor{}
+.wrapper #sec_3>.content>ul.items>li.item .box .bgColor::after{content: '';}
+.wrapper #sec_3>.content>ul.items>li.item .box .bgColor span{}
+.wrapper #sec_3>.content>ul.items>li.item .box .text{}
+.wrapper #sec_3>.content>ul.items>li.item .box .text p{}
+
+.wrapper #sec_4{}
+.wrapper #sec_4 h2{}
+.wrapper #sec_4>.content{}
+.wrapper #sec_4>.content>.texts{}
+.wrapper #sec_4>.content>.texts h4{}
+.wrapper #sec_4>.content>.texts p{}
+.wrapper #sec_4>.content>.profiles{}
+.wrapper #sec_4>.content>.profiles .slider{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .img{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .img img{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .info{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .info strong{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .info span{}
+
+
+.wrapper footer{}
+.wrapper footer .bgColor{}
+.wrapper footer .bgColor>.content{}
+.wrapper footer .bgColor>.content>.info{}
+.wrapper footer .bgColor>.content>.info>div:nth-child(1){}
+.wrapper footer .bgColor>.content>.info>div>.icon{}
+.wrapper footer .bgColor>.content>.info>div>.icon>h3{}
+.wrapper footer .bgColor>.content>.info>div>.icon>img{}
+.wrapper footer .bgColor>.content>.info>div>.address{}
+.wrapper footer .bgColor>.content>.info>div>.address ul{}
+.wrapper footer .bgColor>.content>.info>div>.address ul li{}
+.wrapper footer .bgColor>.content>.info>div>.address ul li strong{}
+.wrapper footer .bgColor>.content>.info>div>.address ul li p{}
+
+.wrapper footer .bgColor>.content>.info>.social{}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(1){}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2){}
+.wrapper footer .bgColor>.content>.info>.social .icon{}
+.wrapper footer .bgColor>.content>.info>.social .icon img{}
+.wrapper footer .bgColor>.content>.info>.social .icon h3{}
+.wrapper footer .bgColor>.content>.info>.social .mail{}
+.wrapper footer .bgColor>.content>.info>.social .mail a{}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul{}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul li{}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul li a{}
+
+.footer-form{}
+.footer-form>h3{}
+.footer-form>span{}
+.footer-form>form{}
+.footer-form>form input{}
+.footer-form>form .FullName{}
+.footer-form>form .FullName label{}
+.footer-form>form .FullName input{}
+.footer-form>form .MailAddress{}
+.footer-form>form .MailAddress label{}
+.footer-form>form .MailAddress input{}
+.footer-form>form .budget-input{}
+.footer-form>form .budget-input label{}
+.footer-form>form .budget-input .custom-select{}
+.footer-form>form .budget-input .custom-select select{}
+.footer-form form .phone-input{}
+.footer-form form .phone-input>div{}
+.footer-form form .phone-input>div label{}
+.footer-form form .phone-input>div input{}
+.footer-form form .button{}
+.footer-form form .button .send_button{}
+.footer-form form .button .send_button:hover{}
+}
+
+@media only screen and (min-width: 760px) and (max-width: 991px) {
+  /* tablet */
+  body{}
+  .wrapper{}
+  .wrapper>.container{}
+  .wrapper>.container>header{}
+  .wrapper>.container>header>.topNavbar{}
+  .wrapper>.container>header>.topNavbar>.logo{}
+  .wrapper>.container>header>.topNavbar>.logo>img{}
+  .wrapper>.container>header>.topNavbar>.nav{}
+  .wrapper>.container>header>.topNavbar>.nav>nav{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a span{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a:hover span{}
+  .wrapper>.container>header>.topNavbar>.dropdown{}
+  .wrapper>.container>header>.topNavbar>.dropdown:hover{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title .dropdown-check{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title .dropdown-copy{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select .dropdown-scrim{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option .dropdown-check{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option .dropdown-copy{}
+  .wrapper>.container>header>.content{}
+  .wrapper>.container>header>.content>.title{
+    padding: 20px;
+    width: 80%;
+}
+  .wrapper>.container>header>.content>.title h1{
+    font-size: 50px;
+}
+  .wrapper>.container>header>.content>.title h1 strong{
+    font-size: 120px;
+}
+  .wrapper>.container>header>.content>.title p{
+    font-size: 16px;
+}
+  .wrapper .form-input{}
+  .wrapper .form-input .top-label{}
+  .wrapper .form-input .top-label input{}
+  .wrapper .form-input .top-label label{}
+  .wrapper .form-input form{}
+  .wrapper .form-input form .inputs{}
+  .wrapper .form-input form .inputs .Email-input{}
+  .wrapper .form-input form .inputs .Email-input input{}
+  .wrapper .form-input form .inputs .Name-input{}
+  .wrapper .form-input form .inputs .Name-input input{}
+  .wrapper .form-input form .inputs .phone-input{}
+  .wrapper .form-input form .next_button{}
+.wrapper .form-input form .next_button:hover{}
+.wrapper>.container>header>.content .image{
+    width: 50%;
+}
+.wrapper>.container>header>.content .image .header-vector{}
+.wrapper>.container>main{}
+.wrapper #sec_1{}
+h2.bigTitle{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.content .head{}
+.content .head h3{}
+.content .head p{}
+.wrapper #sec_1{}
+.wrapper #sec_1>div>.items{}
+.wrapper #sec_1>div>.items>.item.first{}
+.wrapper #sec_1>div>.items>.item.first>.content{
+    width: 100%;
+    padding-right: 30px;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.head{}
+.wrapper #sec_1>div>.items>.item.first>.content>.head h3{}
+.wrapper #sec_1>div>.items>.item.first>.content>.head p{
+    font-size: 15px;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li{
+    margin-right: 50px;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li.active{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li .icon{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(1) .icon::after{
+    /* right: -28px; */
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(2) .icon::after{
+    /* right: -26px; */
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(3) .icon::after{
+    /* right: -26px; */
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(4) .icon::after{
+    /* right: -26px; */
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(5) .icon::after{
+    /* right: -27px; */
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li .icon img{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>.line{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>.line::after{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>.line .dot{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li.item{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li.active{} 
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li>h4{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea{
+    overflow: scroll;
+    height: 205px;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li.item{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li.active{} 
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p{
+    font-size: 14px;
+}
+
+p {}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p strong{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p ul{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p ul li{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p span{}
+.wrapper #sec_1>div>.items>.item.first>.animated-json{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 15%;
+}
+.wrapper #sec_1>div>.items>.item.first>.animated-json .vector{}
+.wrapper #sec_1>div>.items>.item.second{}
+.wrapper #sec_1>div>.items>.item.second>.content{
+    padding-right: 10px;
+    width: 100%;
+}
+.wrapper #sec_1>div>.items>.item.second>.content>.head{}
+.wrapper #sec_1>div>.items>.item.second>.content>.head h3{}
+.wrapper #sec_1>div>.items>.item.second>.content>.head p{}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li.item{
+    width: 199px;
+}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box{
+    margin: 2px;
+}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>img{}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>h5{}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>p{}
+.wrapper #sec_1>div>.items>.item.second>.animated-json{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 15%;
+}
+.wrapper #sec_1>div>.items>.item.second>.animated-json .vector{}
+.wrapper #sec_1>div>.items>.item.third{}
+.wrapper #sec_1>div>.items>.item.third>.content{
+    width: 100%;
+    padding-right: 20px;
+}
+.wrapper #sec_1>div>.items>.item.third>.content .head{}
+.wrapper #sec_1>div>.items>.item.third>.content .head h3{}
+.wrapper #sec_1>div>.items>.item.third>.content .head p{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li.item{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .icon{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .icon img{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .text h5{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .text p{}
+.wrapper #sec_1>div>.items>.item.third>.animated-json{
+    width: 15%;
+}
+.wrapper #sec_1>div>.items>.item.third>.animated-json .vector{}
+.wrapper #sec_1 .vertical-line{}
+.wrapper #sec_1 .vertical-line::after{content: '';}
+.wrapper .center-form{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper .center-form>.text{}
+.wrapper .center-form>.text h6{}
+.wrapper .center-form>.text p{}
+.wrapper .center-form>.form-section{}
+
+
+.form-input.center{}
+.form-input.center .top-label{}
+.form-input.center .top-label input{}
+.form-input.center .top-label label{}
+.form-input.center form{}
+.form-input.center form .inputs{}
+.form-input.center form .inputs .Email-input{}
+.form-input.center form .inputs .Email-input input{}
+.form-input.center form .inputs .Name-input{}
+.form-input.center form .inputs .Name-input input{}
+.form-input.center form .inputs .phone-input{}
+.form-input.center form .inputs .phone-input input{}
+.form-input.center form .inputs .budget-input{}
+.form-input.center form .next_button{}
+.form-input.center form .next_button:hover{}
+.wrapper #sec_2{
+    margin-top: 100px;
+}
+.wrapper #sec_2 h2{}
+  .wrapper #sec_2>div{
+    flex-direction: column-reverse;
+}
+.wrapper #sec_2>div>.texts{
+    width: 100%;
+    padding-right: 0;
+}
+.wrapper #sec_2>div>.texts>ul{
+    display: flex;
+}
+.wrapper #sec_2>div>.texts>ul>li{
+    width: 50%;
+    padding: 0 25px;
+}
+.wrapper #sec_2>div>.texts>ul>li>h3{}
+.wrapper #sec_2>div>.texts>ul>li>p{}
+.wrapper #sec_2>div>.texts>ul>li>p ul{}
+.wrapper #sec_2>div>.texts>ul>li>p ul li{}
+.wrapper #sec_2>div>.animated-vector{
+    width: 100%;
+    height: 330px;
+    text-align: center;
+}
+.wrapper #sec_2>div>.animated-vector .vector{}
+
+.wrapper #sec_3{
+    margin-top: 100px;
+}
+.wrapper #sec_3 h2{}
+.wrapper #sec_3>.content{}
+.wrapper #sec_3>.content>ul.items{}
+.wrapper #sec_3>.content>ul.items>li.item{}
+.wrapper #sec_3>.content>ul.items>li.item .box{}
+.wrapper #sec_3>.content>ul.items>li.item .box .bgColor{}
+.wrapper #sec_3>.content>ul.items>li.item .box .bgColor::after{content: '';}
+.wrapper #sec_3>.content>ul.items>li.item .box .bgColor span{}
+.wrapper #sec_3>.content>ul.items>li.item .box .text{}
+.wrapper #sec_3>.content>ul.items>li.item .box .text p{}
+
+.wrapper #sec_4{
+    margin-top: 100px;
+}
+.wrapper #sec_4 h2{}
+.wrapper #sec_4>.content{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper #sec_4>.content>.texts{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.wrapper #sec_4>.content>.texts h4{
+    text-align: center;
+}
+.wrapper #sec_4>.content>.texts p{
+    text-align: center;
+}
+.wrapper #sec_4>.content>.profiles{
+    width: 100%;
+    padding-left: 0;
+}
+.wrapper #sec_4>.content>.profiles .slider{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .img{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .img img{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .info{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .info strong{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .info span{}
+
+
+.wrapper footer{
+    padding: 40px;
+}
+.wrapper footer .bgColor{}
+.wrapper footer .bgColor>.content{}
+.wrapper footer .bgColor>.content>.info{
+    padding-right: 10px;
+}
+.wrapper footer .bgColor>.content>.info>div:nth-child(1){}
+.wrapper footer .bgColor>.content>.info>div>.icon{}
+.wrapper footer .bgColor>.content>.info>div>.icon>h3{}
+.wrapper footer .bgColor>.content>.info>div>.icon>img{}
+.wrapper footer .bgColor>.content>.info>div>.address{}
+.wrapper footer .bgColor>.content>.info>div>.address ul{}
+.wrapper footer .bgColor>.content>.info>div>.address ul li{}
+.wrapper footer .bgColor>.content>.info>div>.address ul li strong{}
+.wrapper footer .bgColor>.content>.info>div>.address ul li p{}
+
+.wrapper footer .bgColor>.content>.info>.social{
+    flex-direction: column;
+}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(1){
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2){}
+.wrapper footer .bgColor>.content>.info>.social .icon{}
+.wrapper footer .bgColor>.content>.info>.social .icon img{}
+.wrapper footer .bgColor>.content>.info>.social .icon h3{}
+.wrapper footer .bgColor>.content>.info>.social .mail{}
+.wrapper footer .bgColor>.content>.info>.social .mail a{}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul{}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul li{}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul li a{}
+
+.footer-form{
+    width: 80%;
+}
+.footer-form>h3{}
+.footer-form>span{}
+.footer-form>form{}
+.footer-form>form input{}
+.footer-form>form .FullName{}
+.footer-form>form .FullName label{}
+.footer-form>form .FullName input{}
+.footer-form>form .MailAddress{}
+.footer-form>form .MailAddress label{}
+.footer-form>form .MailAddress input{}
+.footer-form>form .budget-input{}
+.footer-form>form .budget-input label{}
+.footer-form>form .budget-input .custom-select{}
+.footer-form>form .budget-input .custom-select select{}
+.footer-form form .phone-input{}
+.footer-form form .phone-input>div{}
+.footer-form form .phone-input>div label{}
+.footer-form form .phone-input>div input{}
+.footer-form form .button{
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.footer-form form .button .send_button{}
+.footer-form form .button .send_button:hover{}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 760px) {
+  /* mobile */
+  body{}
+  .wrapper{}
+  .wrapper>.container{}
+  .wrapper>.container>header{}
+  .wrapper>.container>header>.topNavbar{}
+  .wrapper>.container>header>.topNavbar>.logo{}
+  .wrapper>.container>header>.topNavbar>.logo>img{}
+  .wrapper>.container>header>.topNavbar>.nav{}
+  .wrapper>.container>header>.topNavbar>.nav>nav{
+    display: none;
+}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a span{}
+  .wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a:hover span{}
+  .wrapper>.container>header>.topNavbar>.dropdown{}
+  .wrapper>.container>header>.topNavbar>.dropdown:hover{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title .dropdown-check{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title .dropdown-copy{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-select .dropdown-scrim{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option .dropdown-check{}
+  .wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option .dropdown-copy{}
+  .wrapper>.container>header>.content{
+    display: flex;
+    flex-direction: column-reverse;
+}
+  .wrapper>.container>header>.content>.title{
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+    padding-top: 30px;
+}
+  .wrapper>.container>header>.content>.title h1{
+    font-size: 40px;
+}
+  .wrapper>.container>header>.content>.title h1 strong{
+    font-size: 120px;
+}
+  .wrapper>.container>header>.content>.title p{
+    font-size: 17px;
+}
+  .wrapper .form-input{
+    margin-top: 80px;
+}
+  .wrapper .form-input .top-label{}
+  .wrapper .form-input .top-label input{}
+  .wrapper .form-input .top-label label{}
+  .wrapper .form-input form{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+  .wrapper .form-input form .inputs{
+    height: 70px;
+    width: 100%;
+}
+  .wrapper .form-input form .inputs .phone-input details[open] summary:after {
+}
+
+.wrapper .form-input form>ul {background: white;}
+  .wrapper .form-input form .inputs .budget-input .select-items {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+  .wrapper .form-input form .inputs .budget-input .select-items div, .select-selected{
+    padding: 17px 16px;
+    width: 50%;
+}
+  .wrapper .form-input form>ul.list.open{
+    top: 60px;
+    z-index: 2;
+    max-height: 240px;
+}
+  .wrapper .form-input form>ul li{
+    padding: 10px 0;
+}
+.wrapper .form-input.center form>ul{}
+.wrapper .form-input.center form>ul li label{}
+  .wrapper .form-input form .inputs .Email-input{}
+  .wrapper .form-input form .inputs .Email-input input{}
+  .wrapper .form-input form .inputs .Name-input{}
+  .wrapper .form-input form .inputs .Name-input input{}
+  .wrapper .form-input form .inputs .phone-input{}
+  .wrapper .form-input form .next_button{
+    margin-top: 10px;
+    width: 100%;
+}
+.wrapper .form-input form .next_button:hover{}
+.wrapper>.container>header>.content .image{
+    width: 100%;
+}
+.wrapper>.container>header>.content .image .header-vector{}
+.wrapper>.container>main{}
+.wrapper #sec_1{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+h2.bigTitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.content .head{}
+.content .head h3{}
+.content .head p{}
+.wrapper #sec_1{}
+.wrapper #sec_1>div{
+}
+.wrapper #sec_1>div>.items{
+    width: 100%;
+}
+.wrapper #sec_1>div>.items>.item.first{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper #sec_1>div>.items>.item.first>.content{
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.head{
+    margin-bottom: 100px;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.head h3{}
+.wrapper #sec_1>div>.items>.item.first>.content>.head p{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons{
+    text-align: center;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li{
+    margin-right: 10px;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li.active{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li .icon{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(1) .icon::after{
+    right: 0;
+    top: -55px;
+    left: 0;
+    padding-right: 0;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(2) .icon::after{
+    right: 0;
+    top: -55px;
+    left: 0;
+    padding-right: 0;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(3) .icon::after{
+    right: 0;
+    top: -55px;
+    left: 0;
+    padding-right: 0;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(4) .icon::after{
+    right: 0;
+    top: -55px;
+    left: 0;
+    padding-right: 0;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(5) .icon::after{
+    right: 0;
+    top: -55px;
+    left: 0;
+    padding-right: 0;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li .icon img{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>.line{
+    display: none;
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>.line::after{}
+.wrapper #sec_1>div>.items>.item.first>.content>.icons>.line .dot{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li.item{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li.active{} 
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li>h4{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea{
+    min-height: 440px;
+}
+  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li{
+    /* position: relative; */
+}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li.item{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li.active{} 
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p strong{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p ul{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p ul li{}
+.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p span{}
+.wrapper #sec_1>div>.items>.item.first>.animated-json{
+    width: 100%;
+}
+.wrapper #sec_1>div>.items>.item.first>.animated-json .vector{
+    width: 100%;
+}
+.wrapper #sec_1>div>.items>.item.second{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.wrapper #sec_1>div>.items>.item.second>.content{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+.wrapper #sec_1>div>.items>.item.second>.content>.head{
+    margin: 20px 10px;
+}
+.wrapper #sec_1>div>.items>.item.second>.content>.head h3{}
+.wrapper #sec_1>div>.items>.item.second>.content>.head p{}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li.item{
+    width: 97%;
+    margin: auto;
+}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box{
+    height: auto;
+}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>img{
+    height: 130px;
+    margin-bottom: 10px;
+}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>h5{
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>p{
+    font-size: 14px;
+}
+.wrapper #sec_1>div>.items>.item.second>.animated-json{
+    width: 100%;
+}
+.wrapper #sec_1>div>.items>.item.second>.animated-json .vector{}
+.wrapper #sec_1>div>.items>.item.third{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.wrapper #sec_1>div>.items>.item.third>.content{
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+.wrapper #sec_1>div>.items>.item.third>.content .head{}
+.wrapper #sec_1>div>.items>.item.third>.content .head h3{}
+.wrapper #sec_1>div>.items>.item.third>.content .head p{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li.item{}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .icon{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 10px;
+}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .icon img{
+    width: 100%;
+}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .text h5{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .text p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.wrapper #sec_1>div>.items>.item.third>.animated-json{
+    width: 100%;
+}
+.wrapper #sec_1>div>.items>.item.third>.animated-json .vector{}
+.wrapper #sec_1 .vertical-line{}
+.wrapper #sec_1 .vertical-line::after{content: '';}
+.wrapper .center-form{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.wrapper .center-form>.text{}
+.wrapper .center-form>.text h6{}
+.wrapper .center-form>.text p{}
+.wrapper .center-form>.form-section{}
+
+
+.form-input.center{}
+.form-input.center .top-label{display: flex;width: 100%;justify-content: space-around;}
+.form-input.center .top-label input{
+    display: none;
+}
+.form-input.center .top-label label{
+    margin: 2px;
+}
+.form-input.center form{}
+.form-input.center form .inputs{}
+.form-input.center form .inputs .Email-input{}
+.form-input.center form .inputs .Email-input input{}
+.form-input.center form .inputs .Name-input{}
+.form-input.center form .inputs .Name-input input{}
+.form-input.center form .inputs .phone-input{}
+.form-input.center form .inputs .phone-input input{}
+.form-input.center form .inputs .budget-input{}
+.form-input.center form .next_button{}
+.form-input.center form .next_button:hover{}
+.wrapper #sec_2{
+    margin-top: 70px;
+}
+.wrapper #sec_2 h2{}
+.wrapper #sec_2>div{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.wrapper #sec_2>div>.texts{
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+}
+.wrapper #sec_2>div>.texts>ul{}
+.wrapper #sec_2>div>.texts>ul>li{}
+.wrapper #sec_2>div>.texts>ul>li>h3{}
+.wrapper #sec_2>div>.texts>ul>li>p{}
+.wrapper #sec_2>div>.texts>ul>li>p ul{}
+.wrapper #sec_2>div>.texts>ul>li>p ul li{}
+.wrapper #sec_2>div>.animated-vector{
+    width: 100%;
+}
+.wrapper #sec_2>div>.animated-vector .vector{}
+
+.wrapper #sec_3{}
+.wrapper #sec_3 h2{}
+.wrapper #sec_3>.content{}
+.wrapper #sec_3>.content>ul.items{}
+.wrapper #sec_3>.content>ul.items>li.item{
+    margin-bottom: 20px;
+}
+.wrapper #sec_3>.content>ul.items>li.item .box{
+    min-height: auto;
+}
+.wrapper #sec_3>.content>ul.items>li.item .box .bgColor{}
+.wrapper #sec_3>.content>ul.items>li.item .box .bgColor::after{content: '';}
+.wrapper #sec_3>.content>ul.items>li.item .box .bgColor span{}
+.wrapper #sec_3>.content>ul.items>li.item .box .text{}
+.wrapper #sec_3>.content>ul.items>li.item .box .text p{
+    line-height: 2;
+    font-size: 15px;
+    max-height: initial;
+}
+
+.wrapper #sec_4{
+    margin-top: 70px;
+}
+.wrapper #sec_4 h2{}
+.wrapper #sec_4>.content{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.wrapper #sec_4>.content>.texts{
+    width: 100%;
+}
+.wrapper #sec_4>.content>.texts h4{}
+.wrapper #sec_4>.content>.texts p{}
+.wrapper #sec_4>.content>.profiles{
+    width: 100%;
+    padding-left: 0;
+}
+.wrapper #sec_4>.content>.profiles .slider{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .img{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .img img{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .info{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .info strong{}
+.wrapper #sec_4>.content>.profiles .slider>.owl-carousel>.item .box .info span{}
+
+
+.wrapper footer{
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.wrapper footer .bgColor{}
+.wrapper footer .bgColor>.content{
+    flex-direction: column;
+}
+.wrapper footer .bgColor>.content>.info{
+    width: 100%;
+    padding: 0;
+}
+.wrapper footer .bgColor>.content>.info>div:nth-child(1){}
+.wrapper footer .bgColor>.content>.info>div>.icon{}
+.wrapper footer .bgColor>.content>.info>div>.icon>h3{}
+.wrapper footer .bgColor>.content>.info>div>.icon>img{}
+.wrapper footer .bgColor>.content>.info>div>.address{}
+.wrapper footer .bgColor>.content>.info>div>.address ul{}
+.wrapper footer .bgColor>.content>.info>div>.address ul li{}
+.wrapper footer .bgColor>.content>.info>div>.address ul li strong{}
+.wrapper footer .bgColor>.content>.info>div>.address ul li p{}
+
+.wrapper footer .bgColor>.content>.info>.social{
+    flex-direction: column;
+}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(1){
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2){}
+.wrapper footer .bgColor>.content>.info>.social .icon{
+    display: flex;
+    justify-content: center;
+}
+.wrapper footer .bgColor>.content>.info>.social .icon img{}
+.wrapper footer .bgColor>.content>.info>.social .icon h3{}
+.wrapper footer .bgColor>.content>.info>.social .mail{
+    text-align: center;
+}
+.wrapper footer .bgColor>.content>.info>.social .mail a{}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul li{}
+.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul li a{}
+
+.footer-form{
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.footer-form>h3{}
+.footer-form>span{}
+.footer-form>form{}
+.footer-form>form input{}
+.footer-form>form .FullName{}
+.footer-form>form .FullName label{}
+.footer-form>form .FullName input{}
+.footer-form>form .MailAddress{}
+.footer-form>form .MailAddress label{}
+.footer-form>form .MailAddress input{}
+.footer-form>form .budget-input{}
+.footer-form>form .budget-input label{}
+.footer-form>form .budget-input .custom-select{}
+.footer-form>form .budget-input .custom-select select{}
+.footer-form form .phone-input{}
+.footer-form form .phone-input>div{}
+.footer-form form .phone-input>div label{}
+.footer-form form .phone-input>div input{}
+.footer-form form .button{
+    margin-bottom: 0;
+}
+.footer-form form .button .send_button{
+    width: 100%;
+    margin-top: 10px;
+}
+.footer-form form .button .send_button:hover{}
+
+}
+
+@media only screen and (max-width: 555px){
+  /* mini */
+}
