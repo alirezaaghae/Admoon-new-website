@@ -1,137 +1,165 @@
 <footer class="site-footer footer-index" role="contentinfo">
-            <div class="bgColor">
-                <h2 class="bigTitle">Be in touch with us</h2>
-                <div class="content">
-                    <div class="info">
-                        <div>
-                            <div class="icon">
-                                <img src="assets/images/icon1_footer.svg" alt="Our-Offices-icon" title="Our Offices icon">
-                                <h3>Our Offices</h3>
-                            </div>
-                            <div class="address">
-                                <ul>
-                                    <li>
-                                        <strong>UAE</strong>
-                                        <p>501, Baniyas Center</br>
-                                            Al Maktoum sr., Deira</br>
-                                            Dubai, UAE</p>
-                                    </li>
-                                    <li>
-                                        <strong>OMAN</strong>
-                                        <p>Number 3066, Al Amabilah</br>
-                                            Al Snaiya, Al Seeb</br>
-                                            Muscat, OMAN</p>
-                                    </li>
-                                    <li>
-                                        <strong>KENYA</strong>
-                                        <p>Room 201, 2nd Floor</br>
-                                            Yalah Towers, Biashara Street</br>
-                                            Nairobi, KENYA</p>
-                                    </li>
-                                    <li>
-                                        <strong>Iran</strong>
-                                        <p>Unit. 141, Fl. 14</br>
-                                            Sadaf Tower, Sheikh Bahaee Sq</br>
-                                            Tehran, IRAN</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="social">
-                            <div>
-                                <div class="icon">
-                                    <img src="assets/images/icon2_footer.svg" alt="Our-Email-icon" title="Our Email icon">
-                                    <h3>Our Email</h3>
-                                </div>
-                                <div class="mail"><a href="mailto:talk@admoon.net">talk@admoon.net</a></div>
-                            </div>
-                            <div>
-                                <div class="icon">
-                                    <img src="assets/images/icon3_footer.svg" alt="Our-Phone-icon" title="Our Phone icon">
-                                    <h3>Our Phone</h3>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li><a href="tel:+9685483422">+968 - 548 3422</a></li>
-                                        <li><a href="tel:+9684692578">+968 - 469 2578</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-form">
-                        <h3>Let's get in touch.</h3>
-                        <span>Your business growth journey awaits.</span>
-                        <form>
-                            <div class="FullName">
-                                <label for="name">Full Name</label>
-                                <input type="text" id="name" name="name" min="2" max="20">
-                                <div class="bottom-line"><div class="fill-line"></div></div>
-                            </div>
-                            <div class="MailAddress">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email">
-                                <div class="bottom-line"><div class="fill-line"></div></div>
-                            </div>
-                            <div class="budget-input">
-                                <label for="select">Monthly Budget</label>
-                                <div class="custom-select">
-                                    <select>
-                                      <option value="0"></option>
-                                      <option value="15,000$">Up to 15,000$</option>
-                                      <option value="30,000$">Up to 30,000$</option>
-                                      <option value="50,000$">Up to 50,000$</option>
-                                      <option value="75,000$">Up to 75,000$</option>
-                                    </select>
-                                </div>
-                                <div class="bottom-line"><div class="fill-line"></div></div>
-                            </div>
-                            <div class="phone-input alireza_validator">
-                                <details class="custom-details">
-                                    <summary class="radios">
-                                        <span class="listValue">+98 Iran</span>
-                                    </summary>
-                                    
-                                </details>
-                                <ul class="list">
-                                    <li>
-                                        <label for="item1" value="+98">+98 Iran<span></span></label>
-                                    </li>
-                                    <li>
-                                        <label for="item2" value="+971">+971 UEA</label>
-                                    </li>
-                                    <li>
-                                        <label for="item3" value="+254">+254 kenya</label>
-                                    </li>
-                                    <li>
-                                        <label for="item4" value="+968">+968 Oman</label>
-                                    </li>
-                                    <li>
-                                        <label for="item5" value="+974">+974 Qatar</label>
-                                    </li>
-                                </ul>
-                                <div>
-                                    <div>
-                                        <label for="phone">Phone Number</label>
-                                        <input type="tel" id="phone" name="phone">
-                                    </div>
-                                    <div class="bottom-line"><div class="fill-line"></div></div>
-                                </div>
-                                
-                            </div>
-                            <div class="button">
-                                <button class="send_button">Lets Start</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <div class="footerContact">
+    <div class="container">
+        <div class="location">
+            <a class="map" href="https://goo.gl/maps/AGM85TRxLHGSoKiS6" target="_blank">
+                <img src="assets/images/footerMapCover.png" alt="location" title="location">
+            </a>
+            <div class="text">
+                <ul>
+                    <li>
+                        <img src="assets/images/locationIcon.svg" alt="location-icon" title="location-icon">
+                        <a href="https://goo.gl/maps/AGM85TRxLHGSoKiS6">501, Baniyas CenterAl Maktoum sr., DeiraDubai, UAE</a>
+                    </li>
+                    <li>
+                        <img src="assets/images/phoneIcon.svg" alt="phone-icon" title="phone-icon">
+                        <a href="tel:+9685483422">+968 - 548 3422</a>
+                        <a href="tel:+9684692578">+968 - 469 2578</a>
+                    </li>
+                </ul>
             </div>
-        </footer>
+        </div>
+        <div id="footerform">
+            <form class="form">
+                <span>We can help you with</span>
+                <div class="custom-select package">
+                    <select>
+                      <option value="Audit">Audit</option>
+                      <option value="TuneUp">Tune up</option>
+                      <option value="AdsManagement">Ads Management</option>
+                      <option value="AccountSuspension">Account Suspension</option>
+                    </select>
+                </div>
+                <div class="FullName">
+                    <label>Full Name
+                        <input type="text" name="name" min="2" max="20">
+                    </label>
+                    <div class="bottom-line"><div class="fill-line"></div></div>
+                </div>
+                <div class="MailAddress">
+                    <label>Email
+                        <input type="email" name="email">
+                    </label>
+                    <div class="bottom-line"><div class="fill-line"></div></div>
+                </div>
+                <div class="WebsiteAddress">
+                    <label>Website URL
+                    <input type="text" name="Website"></label>
+                    <div class="bottom-line"><div class="fill-line"></div></div>
+                </div>
+                <div class="PhoneNumber">
+                    <label>Phone Number
+                        <input type="tel" name="phone" maxlength="11">
+                    </label>
+                    <div class="bottom-line"><div class="fill-line"></div></div>
+                </div>
+                <div class="button">
+                    <button class="send_button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="footerNav desktop">
+        <div class="logo">
+            <img src="assets/images/admoonLogoWhite.svg" alt="admoon-logo" title="admoon-logo">
+        </div>
+        <div class="navbar">
+            <ul class="navv">
+                <li>
+                    <strong>Services</strong>
+                    <ul>
+                        <li><a href="Audit.php">Audit</a></li>
+                        <li><a href="AdsManagement.php">Ads Management</a></li>
+                        <li><a href="TuneUp.php">Tune Up</a></li>
+                        <li><a href="AccountSuspension.php">Account Suspension</a></li>
+                    </ul>
+                </li>
+                <div class="vl"></div>
+                <li>
+                    <strong>Solution for industry</strong>
+                    <ul>
+                        <li><a href="#">E-commerce</a></li>
+                        <li><a href="#">Travel and Tourism</a></li>
+                        <li><a href="#">Real Estate</a></li>
+                    </ul>
+                </li>
+                <div class="vl"></div>
+                <li>
+                    <strong>Learn about</strong>
+                    <ul>
+                        <li><a href="#">Search Campaign</a></li>
+                        <li><a href="#">Display Campaign</a></li>
+                        <li><a href="#">Youtube Campaign</a></li>
+                        <li><a href="#">Download Campaign</a></li>
+                        <li><a href="#">Application Campaign</a></li>
+                    </ul>
+                </li>
+                <div class="vl"></div>
+                <li>
+                    <strong>Resources</strong>
+                    <ul>
+                        <li><a href="CaseStudy.php">Case Study</a></li>
+                        <li><a href="AboutUs.php">About Us</a></li>
+                        <li><a href="ContactUs.php">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="trustUs">
+            <div class="GPartner">
+                <a target="_blank" href="https://www.google.com/partners/agency?id=6288273986" class="footerbottomgpartner"><img src="assets/images/GPartner.png"></a>
+            </div>
+            <div class="Social">
+                <ul>
+                    <li><a target="_blank" href="#"><img src="assets/images/LinkdinIcon.svg" alt="Linkdin-Icon" title="Linkdin-Icon"></a></li>
+                    <li><a target="_blank" href="#"><img src="assets/images/telegramIcon.svg" alt="telegram-Icon" title="telegram-Icon"></a></li>
+                    <li><a target="_blank" href="#"><img src="assets/images/whatsappIcon.svg" alt="whatsapp-Icon" title="whatsapp-Icon"></a></li>
+                    <li><a target="_blank" href="#"><img src="assets/images/instagramIcon.svg" alt="instagram-Icon" title="instagram-Icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footerNav mobile">
+        <div class="navbar">
+            <ul class="navv">
+                <li class="Services">Services <img src="assets/images/downArrow.svg"></li>
+                <ul class="ServicesBox">
+                    <li><a href="Audit.php">Audit</a></li>
+                    <li><a href="AdsManagement.php">Ads Management</a></li>
+                    <li><a href="TuneUp.php">Tune Up</a></li>
+                    <li><a href="AccountSuspension.php">Account Suspension</a></li>
+                </ul>
+                <hr>
+                <li><a href="CaseStudy.php">Case Study</a></li>
+                <hr>
+                <li class="SolutionIndustry">Solution for industry <img src="assets/images/downArrow.svg"></li>
+                <ul class="SolutionIndustryBox">
+                    <li><a href="#">E-commerce</a></li>
+                    <li><a href="#">Travel and Tourism</a></li>
+                    <li><a href="#">Real Estate</a></li>
+                </ul>
+                <hr>
+                <li class="LearnAbout">Learn about <img src="assets/images/downArrow.svg"></li>
+                <ul class="LearnAboutBox">
+                    <li><a href="#">Search Campaign</a></li>
+                    <li><a href="#">Display Campaign</a></li>
+                    <li><a href="#">Youtube Campaign</a></li>
+                    <li><a href="#">Download Campaign</a></li>
+                    <li><a href="#">Application Campaign</a></li>
+                </ul>
+                <hr>
+                <li><a href="AboutUs.php">About Us</a></li>
+                <hr>
+                <li><a href="ContactUs.php">Contact Us</a></li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+</footer>
 <script src="assets/js/jquery-3.6.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="assets/OwlCarousel/dist/owl.carousel.min.js"></script>
 <script src="assets/gsap-public/minified/gsap.min.js"></script>
 <script src="assets/js/script.js" defer="defer"></script>
-</body>
-
 </html>

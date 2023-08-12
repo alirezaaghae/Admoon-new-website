@@ -50,5 +50,3 @@
         /* Empty */
     </style>
 </head>
-
-<body>

@@ -45,7 +45,7 @@ for (i = 0; i < l; i++) {
   /*for each element, create a new DIV that will contain the option list:*/
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
-  for (j = 1; j < ll; j++) {
+  for (j = 0; j < ll; j++) {
     /*for each option in the original select element,
     create a new DIV that will act as an option item:*/
     c = document.createElement("DIV");
@@ -112,27 +112,39 @@ document.addEventListener("click", closeAllSelect);
 
 
 
-$('.owl-carousel').owlCarousel({
+$('#homePage .owl-carousel').owlCarousel({
     loop:true,
-    nav:false,
-    rtl:true,
+    dots:false,
+    nav:true,
+    // rtl:true,
     autoplay: true,
-    autoplayTimeout: 3000,
-    margin: 20,
-    // navText : ["<img src='assets/images/right_button.svg' width='54px'>","<img src='assets/images/left_button.svg' width='54px'>"],
+    autoplayHoverPause: true,
+    singleItem:true,
+    autoplayTimeout: 2000,
+    navText : ["<img src='assets/images/rightArrowSlider.svg' width='54px'>","<img src='assets/images/leftArrowSlider.svg' width='54px'>"],
     responsive:{
       0:{
-          items:1,
-          margin: 10
+          items:1
       },
       600:{
-          items:3,
-          margin: 10,
+          items:1
       },
       1000:{
-          items:3,
+          items:1
       }
      }
+});
+
+$("#homePage .owl-carousel-mobile").owlCarousel({
+  loop: true,
+  autoplay: true,
+  touchDrag: false,
+  singleItem: true,
+  mouseDrag: false,
+  nav: false,
+  dots:false,
+  animateOut: 'slideOutUp',
+  animateIn: 'slideInUp'
 });
 
 
@@ -332,23 +344,17 @@ $('.top-label label').click(function (e) {
 });
 
 
-// footer form
-$('.footer-form>form>div').click(function (e) {
+
+
+
+
+
+
+// label form
+// inputs form
+$('form>div').click(function (e) {
   e.preventDefault();
   $(this).addClass('active');
   $(this).find( "input" ).focus();
   return false;
 });
-
-
-// $(function () {
-//     $('.menu-icon,.topNavLinks').click(function () {
-//         $('.firstQS').addClass('show');
-//         $('.secondQS').removeClass('show');
-//         $('.backbutton').hide();
-//         $('.menu-icon').toggleClass('is-open');
-//         $('.topNavLinks').toggleClass('ShowMunu')
-//     });
-// });
-
-// gasp animation scroll

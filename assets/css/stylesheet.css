@@ -4,7 +4,7 @@
 :focus {outline: none;}
 * {margin: 0;padding: 0;}
 html {overflow-x: hidden; scroll-behavior: smooth;}
-html,body,button,input,optgroup,a,span,form,div,ul,li,p,strong,em,div,h1,h2,h3,h4,h5,h6,section,main,select,textarea {}
+html,body,button,input,optgroup,a,span,.form,div,ul,li,p,strong,em,div,h1,h2,h3,h4,h5,h6,section,main,select,textarea {}
 a{transition:all .3s;text-decoration: none;}
 /*    start code here   */
 
@@ -20,1397 +20,118 @@ body{
 .wrapper>.container>header{
     position: relative;
 }
-.wrapper>.container>header>.topNavbar{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 0;
-}
-.wrapper>.container>header>.topNavbar>.logo{}
-.wrapper>.container>header>.topNavbar>.logo>img{
-    width: 140px;
-}
-.wrapper>.container>header>.topNavbar>.nav{}
-.wrapper>.container>header>.topNavbar>.nav>nav{
-    position: relative;
-}
-.wrapper>.container>header>.topNavbar>.nav>nav>ul{
-    display: flex;
-    justify-content: space-around;
-}
-.wrapper>.container>header>.topNavbar>.nav>nav>ul>li{}
-.wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a{
-    padding: 15px;
-}
-.wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a span{
-    font-weight: 500;
-    font-size: 13px;
-    transition: all .1s;
-}
-.wrapper>.container>header>.topNavbar>.nav>nav>ul>li>a:hover span{
-    transform: scale(1.05);
-    display: inline-block;
-}
-.wrapper>.container>header>.topNavbar>.dropdown{}
-.wrapper>.container>header>.topNavbar>.dropdown:hover{}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-select{
-    position: relative;
-    padding: 10px 13px;
-    z-index: 1;
-    background: #5552EB;
-    border-radius: 7px;
-    border: 1px solid #5552EB;
-}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-select:hover #dropdown-title .dropdown-copy{color: #5552EB;}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-select:hover::before{color: #FFFFFF;width: 100%;height: 100%;}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-select:hover #dropdown-title .dropdown-check{background-image: url(../images/arrow2.svg);}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-select::before{content: "";transition: all .3s;background: white;width: 0;border-radius: 6px;height: 0;display: block;top: 0;left: 0;right: 0;bottom: 0;margin: auto;position: absolute;z-index: 0;}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title{
-    z-index: 1;
-    position: relative;
-    transition: all .3s;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 14px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title .dropdown-check{
-    display: block;
-    background-image: url(../images/arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-select #dropdown-title .dropdown-copy{
-    transition: all .3s;
-}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-select .dropdown-scrim{}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-options{
-    margin-top: 2px;
-    transition: all .3s;
-    transform: translateY(-43px);
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-options.open{
-    transform: translateY(0);
-	  opacity: 1;
-}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list{
-    /* background: #5552EB; */
-    /* border-radius: 7px; */
-}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option{
-    position: relative;
-    padding: 8px;
-    text-align: center;
-    cursor: pointer;
-    background: #5552EB;
-    border-radius: 7px;
-	transition:all .3s;
-	border: 1px solid #5552EB;
-	margin-bottom:2px;
-}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option:hover{
-	background: white;
-	
-}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option:hover .dropdown-copy{
-	color:#5552EB;
-}
-
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option .dropdown-check{
-}
-.wrapper>.container>header>.topNavbar>.dropdown .dropdown-options .dropdown-options-list .dropdown-option .dropdown-copy{
-    z-index: 1;
-    position: relative;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 14px;
-}
-.wrapper>.container>header>.content{
-    position: relative;
-    display: flex;
-    margin-top: 50px;
-}
-.wrapper>.container>header>.content>.title{width: 80%;padding-right: 240px;}
-.wrapper>.container>header>.content>.title h1{
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 70px;
-    /* line-height: 130px; */
-/* identical to box height */
-    color: #000000;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-.wrapper>.container>header>.content>.title h1 strong{
-    transition: all .5s;
-    font-weight: 400;
-    font-size: 170px;
-    text-transform: uppercase;
-    color: transparent;
-    background-image: radial-gradient(100% 100% at 100% 100%, #4BFFDF 20.85%, rgba(243, 104, 213, 0.9) 52.5%, rgba(255, 197, 47, 0.8) 100%);
-    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-	  background-clip: text;
-  animation: color 10s linear infinite; 
-  background-size: 500%;  
-  /* -webkit-transform: translate3d(0,0,0); */
-	  -webkit-backface-visibility: hidden;
-
-}
-
-@keyframes color {
-  0% { 
-    background-position: 0% 100%;
-  }
-	50% { 
-    background-position: 100% 100%; 
-  }
-  100% {
-    background-position: 0% 100%;
-  }
-}
 
 
-.wrapper>.container>header>.content>.title>p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 19px;
-    /* line-height: 38px; */
-    color: #000000;
-    margin-bottom: 50px;
-}
-.wrapper .form-input{
-    position: relative;
-    margin-top: 40px;
-}
-.wrapper .form-input .top-label{
-    transition: all .3s;
-    top: -30px;
-    position: absolute;
-}
-.wrapper .form-input[state="email"] .top-label,.wrapper .form-input[state="success"] .top-label{
-	top: 0px;
-}
-.wrapper .form-input .top-label input{
-    opacity: 0;
-}
-.wrapper .form-input .top-label label{
-    color: #E6E6E6;
-    font-weight: 300;
-    font-size: 12px;
-    transition: all .3s;
-    cursor: pointer;
-}
-.wrapper .form-input[state="email"] .top-label #Email_menu+label,.wrapper .form-input[state="name"] .top-label #Name_menu+label,.wrapper .form-input[state="phone"] .top-label #Phone_menu+label,.wrapper .form-input[state="budget"] .top-label #Budget_menu+label{color: #67D6A1;font-weight: 500;}
-.wrapper .form-input .top-label label:hover{color: #67d6a1a8;}
-.wrapper .form-input form{
-    position: relative;
-    /* overflow: hidden; */
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-}
-.wrapper .form-input form .inputs{
-    border: 1px solid #D6D6D6;
-    border-radius: 12px;
-    width: 67%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    background-color: white;
-    z-index: 1;
-}
-.wrapper .form-input[state='budget'] form .inputs{
-	overflow: visible !important;
-}
-.wrapper .form-input[state='budget'] form .inputs>div:not(.budget-input){
-	display:none;
-	opacity: 0;
-}
-.wrapper .form-input form .inputs .Email-input{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transition: all .3s;
-    top: 110%;
-}
 
-/* .wrapper .form-input form .inputs .Email-input::after{content:'Email';} */
-.wrapper .form-input form .inputs .Email-input input{width: 100%;height: 100%;text-indent: 20px;}
-.wrapper .form-input form .inputs .Name-input{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transition: all .3s;
-    top: 110%;
-}
-/* .wrapper .form-input form .inputs .Name-input::after{content:'Full Name';} */
-.wrapper .form-input form .inputs .Name-input input{
-    width: 100%;
-    height: 100%;
-    text-indent: 20px;
-}
-.wrapper .form-input form .inputs .phone-input{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transition: all .3s;
-    top: 110%;
-    display: flex;
-    align-items: center;
-}
-.wrapper .form-input form .inputs .successDiv{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transition: all .3s;
-    left: -110%;
-    display: flex;
-    background: linear-gradient(90deg, #2D0E86 -3.62%, #95E9F1 113.22%);
-    justify-content: center;
-    align-items: center;
-}
 
-.wrapper .form-input form .inputs .successDiv p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-/* identical to box height */
-    color: #FFFFFF;
-    text-align: center;
-}
-.wrapper .form-input.center form .inputs .successDiv{background: linear-gradient(90deg, #FFFFFF -3.62%, #FFCDB8 122.39%);}
-.wrapper .form-input.center form .inputs .successDiv p{color: #F34B66;}
-/* .wrapper .form-input form .inputs .phone-input::after{content:'Phone Number';} */
-/* input select number */
 
-.wrapper .form-input form .inputs .phone-input details {
-	position: relative;
-	width: 100px;
-	margin-right: 1rem;
-	margin-left: 13px;
-}
 
-.wrapper .form-input form .inputs .phone-input details[open] {
-	z-index: 1;
-}
 
-.wrapper .form-input form .inputs .phone-input summary {
-	padding: 5px;
-	cursor: pointer;
-	/* border-radius: 5px; */
-	/* background-color: #ddd; */
-	list-style: none;
-	border: 1px solid #D5D5D5;
-	border-radius: 7px;
-	text-align: center;
-	z-index: 2;
-	position: relative;
-}
 
-.wrapper .form-input form .inputs .phone-input summary::-webkit-details-marker {
-	display: none;
-}
 
-.wrapper .form-input form .inputs .phone-input details[open] summary:before {
-/* 	content: "";
-	display: block;
-	width: 100vw;
-	height: 100vh;
-	background: transparent;
-	position: fixed;
-	top: 0;
-	left: 0; */
-}
 
-.wrapper .form-input form .inputs .phone-input summary:after {
-	/* content: ""; */
-	display: inline-block;
-	float: right;
-	width: 0.5rem;
-	height: 0.5rem;
-	border-bottom: 1px solid currentColor;
-	border-left: 1px solid currentColor;
-	border-bottom-left-radius: 2px;
-	transform: rotate(45deg) translate(50%, 0%);
-	transform-origin: center center;
-	transition: transform ease-in-out 100ms;
-}
 
-.wrapper .form-input form .inputs .phone-input summary:focus {
-	outline: none;
-}
 
-.wrapper .form-input form .inputs .phone-input details[open] summary:after {
-	transform: rotate(-45deg) translate(0%, 0%);
-}
 
-.wrapper .form-input form>ul {
-	z-index: 0;
-	width: 100px;
-	/* background: #ddd; */
-	position: absolute;
-	transition:all .3s;
-	left: 14px;
-	padding: 1rem;
-	margin: 0;
-	box-sizing: border-box;
-	border-radius: 5px;
-	max-height: 0px;
-	overflow-y: auto;
-	border: 1px solid #D5D5D5;
-	border-radius: 7px;
-}
-.wrapper .form-input.center form>ul{background-color:white;border-color:#f86d6d;}
-.wrapper .form-input.center form>ul li label{color:#f04d69;}
-.wrapper .form-input form>ul.list.open{top: calc(100% + 0.5rem);max-height: 200px;}
 
-.wrapper .form-input form>ul li {
-	margin: 0;
-	cursor: pointer;
-	/* border-bottom: 1px solid #ccc; */
-	padding:2px;
-	transition:all .3s;
-}
 
-.wrapper .form-input form>ul li:hover{background-color:#eeeeee;border-radius:5px;}
-
-.wrapper .form-input form>ul li:first-child {
-	padding-top: 0;
-}
-
-.wrapper .form-input form>ul li:last-child {
-	padding-bottom: 0;
-	border-bottom: none;
-}
-
-/* FAKE SELECT */
-
-.wrapper .form-input form .inputs .phone-input summary.radios {
-	counter-reset: radios;
-}
-
-.wrapper .form-input form .inputs .phone-input summary.radios:before {
-	content: var(--selection);
-}
-
-.wrapper .form-input form .inputs .phone-input input[type="radio"] {
-	counter-increment: radios;
-	appearance: none;
-	display: none;
-}
-
-.wrapper .form-input form .inputs .phone-input input[type="radio"]:checked {
-	display: inline;
-	--display: block;
-}
-
-.wrapper .form-input form .inputs .phone-input input[type="radio"]:after,.wrapper .form-input form .inputs .phone-input .listValue {
-	content: attr(title);
-	display: inline;
-	font-size: 1rem;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 13px;
-	text-align: center;
-	line-height: 24px;
-/* identical to box height */
-	color: #575757;
-	cursor: pointer;
-}
-.wrapper .form-input.center form .inputs .phone-input .listValue{color:#f7686c;}
-
-.wrapper .form-input form>ul.list {
-	counter-reset: labels;
-}
-
-.wrapper .form-input form>ul label {
-	width: 100%;
-	display: flex;
-	cursor: pointer;
-	justify-content: space-between;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 12px;
-	line-height: 21px;
-/* identical to box height */
-	color: #4B4B4B;
-}
-
-.wrapper .form-input form>ul label span {
-	--display: none;
-	display: var(--display);
-	width: 1rem;
-	height: 1rem;
-	border: 1px solid #727272;
-	border-radius: 3px;
-}
-
-.wrapper .form-input form .inputs .phone-input input{
-    width: 60%;
-    height: 100%;
-}
-.wrapper .form-input form .inputs .budget-input{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transition: all .3s;
-    top: 110%;
-}
-/* .wrapper .form-input form .inputs .budget-input::after{content:'Monthly Budget';} */
-/* input select budget */
+/* input select Package */
 /*the container must be positioned relative:*/
-.wrapper .form-input form .inputs .budget-input .custom-select {
-    position: relative;
-    font-family: Arial;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .wrapper .form-input form .inputs .budget-input .custom-select select {
-    display: none; /*hide original SELECT element:*/
-  }
-  
-  .wrapper .form-input form .inputs .budget-input .select-selected {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+.form .custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 100%;
+  height: 100%;
+}
+
+.form .custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.form .select-selected {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 /* identical to box height */
-    color: #494949;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background: white;
-    border-radius: 11px;
-  }
-  
-  /*style the arrow inside the select element:*/
-  .wrapper .form-input form .inputs .budget-input .select-selected:after {
-    transition: all .3s;
-    position: absolute;
-    content: "";
-    right: 15px;
-    width: 18px;
-    height: 18px;
-    background-image: url('../images/Polygon.svg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  
-  /*point the arrow upwards when the select box is open (active):*/
-  .wrapper .form-input form .inputs .budget-input .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    transform: rotate(180deg);
-  }
-  
-  /*style the items (options), including the selected item:*/
-  .wrapper .form-input form .inputs .budget-input .select-items div,.select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    /* border: 1px solid transparent; */
-    /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
-    cursor: pointer;
-    user-select: none;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+  color: #494949;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 11px;
+}
+
+/*style the arrow inside the select element:*/
+.form .select-selected:after {
+  transition: all .3s;
+  position: absolute;
+  content: "";
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/Polygon.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.form .select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  transform: rotate(180deg);
+}
+
+/*style the items (options), including the selected item:*/
+.form .select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  /* border: 1px solid transparent; */
+  /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+  cursor: pointer;
+  user-select: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 /* identical to box height */
-    color: #282828;
-  }
-  
-  /*style items (options):*/
-  .wrapper .form-input form .inputs .budget-input .select-items {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    border: 1px solid #000000;
-    border-radius: 12px;
-    margin-top: 10px;
-    transition: all .3s;
-  }
-
-.wrapper .form-input.center form .inputs .budget-input .select-items{
-	background-color:white;
-}
-  
-  /*hide the items when the select box is closed:*/
-  .wrapper .form-input form .inputs .budget-input .select-hide {
-    /* display: none; */
-    top: -10px;
-    z-index: -1;
-    opacity: 0;
-  }
-  
-  .wrapper .form-input form .inputs .budget-input .select-items div:hover, .same-as-selected {
-    /* background-color: rgba(0, 0, 0, 0.1); */
-  }
-
-  .form-input[state='email'] form .inputs .Email-input, .form-input[state='name'] form .inputs .Name-input, .form-input[state='phone'] form .inputs .phone-input, .form-input[state='budget'] form .inputs .budget-input{top:0;}
-	.wrapper .form-input[state='success'] form .inputs .successDiv{left:0;opacity: 1;}
-
-  .wrapper .form-input form .next_button{
-    background: linear-gradient(90deg, #97ECF1 0%, #5552EB 100%);
-    border-radius: 12px;
-    border: none;
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 33px;
-    color: #FFFFFF;
-    display: flex;
-    padding: 20px 0;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100%;
+  color: #282828;
 }
 
-.wrapper .form-input[state='success'] form .next_button{
-	display:none;
+/*style items (options):*/
+.form .select-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  margin-top: 10px;
+  transition: all .3s;
 }
 
-/* .wrapper .form-input form .inputs>div.active{top:0;} */
-  .wrapper .form-input form .next_button:hover{}
-  .wrapper>.container>header>.content .image{
-    width: 40%;
-}
-  .wrapper>.container>header>.content .image .header-vector{
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-radius: 45px;
-    overflow: hidden;
-  }
-  .wrapper>.container>main{}
-  h2.bigTitle{
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 81px;
-/* identical to box height */
-    color: #5552EB;
-    text-align: center;
-    margin-bottom: 100px;
-}
-  .content .head{}
-  .content .head h3{
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 40px;
-    margin-bottom: 20px;
-    color: #8141D2;
-}
-  .content .head p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 27px;
-    color: #000000;
-}
-  .wrapper #sec_1{
-    margin-top: 150px;
-    position: relative;
-    margin-bottom: 150px;
-}
-  .wrapper #sec_1>div>.items{
-    position: relative;
+.form .select-items{
+background-color:white;
 }
 
-  .wrapper #sec_1>div>.items>.item.first{
-    display: flex;
-    margin-bottom: 50px;
-}
-  .wrapper #sec_1>div{display: flex;flex-direction: row-reverse;}
-  .wrapper #sec_1>div>.items>.item.first>.content{
-    width: 60%;
-    padding-right: 60px;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.head{}
-  .wrapper #sec_1>div>.items>.item.first>.content>.head h3{}
-  .wrapper #sec_1>div>.items>.item.first>.content>.head p{
-    font-weight: 300;
-    font-size: 16px;
-    margin-top: 20px;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons{
-    margin-top: 50px;
-    position: relative;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul{
-    display: flex;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li{transition: all .3s;margin-right: 66px;border-left: 5px solid white;cursor:pointer;}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li.active{}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li.active .icon,.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:hover .icon{
-    background: #8141D2;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li .icon{
-}
-  .wrapper #sec_1>div>.items>.item>.content>.icons ul li .icon{
-	  transition: all .3s;
-    position: relative;
-    background: #ccb9e4;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
+/*hide the items when the select box is closed:*/
+.form .select-hide {
+  /* display: none; */
+  top: -10px;
+  z-index: -1;
+  opacity: 0;
 }
 
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(1) .icon::after{content: '01';position: absolute;right: -35px;z-index: -1;font-family: 'Abril Fatface';font-style: normal;font-weight: 400;font-size: 40px;line-height: 67px;color: #ccb9e4;background-color: white;padding-right: 5px;transition: all .3s;}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(2) .icon::after{content: '02';position: absolute;right: -40px;z-index: -1;font-family: 'Abril Fatface';font-style: normal;font-weight: 400;font-size: 40px;line-height: 67px;color: #ccb9e4;background-color: white;padding-right: 5px;transition: all .3s;}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(3) .icon::after{content: '03';position: absolute;right: -41px;z-index: -1;font-family: 'Abril Fatface';font-style: normal;font-weight: 400;font-size: 40px;line-height: 67px;color: #CCB9D6;background-color: white;padding-right: 5px;transition: all .3s;}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(4) .icon::after{content: '04';position: absolute;right: -43px;z-index: -1;font-family: 'Abril Fatface';font-style: normal;font-weight: 400;font-size: 40px;line-height: 67px;color: #ccb9e4;background-color: white;padding-right: 5px;transition: all .3s;}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:nth-child(5) .icon::after{content: '05';position: absolute;right: -40px;z-index: -1;font-family: 'Abril Fatface';font-style: normal;font-weight: 400;font-size: 40px;line-height: 67px;color: #ccb9e4;background-color: white;padding-right: 5px;transition: all .3s;}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li.active .icon::after,.wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li:hover .icon::after{color: #8141D2;}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>ul>li .icon img{}
-  .wrapper #sec_1>div>.items>.item>.content>.icons>ul>li .icon img{
-    height: 40px;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>.line{
-    position: absolute;
-    background-color: #8141D2;
-    width: 85%;
-    height: 1.5px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: -2;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>.line::after{position:absolute;top:0;bottom:0;margin:auto 0;content: '';width: 5px;background: #8141D2;}
-  .wrapper #sec_1>div>.items>.item.first>.content>.icons>.line .dot{
-    background: #8240d2;
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    position: absolute;
-    left: 17.7%;
-    top: -2px;
-    transition: all .3s;
-    
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo{
-    margin-top: 35px;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title{
-    position: relative;
-    height: 50px;
-    overflow: hidden;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li.item{transition: all .3s;opacity: 0;transform: translateY(10px);}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li{
-    position: absolute;
-    transform: translateY(45px);
-    transition: all .3s;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li.active{transform: translateY(0px);} 
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li.up{transform: translateY(-45px);} 
-
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.title>li>h4{
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 40px;
-    color: #8141D2;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea{
-    overflow: hidden;
-    height: 280px;
-    position: relative;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li.item{transition: all .3s;opacity: 0;transform: translateY(10px);}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li{
-    position: absolute;
-    transform: translateY(61px);
-    opacity: 0;
-    transition: all .3s;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li.active{opacity: 1;transform: translateY(0px);} 
-.wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li.up{transform: translateY(-60px);} 
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 27px;
-}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p strong{}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p ul{}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p ul li{}
-  .wrapper #sec_1>div>.items>.item.first>.content>.textinfo>ul.textarea>li p span{}
-  .wrapper #sec_1>div>.items>.item.first>.animated-json{
-    width: 40%;
-}
-  .wrapper #sec_1>div>.items>.item.first>.animated-json .vector{
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-radius: 45px;
-    overflow: hidden;
-}
-  .wrapper #sec_1>div>.items>.item.second{
-    display: flex;
-}
-  .wrapper #sec_1>div>.items>.item.second>.content{
-    width: 60%;
-    padding-right: 60px;
-}
-  .wrapper #sec_1>div>.items>.item.second>.content>.head{}
-  .wrapper #sec_1>div>.items>.item.second>.content>.head h3{
-    color: #F03F4A;
-}
-  .wrapper #sec_1>div>.items>.item.second>.content>.head p{}
-  .wrapper #sec_1>div>.items>.item.second>.content>ul.items{
-    display: flex;
-}
-  .wrapper #sec_1>div>.items>.item.second>.content>ul.items>li.item{
-    width: 245px;
-}
-  .wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box{
-    border: 1px solid #DBDBDB;
-    border-radius: 29px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 44px 20px 20px 20px;
-    margin: 7px;
-    height: 400px;
-}
-  .wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>img{
-    height: 93px;
-    margin-bottom: 30px;
-}
-  .wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>h5{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 24px;
-/* identical to box height */
-    color: #000000;
-    margin-bottom: 20px;
-}
-  .wrapper #sec_1>div>.items>.item.second>.content>ul.items>li>.box>p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 21px;
-    color: #000000;
-    max-height: 170px;
-    overflow: scroll;
-}
-  .wrapper #sec_1>div>.items>.item.second>.animated-json{
-    width: 40%;
-}
-  .wrapper #sec_1>div>.items>.item.second>.animated-json .vector{
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-radius: 45px;
-    overflow: hidden;
-}
-  .wrapper #sec_1>div>.items>.item.third{
-    display: flex;
-    margin-top: 100px;
-}
-  .wrapper #sec_1>div>.items>.item.third>.content{
-    width: 60%;
-    padding-right: 60px;
-}
-  .wrapper #sec_1>div>.items>.item.third>.content .head{}
-  .wrapper #sec_1>div>.items>.item.third>.content .head h3{
-    color: #E9B632;
-}
-  .wrapper #sec_1>div>.items>.item.third>.content .head p{}
-  .wrapper #sec_1>div>.items>.item.third>.content>ul.items{
-    margin-top: 30px;
-}
-  .wrapper #sec_1>div>.items>.item.third>.content>ul.items>li.item{
-    margin-bottom: 30px;
-}
-  .wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box{
-    display: flex;
-}
-  .wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .icon{
-    height: 70px;
-    width: 15%;
-}
-  .wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .icon img{
-    height: 100%;
-    width: 70px;
-}
-  .wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .text{
-    width: 100%;
-}
-  .wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .text h5{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-/* identical to box height */
-    color: #000000;
-}
-  .wrapper #sec_1>div>.items>.item.third>.content>ul.items>li>.box .text p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 21px;
-    color: #000000;
-}
-  .wrapper #sec_1>div>.items>.item.third>.animated-json{
-    width: 40%;
-}
-  .wrapper #sec_1>div>.items>.item.third>.animated-json .vector{
-    height: auto;
-    vertical-align: middle;
-    border-radius: 45px;
-    overflow: hidden;
-  }
-  .wrapper #sec_1 .vertical-line{
-    position: relative;
-    left: -50px;
-    background-color: #e7e7e7;
-    width: 5px;
-    /* margin-right: 30px; */
-    overflow: hidden;
-    border-radius: 20px;
-}
-  .wrapper #sec_1 .vertical-line::after{content: '';position: absolute;top: 0;background-color: #5C61EC;width: 100%;height: 170px;}
-  .wrapper .center-form{
-    background: linear-gradient(89.95deg, #ffab7b 0.03%, #F24764 99.94%);
-    border-radius: 32px;
-    padding: 40px;
-    display: flex;
-}
-  .wrapper .center-form input::placeholder{
-	  font-family: 'Poppins';
-font-style: normal;
-font-weight: 200;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-
-color: #F9F9F9;}
-  .wrapper .center-form>.text{
-    width: 100%;
-}
-  .wrapper .center-form>.text h6{
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-    color: #FFFFFF;
-    width: 80%;
-}
-  .wrapper .center-form>.text p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 27px;
-/* identical to box height */
-    color: #00000059;
-    width: 80%;
-    margin-top: 10px;
-}
-  .wrapper .center-form>.form-section{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-  
-
-  .form-input.center{}
-  .form-input.center .top-label{}
-  .form-input.center .top-label input{}
-  .form-input.center .top-label label{
-    color: #eee;
-}
-  
-  .form-input.center[state="email"] .top-label #Email_menu+label, .form-input.center[state="name"] .top-label #Name_menu+label, .form-input.center[state="phone"] .top-label #Phone_menu+label, .form-input.center[state="budget"] .top-label #Budget_menu+label{color: #FFF492;font-weight: 500;}
-  .form-input.center .top-label label:hover{color: #FFF492;}
-  .form-input.center form{}
-  .form-input.center form .inputs{
-    border-color: white;
-}
-  .form-input.center form .inputs .Email-input{}
-  .form-input.center form .inputs .Email-input input{
-    background: transparent;
-    color: #f8706d;
-}
-.form-input.center form .inputs .Email-input input::placeholder{color:#f8706d;}
-  .form-input.center form .inputs .Name-input{}
-  .form-input.center form .inputs .Name-input input{color: #f8706d;}
-  .form-input.center form .inputs .Name-input input::placeholder{color: #f8706d;}
-  .form-input.center form .inputs .phone-input{}
-  .form-input.center form .inputs .phone-input input{color: #f8706d;}
-  .form-input.center form .inputs .phone-input input::placeholder{color: #f8706d;}
-  .form-input.center form .inputs .budget-input{}
-  .form-input.center form .next_button{
-    background: #FFFFFF;
-    color: #F34B66;
-}
-  .form-input.center form .next_button:hover{}
-
-  /* input select number center */
-
-.form-input.center form .inputs .phone-input details {
-	position: relative;
-	/* width: 300px; */
-	/* margin-right: 1rem; */
+.form .select-items div:hover, .same-as-selected {
+  /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
-.form-input.center form .inputs .phone-input details[open] {
-	z-index: 1;
-}
-
-.form-input.center form .inputs .phone-input summary {
-	/* padding: 1rem; */
-	/* cursor: pointer; */
-	/* border-radius: 5px; */
-	/* background-color: #ddd; */
-	/* list-style: none; */
-}
-
-.form-input.center form .inputs .phone-input summary::-webkit-details-marker {
-	display: none;
-}
-
-.form-input.center form .inputs .phone-input details[open] summary:before {
-/* 	content: "";
-	display: block;
-	width: 100vw;
-	height: 100vh;
-	background: transparent;
-	position: fixed;
-	top: 0;
-	left: 0; */
-}
-
-.form-input.center form .inputs .phone-input summary:after {
-	/* content: ""; */
-	display: inline-block;
-	float: right;
-	width: 0.5rem;
-	height: 0.5rem;
-	border-bottom: 1px solid currentColor;
-	border-left: 1px solid currentColor;
-	border-bottom-left-radius: 2px;
-	transform: rotate(45deg) translate(50%, 0%);
-	transform-origin: center center;
-	transition: transform ease-in-out 100ms;
-}
-
-.form-input.center form .inputs .phone-input summary:focus {
-	outline: none;
-}
-
-.form-input.center form .inputs .phone-input details[open] summary:after {
-	transform: rotate(-45deg) translate(0%, 0%);
-}
-
-.form-input.center form .inputs .phone-input ul {
-	width: 100%;
-	background: #ddd;
-	position: absolute;
-	top: calc(100% + 0.5rem);
-	left: 0;
-	padding: 1rem;
-	margin: 0;
-	box-sizing: border-box;
-	border-radius: 5px;
-	max-height: 200px;
-	overflow-y: auto;
-}
-
-.form-input.center form .inputs .phone-input li {
-	margin: 0;
-	padding: 1rem 0;
-	border-bottom: 1px solid #ccc;
-}
-
-.form-input.center form .inputs .phone-input li:first-child {
-	padding-top: 0;
-}
-
-.form-input.center form .inputs .phone-input li:last-child {
-	padding-bottom: 0;
-	border-bottom: none;
-}
-
-/* FAKE SELECT */
-
-.form-input.center form .inputs .phone-input summary.radios {
-	counter-reset: radios;
-	border-color: #ff8e95;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 13px;
-	text-align: center;
-	line-height: 24px;
-	color: #575757;
-	cursor: pointer;
-}
-
-.form-input.center form .inputs .phone-input summary.radios:before {
-	content: var(--selection);
-}
-
-.form-input.center form .inputs .phone-input input[type="radio"] {
-	counter-increment: radios;
-	appearance: none;
-	display: none;
-}
-
-.form-input.center form .inputs .phone-input input[type="radio"]:checked {
-	display: inline;
-	--display: block;
-}
-
-.form-input.center form .inputs .phone-input input[type="radio"]:after {
-	content: attr(title);
-	display: inline;
-	/* font-size: 1rem; */
-	color: #f76e6d;
-}
-
-.form-input.center form .inputs .phone-input ul.list {
-	counter-reset: labels;
-}
-
-.form-input.center form .inputs .phone-input label {
-	width: 100%;
-	display: flex;
-	cursor: pointer;
-	justify-content: space-between;
-}
-
-.form-input.center form .inputs .phone-input label span {
-	--display: none;
-	display: var(--display);
-	width: 1rem;
-	height: 1rem;
-	border: 1px solid #727272;
-	border-radius: 3px;
-}
-
-.wrapper #sec_2{
-    margin-top: 150px;
-}
-.wrapper #sec_2 h2{}
-.wrapper #sec_2>div{
-    display: flex;
-}
-.wrapper #sec_2>div>.texts{
-    width: 40%;
-    padding-right: 30px;
-}
-.wrapper #sec_2>div>.texts>ul{}
-.wrapper #sec_2>div>.texts>ul>li{
-}
-.wrapper #sec_2>div>.texts>ul>li>h3{
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 40px;
-    color: #8141D2;
-    margin-bottom: 20px;
-}
-.wrapper #sec_2>div>.texts>ul>li>p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 27px;
-    color: #000000;
-    margin-bottom: 50px;
-}
-.wrapper #sec_2>div>.texts>ul>li>ul{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 27px;
-    color: #000000;
-    padding-left: 15px;
-}
-.wrapper #sec_2>div>.texts>ul>li>ul li{
-    list-style: outside;
-}
-.wrapper #sec_2>div>.animated-vector{
-    width: 60%;
-}
-.wrapper #sec_2>div>.animated-vector .vector{}
-
-.wrapper #sec_3{
-    margin-top: 130px;
-}
-.wrapper #sec_3 h2{}
-.wrapper #sec_3>.content{}
-.wrapper #sec_3>.content>ul.items{}
-.wrapper #sec_3>.content>ul.items>li.item{}
-.wrapper #sec_3>.content>ul.items>li.item .box{
-    border: 1px solid #DBDBDB;
-    border-radius: 29px;
-    padding: 20px;
-    min-height: 420px;
-}
-.wrapper #sec_3>.content>ul.items>li.item .box .bgColor{
-    border-radius: 22px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 20px;
-}
-.wrapper #sec_3>.content>ul.items>li.item:nth-child(1) .box .bgColor{background: linear-gradient(89.74deg, #FBE390 0.19%, #CE5816 99.23%);}
-.wrapper #sec_3>.content>ul.items>li.item:nth-child(2) .box .bgColor{
-    background: linear-gradient(270.05deg, #9D0E4A 0.04%, #FCA3A3 99.95%);
-}
-.wrapper #sec_3>.content>ul.items>li.item:nth-child(3) .box .bgColor{
-    background: linear-gradient(90.79deg, #84FFD3 -19.72%, #5E6AD5 42.88%, #8D2ABC 121.68%);
-}
-.wrapper #sec_3>.content>ul.items>li.item .box .bgColor::after{content: '';position: absolute;width: 100%;height: 100%;z-index: 0;background-size: 100% 100%;}
-.wrapper #sec_3>.content>ul.items>li.item:nth-child(1) .box .bgColor::after{background-image: url('../images/sec1_box1.svg');}
-.wrapper #sec_3>.content>ul.items>li.item:nth-child(2) .box .bgColor::after{background-image: url('../images/sec1_box2.svg');}
-.wrapper #sec_3>.content>ul.items>li.item:nth-child(3) .box .bgColor::after{background-image: url('../images/sec1_box3.svg'); opacity: 0.5;}
-.wrapper #sec_3>.content>ul.items>li.item .box .bgColor span{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 24px;
-    text-align: center;
-    color: #FFFFFF;
-    z-index: 1;
-}
-.wrapper #sec_3>.content>ul.items>li.item .box .text{}
-.wrapper #sec_3>.content>ul.items>li.item .box .text p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 21px;
-    color: #000000;
-    text-align: justify;
-    max-height: 200px;
-    overflow: scroll;
-}
-
-.wrapper #sec_4{
-    margin-top: 150px;
-}
-.wrapper #sec_4 h2{}
-.wrapper #sec_4>.content{
-    display: flex;
-}
-.wrapper #sec_4>.content>.texts{
-    width: 30%;
-}
-.wrapper #sec_4>.content>.texts h4{
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 40px;
-    color: #8141D2;
-}
-.wrapper #sec_4>.content>.texts p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 27px;
-    color: #000000;
-    margin-top: 20px;
-    /* text-align: justify; */
-}
-.wrapper #sec_4>.content>.profiles{
-    width: 70%;
-    padding-left: 100px;
-}
-.wrapper #sec_4>.content>.profiles .slider{}
-.wrapper #sec_4>.content>.profiles .slider>.owl-carousel{}
-.wrapper #sec_4>.content>.profiles .slider>.owl-carousel .item{}
-.wrapper #sec_4>.content>.profiles .slider>.owl-carousel .item .box{}
-.wrapper #sec_4>.content>.profiles .slider>.owl-carousel .item .box .img{}
-.wrapper #sec_4>.content>.profiles .slider>.owl-carousel .item .box .img img{}
-.wrapper #sec_4>.content>.profiles .slider>.owl-carousel .item .box .info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-}
-.wrapper #sec_4>.content>.profiles .slider>.owl-carousel .item .box .info strong{}
-.wrapper #sec_4>.content>.profiles .slider>.owl-carousel .item .box .info span{
-    font-weight: 200;
-}
-
-
-.wrapper footer{
-    margin-top: 150px;
-    background: linear-gradient(269.95deg, #EBC952 0.05%, #704008 99.97%);
-    border-radius: 55px;
-    padding: 70px;
-}
-.wrapper footer .bgColor{
-    position: relative;
-}
-.wrapper footer .bgColor h2{
-    color: #FFFFFF;
-}
-.wrapper footer .bgColor>.content{
-    display: flex;
-    position: relative;
-}
-.wrapper footer .bgColor>.content>.info{
-    width: 50%;
-    padding-right: 80px;
-}
-.wrapper footer .bgColor>.content>.info>div:nth-child(1){}
-.wrapper footer .bgColor>.content>.info>div>.icon{
-    display: flex;
-    align-items: center;
-}
-.wrapper footer .bgColor>.content>.info>div>.icon>h3{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 27px;
-/* identical to box height */
-    color: #FFC42C;
-    margin-left: 15px;
-}
-.wrapper footer .bgColor>.content>.info>div>.icon>img{}
-.wrapper footer .bgColor>.content>.info>div>.address{margin-top: 50px;}
-.wrapper footer .bgColor>.content>.info>div>.address ul{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.wrapper footer .bgColor>.content>.info>div>.address ul li{
-    width: 50%;
-    color: wheat;
-    margin-bottom: 30px;
-}
-.wrapper footer .bgColor>.content>.info>div>.address ul li strong{
-    color: white;
-}
-.wrapper footer .bgColor>.content>.info>div>.address ul li p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 19px;
-}
-
-.wrapper footer .bgColor>.content>.info>.social{
-    display: flex;
-}
-.wrapper footer .bgColor>.content>.info>.social>div:nth-child(1){
-    margin-right: 90px;
-}
-.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2){}
-.wrapper footer .bgColor>.content>.info>.social .icon{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.wrapper footer .bgColor>.content>.info>.social .icon img{}
-.wrapper footer .bgColor>.content>.info>.social .icon h3{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 27px;
-    color: #FFC42C;
-    margin-left: 15px;
-}
-.wrapper footer .bgColor>.content>.info>.social .mail{}
-.wrapper footer .bgColor>.content>.info>.social .mail a{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
-    line-height: 24px;
-/* identical to box height */
-    color: white;
-}
-.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul{}
-.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul li{}
-.wrapper footer .bgColor>.content>.info>.social>div:nth-child(2) ul li a{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
-    line-height: 24px;
-    color: white;
-}
-
-.footer-form{
-    width: 50%;
-    background: #FFFFFF;
-    border-radius: 53px;
-    overflow: hidden;
-    padding: 40px 50px;
-}
-.footer-form>h3{
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-    color: #FFC42C;
-}
-.footer-form>span{
-    color: #676767;
-    font-weight: 300;
-}
-.footer-form>form{}
-.footer-form>form>div{
+.form{}
+.form>div{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1430,7 +151,7 @@ color: #F9F9F9;}
     height: 100%;
     width: 0;
 }
-.footer-form>form input{
+.form input{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -1441,13 +162,13 @@ color: #F9F9F9;}
     transition: all .3s;
     height: 0;
 }
-.footer-form>form .FullName{}
-.footer-form>form .FullName .bottom-line{}
-.footer-form>form .FullName .bottom-line .fill-line{}
-.footer-form>form .FullName label{
+.form .FullName{}
+.form .FullName .bottom-line{}
+.form .FullName .bottom-line .fill-line{}
+.form .FullName label{
     
 }
-.footer-form>form label{
+.form label{
     transition: all .3s;
     font-family: 'Poppins';
     font-style: normal;
@@ -1458,296 +179,40 @@ color: #F9F9F9;}
     font-size: 17px;
     line-height: 24px;
     }
-.footer-form>form .FullName input{}
-.footer-form>form .MailAddress{}
-.footer-form>form .MailAddress .bottom-line .fill-line{}
-.footer-form>form .MailAddress label{}
-.footer-form>form .MailAddress input{}
-.footer-form>form .budget-input{}
-.footer-form>form .budget-input .bottom-line .fill-line{}
-.footer-form>form .budget-input label{}
-.footer-form>form .budget-input .custom-select{
-}
-.footer-form>form .budget-input .custom-select select{}
+.form .FullName input{}
+.form .MailAddress{}
+.form .MailAddress .bottom-line .fill-line{}
+.form .MailAddress label{}
+.form .MailAddress input{}
+.form .budget-input{}
+.form .budget-input .bottom-line .fill-line{}
+.form .budget-input label{}
 
-/* input select budget */
-/*the container must be positioned relative:*/
-.footer-form form .budget-input .custom-select {
-    position: relative;
-    font-family: Arial;
-  }
-  
-  .footer-form form .budget-input .custom-select select {
-    display: none; /*hide original SELECT element:*/
-  }
-  
-  .footer-form form .budget-input .select-selected {
-    height: 40px;
-    color: #3e3e3e !important;
-    padding: 8px 0 !important;
-  }
-  
-  /*style the arrow inside the select element:*/
-  .footer-form form .budget-input .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    background-image: url(../images/Polygon.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transition: all .3s;
-  }
-  
-  /*point the arrow upwards when the select box is open (active):*/
-  .footer-form form .budget-input .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    transform: rotate(180deg);
-  }
-  
-  /*style the items (options), including the selected item:*/
-  .footer-form form .budget-input .select-items div,.footer-form form .budget-input .select-selected {
-    color: #2a2a2a;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  /*style items (options):*/
-  .footer-form form .budget-input .select-items {
-    position: absolute;
-    background-color: white;
-    border: 1px solid #797979;
-    border-radius: 10px;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    margin-top: 20px;
-    transition: all .3s;
-  }
-  
-  /*hide the items when the select box is closed:*/
-  .footer-form form .budget-input .select-hide {
-    display: none;
-    top: -20px;
-    z-index: 0;
-    opacity: 0;
-  }
-  
-  .footer-form form .budget-input .select-items div:hover, .same-as-selected {
-    background-color: rgb(103 214 161 / 17%);
-  }
-
-  .footer-form form .phone-input{
+  .form .phone-input{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
-  .footer-form form .phone-input .bottom-line .fill-line{}
-  .footer-form form .phone-input>div{width: 75%;}
-.footer-form form .phone-input>div>div{
+  .form .phone-input .bottom-line .fill-line{}
+  .form .phone-input>div{width: 75%;}
+.form .phone-input>div>div{
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-.footer-form form .phone-input>div.bottom-line{
+.form .phone-input>div.bottom-line{
     position: absolute;
     bottom: 0;
 }
-  .footer-form form .phone-input>div label{}
-  .footer-form form .phone-input>div input{}
-  .footer-form>form .active{}
-  .footer-form>form .active label{
+  .form .phone-input>div label{}
+  .form .phone-input>div input{}
+  .form .active{}
+  .form .active label{
     font-size: 12px;
-}
-  .footer-form>form .active input{height:30px;}
-  .footer-form>form .active .fill-line{
-    width: 100%;
-}
-
-
-  .footer-form form .button{
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
 }
-  .footer-form form .button .send_button{
-    background: linear-gradient(90deg, #D2D2D2 0%, #A64A2E 0.01%, #FBB371 100%);
-    border-radius: 12px;
-    border: none;
-    color: white;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    width: 150px;
-    height: 45px;
-}
-  .footer-form form .button .send_button:hover{}
-
-
-
-
-
-/* input select number footer */
-
-.footer-form form .phone-input details {
-	position: relative;
-	width: 100px;
-	margin-right: 1rem;
-	display: flex;
-}
-
-.footer-form form .phone-input details[open] {
-	z-index: 1;
-}
-
-.footer-form form .phone-input summary {
-	/* padding: 1rem; */
-	cursor: pointer;
-	border-radius: 5px;
-	/* background-color: #ddd; */
-	list-style: none;
-	border: 1px solid #D5D5D5;
-	border-radius: 7px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 5px 0;
-}
-
-.footer-form form .phone-input summary::-webkit-details-marker {
-	display: none;
-}
-
-.footer-form form .phone-input details[open] summary:before {
-	content: "";
-	display: block;
-	width: 100vw;
-	height: 100vh;
-	background: transparent;
-	position: fixed;
-	top: 0;
-	left: 0;
-}
-
-.footer-form form .phone-input summary:after {
-	/* content: ""; */
-	display: inline-block;
-	float: right;
-	width: 0.5rem;
-	height: 0.5rem;
-	border-bottom: 1px solid currentColor;
-	border-left: 1px solid currentColor;
-	border-bottom-left-radius: 2px;
-	transform: rotate(45deg) translate(50%, 0%);
-	transform-origin: center center;
-	transition: transform ease-in-out 100ms;
-}
-
-.footer-form form .phone-input summary:focus {
-	outline: none;
-}
-
-.footer-form form .phone-input details[open] summary:after {
-	transform: rotate(-45deg) translate(0%, 0%);
-}
-
-.footer-form form .phone-input ul {
-    width: 100px;
-    background: #fff;
-    position: absolute;
-    top: -5px;
-    left: 0;
-    padding: 1rem;
-    margin: 0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    max-height: 200px;
-    overflow-y: auto;
-    z-index: -1;
-    opacity: 0;
-    background: #FFFFFF;
-    border: 1px solid #828282;
-    border-radius: 7px;
-    transition: all .3s;
-}
-
-.footer-form form .phone-input li {
-	margin: 0;
-	padding: 2px 0;
-	/* border-bottom: 1px solid #ccc; */
-}
-
-.footer-form form .phone-input li:first-child {
-	padding-top: 0;
-}
-
-.footer-form form .phone-input li:last-child {
-	padding-bottom: 0;
-	border-bottom: none;
-}
-
-/* FAKE SELECT */
-
-.footer-form form .phone-input summary.radios {
-	counter-reset: radios;
-}
-
-.footer-form form .phone-input summary.radios:before {
-	content: var(--selection);
-}
-
-.footer-form form .phone-input input[type="radio"] {
-	counter-increment: radios;
-	appearance: none;
-	display: none;
-}
-
-.footer-form form .phone-input input[type="radio"]:checked {
-	display: inline;
-	--display: block;
-}
-
-.footer-form form .phone-input input[type="radio"]:after {
-	content: attr(title);
-	display: inline;
-	font-size: 1rem;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 14px;
-	line-height: 24px;
-/* identical to box height */
-	color: #696969;
-}
-
-.footer-form form .phone-input ul.list {
-    counter-reset: labels;
-}
-.footer-form form .phone-input ul.list.open{
-    top: calc(100% + 0.5rem);
-    max-height: 150px;
-    opacity: 1;
-    z-index: 1;
-}
-
-.footer-form form .phone-input label {
-	width: 100%;
-	display: flex;
-	cursor: pointer;
-	justify-content: space-between;
-}
-
-.footer-form form .phone-input label span {
-	--display: none;
-	display: var(--display);
-	width: 1rem;
-	height: 1rem;
-	border: 1px solid #727272;
-	border-radius: 3px;
+  .form .active input{height:30px;}
+  .form .active .fill-line{
+    width: 100%;
 }
