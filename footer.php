@@ -123,36 +123,74 @@
     <div class="footerNav mobile">
         <div class="navbar">
             <ul class="navv">
-                <li class="Services">Services <img src="assets/images/downArrow.svg"></li>
-                <ul class="ServicesBox">
-                    <li><a href="Audit.php">Audit</a></li>
-                    <li><a href="AdsManagement.php">Ads Management</a></li>
-                    <li><a href="TuneUp.php">Tune Up</a></li>
-                    <li><a href="AccountSuspension.php">Account Suspension</a></li>
-                </ul>
-                <hr>
-                <li><a href="CaseStudy.php">Case Study</a></li>
-                <hr>
-                <li class="SolutionIndustry">Solution for industry <img src="assets/images/downArrow.svg"></li>
-                <ul class="SolutionIndustryBox">
-                    <li><a href="#">E-commerce</a></li>
-                    <li><a href="#">Travel and Tourism</a></li>
-                    <li><a href="#">Real Estate</a></li>
-                </ul>
-                <hr>
-                <li class="LearnAbout">Learn about <img src="assets/images/downArrow.svg"></li>
-                <ul class="LearnAboutBox">
-                    <li><a href="#">Search Campaign</a></li>
-                    <li><a href="#">Display Campaign</a></li>
-                    <li><a href="#">Youtube Campaign</a></li>
-                    <li><a href="#">Download Campaign</a></li>
-                    <li><a href="#">Application Campaign</a></li>
-                </ul>
-                <hr>
-                <li><a href="AboutUs.php">About Us</a></li>
-                <hr>
-                <li><a href="ContactUs.php">Contact Us</a></li>
-                <hr>
+             <div class="panel-group">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse101">Services <img src="assets/images/downArrow.svg"></a>
+                        </h4>
+                    </div>
+                    <div id="collapse101" class="panel-collapse collapse">
+                        <ul class="list-group">
+                        <li class="list-group-item"><a href="Audit.php">Audit</a></li>
+                        <li class="list-group-item"><a href="AdsManagement.php">Ads Management</a></li>
+                        <li class="list-group-item"><a href="TuneUp.php">Tune Up</a></li>
+                        <li class="list-group-item"><a href="AccountSuspension.php">Account Suspension</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a href="CaseStudy.php">Case Study</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse102">Solution for industry <img src="assets/images/downArrow.svg"></a>
+                        </h4>
+                    </div>
+                    <div id="collapse102" class="panel-collapse collapse">
+                        <ul class="list-group">
+                        <li class="list-group-item"><a href="#">E-commerce</a></li>
+                        <li class="list-group-item"><a href="#">Travel and Tourism</a></li>
+                        <li class="list-group-item"><a href="#">Real Estate</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse103">Learn about <img src="assets/images/downArrow.svg"></a>
+                        </h4>
+                    </div>
+                    <div id="collapse103" class="panel-collapse collapse">
+                        <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Search Campaign</a></li>
+                        <li class="list-group-item"><a href="#">Display Campaign</a></li>
+                        <li class="list-group-item"><a href="#">Youtube Campaign</a></li>
+                        <li class="list-group-item"><a href="#">Download Campaign</a></li>
+                        <li class="list-group-item"><a href="#">Application Campaign</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="AboutUs.php">About Us</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a href="ContactUs.php">Contact Us</a>
+                        </h4>
+                    </div>
+                </div>
+              </div> 
             </ul>
         </div>
     </div>
