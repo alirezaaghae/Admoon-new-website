@@ -1,7 +1,7 @@
 var emailValid = false;
 var nameValid = false;
 var phoneValid = false;
-var budgetValid = false;
+var websiteValid = false;
 
 // just get 11 number input
 var alireza = document.querySelectorAll(".alireza_validator input"),
@@ -66,7 +66,6 @@ for (i = 0; i < l; i++) {
             for (k = 0; k < yl; k++) {
               y[k].removeAttribute("class");
             }
-            budgetValid = true;
             this.setAttribute("class", "same-as-selected");
             break;
           }
@@ -265,7 +264,13 @@ $('.list label').click(function (e) {
       phoneValid = true;
     };
   });
-  
+  $(".website-input input").blur(function () {
+    if ($(this).is(":invalid") || this.value.length < 2) {
+      websiteValid = false;
+    } else {
+      websiteValid = true;
+    };
+  });
 
     // if ($(this).is(":invalid") || this.value.length != 10) {
     //   phoneValid = false;
@@ -293,19 +298,19 @@ $('.next_button').click(function () {
       break;
     case '2':
       if(phoneValid){
-        $('.form-input').attr("state", "budget");
+        $('.form-input').attr("state", "website");
         $('.next_button').text('Send');
         $('.next_button').attr("state", "3");
       }
       break;
     case '3':
-      if(budgetValid){
+      if(websiteValid){
         $('.successDiv').css("display", "flex");
         setTimeout(function(){ 
           $('.form-input').attr("state", "success");
         }, 100);
       }
-      budgetValid = false;
+      websiteValid = false;
       break;
     case '4':
       console.log(state);
@@ -333,7 +338,7 @@ $('.top-label label').click(function (e) {
       
       break;
     case '3':
-      $('.form-input').attr("state", "budget");
+      $('.form-input').attr("state", "website");
       $('.next_button').text('Send');
       $('.next_button').attr("state", "3");
       break;
@@ -358,3 +363,43 @@ $('form>div').click(function (e) {
   $(this).find( "input" ).focus();
   return false;
 });
+
+
+// circle price
+
+	const circleRange = document.querySelector('.circle-range')	
+	let isDragging
+
+	circleRange.addEventListener('mousedown',()=>{isDragging = true})
+
+	circleRange.addEventListener('mouseup',()=>{isDragging = false})
+
+	window.addEventListener('mousemove',e=>{
+		const slider = document.querySelector('.slider')
+		const info = document.querySelector('.info')
+		const box = circleRange.getBoundingClientRect()
+		const {atan2, PI, round} = Math
+		let angle 
+		let centerX
+		let centerY
+		let deltaX
+		let deltaY
+		let posX
+		let posY
+		if(isDragging) {
+			centerX = (circleRange.offsetWidth / 2) + box.left
+			centerY = (circleRange.offsetHeight / 2) + box.top
+			posX = e.pageX
+			posY = e.pageY
+			deltaY = centerY - posY
+			deltaX = centerX - posX
+			angle = atan2(deltaY, deltaX) * (180 / PI) 
+			angle -= 90
+			if(angle < 0)
+				angle += 360
+			angle = round(angle)
+			slider.style.transform = `rotate(${angle}deg)`
+			info.textContent = angle
+		}
+		console.log(angle)
+	})

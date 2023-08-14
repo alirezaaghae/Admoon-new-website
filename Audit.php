@@ -1,8 +1,6 @@
 <!-- include html setting (head) -->
 <?php include('head.php'); ?>
 
-<!-- col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24 -->
-
 <!-- page -->
 <body id="Audit">
     <div class="wrapper Audit-page">
@@ -16,7 +14,7 @@
                         <p>Feeling frustrated with your Google Ads campaign? Our expert team can help with our Audit service. We'll analyze every aspect of your campaign to uncover hidden potential, and provide you with a comprehensive report. Unlock the full potential of your campaign and start seeing the results you've been dreaming of. Let us help you take it to the next level with our Audit service.</p>
                         <div class="price">
                             <span>Pricing</span>
-                            <strong><i>$200</i> - $50</strong>
+                            <strong><del>$200</del> - $50</strong>
                             <a href="#Steps">Request now</a>
                         </div>
                     </div>
@@ -28,8 +26,10 @@
         </header>
         <main>
             <section id="Intro">
-                <h2>The Audit steps we take for you</h2>
-                <p>During the process of creating an audit for your Google Ads campaign, our team follows a meticulous and comprehensive approach to ensure no stone is left unturned. Here's a breakdown of what we do:                </p>
+                <div class="container">
+                    <h2>The Audit steps we take for you</h2>
+                    <p>During the process of creating an audit for your Google Ads campaign, our team follows a meticulous and comprehensive approach to ensure no stone is left unturned. Here's a breakdown of what we do:                </p>
+                </div>
             </section>
             <section id="Steps">
                 <div class="container">
@@ -45,7 +45,50 @@
                     </div>
                 </div>
             </section>
-            <section id="Form"></section>
+            <section id="Form">
+                <div class="container">
+                    <div class="box">
+                        <div class="priceInfo">
+                            <div class="text">
+                                <span>Let us make your account more valuable</span>
+                                <b>Price: <strong><del>$200</del> - $50</strong></b>
+                            </div>
+                            <div class="button">
+                                <button class="formDiscover">Discover more</button>
+                            </div>
+                        </div>
+                        <div class="form-input center" state="email" page="Audit">
+                            <div class="top-label">
+                                <label class="active" value="0">Email<input type="radio" class="radio-input Email_menu2" name="top_label_menu" value="0"></label>
+                                <label value="1">Full Name<input type="radio" class="radio-input Name_menu2" name="top_label_menu" value="1" checked></label>
+                                <label value="2">Phone Number<input type="radio" class="radio-input Phone_menu2" name="top_label_menu" value="2"></label>
+                                <label value="3">Website URL<input type="radio" class="radio-input Budget_menu2" name="top_label_menu" value="3"></label>
+                            </div>
+                            <form class="from">
+                                <div class="inputs">
+                                    <div class="Email-input">
+                                        <input type="email" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="Name-input">
+                                        <input type="text" name="name" placeholder="Full Name" min="2" max="20">
+                                    </div>
+                                    <div class="phone-input alireza_validator">
+                                        <input type="tel" class="phone123" name="phone" placeholder="Phone Number" maxlength="11">
+                                    </div>
+                                    <div class="website-input">
+                                        <input type="url" name="website" placeholder="Website address" max="30">
+                                    </div>
+
+                                    <div class="successDiv">
+                                        <p>Thank you for ordering us! We will call you back</p>
+                                    </div>
+                                </div>
+                                <button class="next_button" state="1">Next</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id="collaborating">
                 <div class="container">
                     <div class="title">
@@ -97,21 +140,21 @@
                             <li class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
                                 <div class="img"><img src="assets/images/AuditService2Icon.svg" alt="Audit-Service-Icon" title="Audit-Service-icon"></div>
                                 <div class="text">
-                                    <h3>Tailored Insights:</h3>
+                                    <h3>Tailored Insights</h3>
                                     <p>We go beyond generic analysis, delving into the nuances of your industry to provide customized recommendations aligned with your goals.</p>
                                 </div>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
                                 <div class="img"><img src="assets/images/AuditService3Icon.svg" alt="Audit-Service-Icon" title="Audit-Service-icon"></div>
                                 <div class="text">
-                                    <h3>Unlock Hidden Potential:</h3>
+                                    <h3>Unlock Hidden Potential</h3>
                                     <p>Our experts have a keen eye for optimization and can uncover untapped opportunities within your campaign.</p>
                                 </div>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
                                 <div class="img"><img src="assets/images/AuditService4Icon.svg" alt="Audit-Service-Icon" title="Audit-Service-icon"></div>
                                 <div class="text">
-                                    <h3>Genuine Partnership:</h3>
+                                    <h3>Genuine Partnership</h3>
                                     <p>We are committed to your success and work closely with you to develop strategies that drive results.</p>
                                 </div>
                             </li>
@@ -120,7 +163,50 @@
                 </div>
             </section>
             <!-- <section id="statistics"></section> -->
-            <section id="Form2"></section>
+            <section id="Form2">
+                <div class="container">
+                    <div class="box">
+                        <div class="priceInfo">
+                            <div class="text">
+                                <span>Do you want these numbers to be yours?</span>
+                                <b>Price: <strong><del>$200</del> - $50</strong></b>
+                            </div>
+                            <div class="button">
+                                <button class="formDiscover">Start Now</button>
+                            </div>
+                        </div>
+                        <div class="form-input center" state="email" page="Audit">
+                            <div class="top-label">
+                                <label class="active" value="0">Email<input type="radio" class="radio-input Email_menu2" name="top_label_menu" value="0"></label>
+                                <label value="1">Full Name<input type="radio" class="radio-input Name_menu2" name="top_label_menu" value="1" checked></label>
+                                <label value="2">Phone Number<input type="radio" class="radio-input Phone_menu2" name="top_label_menu" value="2"></label>
+                                <label value="3">Website URL<input type="radio" class="radio-input Budget_menu2" name="top_label_menu" value="3"></label>
+                            </div>
+                            <form class="from">
+                                <div class="inputs">
+                                    <div class="Email-input">
+                                        <input type="email" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="Name-input">
+                                        <input type="text" name="name" placeholder="Full Name" min="2" max="20">
+                                    </div>
+                                    <div class="phone-input alireza_validator">
+                                        <input type="tel" class="phone123" name="phone" placeholder="Phone Number" maxlength="11">
+                                    </div>
+                                    <div class="website-input">
+                                        <input type="url" name="website" placeholder="Website address" max="30">
+                                    </div>
+
+                                    <div class="successDiv">
+                                        <p>Thank you for ordering us! We will call you back</p>
+                                    </div>
+                                </div>
+                                <button class="next_button" state="1">Next</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id="Questions">
                 <div class="container">
                     <h2>Frequently Asked Questions</h2>
@@ -219,8 +305,8 @@
             <section id="FinalIntro">
                 <div class="container">
                     <div class="content">
-                        <div class="img"><img src="assets/images/ceoProfile.png" alt="Ali-Hajizadeh(CEO-on-Admoon)" title="Ali-Hajizadeh(CEO-on-Admoon)"></div>
-                        <div class="text"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span><p>Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns. No more guesswork; I'll let data-driven decisions and my expert guidance light the way to success. Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns.</p></div>
+                        <div class="img"><img src="assets/images/ceoProfile.png" alt="Ali-Hajizadeh(CEO-on-Admoon)" title="Ali-Hajizadeh(CEO-on-Admoon)"><div class="mobile"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div></div>
+                        <div class="text"><div class="desktop"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div><p>Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns. No more guesswork; I'll let data-driven decisions and my expert guidance light the way to success. Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns.</p></div>
                     </div>
                 </div>
             </section>

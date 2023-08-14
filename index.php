@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </section>
-            <section id="ProvenSuccess">
+            <section id="ProvenSuccess" class="Provens">
                 <div class="container">
                     <h2>We have proven success</h2>
                     <div class="boxs">
@@ -199,7 +199,7 @@
                                                 <span>Monthly budget:</span><span>Wage:</span>
                                             </div>
                                             <div class="value">
-                                                <strong>$5,001-$15,000</strong><strong><i>%12</i> %7</strong>
+                                                <strong>$5,001-$15,000</strong><strong><del>%12</del> %7</strong>
                                             </div>
                                         </li><hr>
                                         <li>
@@ -207,7 +207,7 @@
                                                 <span>Monthly budget:</span><span>Wage:</span>
                                             </div>
                                             <div class="value">
-                                                <strong>$15,001-∞</strong><strong><i>%9</i> %5</strong>
+                                                <strong>$15,001-∞</strong><strong><del>%9</del> %5</strong>
                                             </div>
                                         </li>
                                     </ul>

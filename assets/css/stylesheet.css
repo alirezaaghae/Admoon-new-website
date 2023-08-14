@@ -179,9 +179,9 @@ background-color:white;
 .form .MailAddress .bottom-line .fill-line{}
 .form .MailAddress label{}
 .form .MailAddress input{}
-.form .budget-input{}
-.form .budget-input .bottom-line .fill-line{}
-.form .budget-input label{}
+.form .website-input{}
+.form .website-input .bottom-line .fill-line{}
+.form .website-input label{}
 
   .form .phone-input{
     display: flex;
@@ -210,4 +210,239 @@ background-color:white;
   .form .active input{height:30px;}
   .form .active .fill-line{
     width: 100%;
+}
+
+ 
+
+
+
+
+
+/* center form */
+.form-input.center[state="success"]{}
+.form-input.center{position: relative; margin-top: 40px; }
+  .form-input.center .top-label{transition: all .3s;top: -30px;position: absolute;}
+  /* .form-input[state="email"] .top-label, .form-input[state="success"] .top-label{top: 0px;} */
+  .form-input.center .top-label input{opacity: 0;}
+  .form-input.center .top-label label{
+    color: #E6E6E6;
+    font-weight: 300;
+    font-size: 12px;
+    transition: all .3s;
+    cursor: pointer;
+}
+  
+  .form-input.center[state="email"] .top-label label[value="0"], .form-input.center[state="name"] .top-label label[value="1"], .form-input.center[state="phone"] .top-label label[value="2"], .form-input.center[state="website"] .top-label label[value="3"]{color: #FFF492;font-weight: 500;}
+  .form-input.center .top-label label:hover{color: #FFF492;}
+  .form-input.center form{
+}
+.form-input form{
+  position: relative;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+  .form-input.center form .inputs{
+    border: 1px solid #D6D6D6;
+    border-radius: 12px;
+    width: 67%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(90deg, #fefefe 0%, #ffffff 100%);
+    z-index: 1;
+}
+
+/* .form-input.center[state='website'] form .inputs>div:not(.website-input){
+	display:none;
+	opacity: 0;
+} */
+.form-input.center form .inputs .Email-input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all .3s;
+    top: 110%;
+}
+  .form-input.center form .inputs .Email-input input{
+    background: linear-gradient(90deg, #fefefe 0%, #ffffff 100%);
+    color: #f8706d;
+}
+.form-input.center form .inputs input{width: 100%;height: 100%;text-indent: 20px;}
+.form-input.center form .inputs .Name-input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all .3s;
+    top: 110%;
+}
+/* .wrapper .form-input form .inputs .Name-input::after{content:'Full Name';} */
+
+.form-input.center form .inputs .phone-input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all .3s;
+    top: 110%;
+    display: flex;
+    align-items: center;
+}
+.form-input.center form .inputs .successDiv{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all .3s;
+    left: -110%;
+    display: flex;
+    background: linear-gradient(90deg, #2D0E86 -3.62%, #95E9F1 113.22%);
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input.center form .inputs .successDiv p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+/* identical to box height */
+    color: #FFFFFF;
+    text-align: center;
+}
+.form-input.center form .inputs .Email-input input::placeholder{color:#f8706d;}
+  .form-input.center form .inputs .Name-input{}
+  .form-input.center form .inputs .Name-input input{color: #f8706d;}
+  .form-input.center form .inputs .Name-input input::placeholder{color: #f8706d;}
+  .form-input.center form .inputs .phone-input{}
+  .form-input.center form .inputs .phone-input input{color: #f8706d;}
+  .form-input.center form .inputs .phone-input input::placeholder{color: #f8706d;}
+  .form-input.center form .inputs .website-input{}
+  .form-input.center form .inputs .website-input input{color: #f8706d;}
+  .form-input.center form .inputs .website-input input::placeholder{color: #f8706d;}
+  .form-input.center form .next_button{
+    background: linear-gradient(90deg, #fefefe 0%, #ffffff 100%);
+    color: #F34B66;
+}
+  .form-input.center form .next_button:hover{}
+
+  .wrapper .form-input form .inputs .website-input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all .3s;
+    top: 110%;
+  }
+  
+    .form-input[state='email'] form .inputs .Email-input, .form-input[state='name'] form .inputs .Name-input, .form-input[state='phone'] form .inputs .phone-input, .form-input[state='website'] form .inputs .website-input{top:0;}
+    .wrapper .form-input[state='success'] form .inputs .successDiv{left:0;opacity: 1;}
+  
+    .wrapper .form-input form .next_button{
+      background: linear-gradient(90deg, #97ECF1 0%, #5552EB 100%);
+      border-radius: 12px;
+      border: none;
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 33px;
+      color: #FFFFFF;
+      display: flex;
+      padding: 20px 0;
+      width: 30%;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 100%;
+  }
+  
+  .wrapper .form-input[state='success'] form .next_button{
+    display:none;
+  }
+  
+  /* .wrapper .form-input form .inputs>div.active{top:0;} */
+    .wrapper .form-input form .next_button:hover{}
+
+.form-input.center form .inputs .phone-input input[type="radio"] {
+	counter-increment: radios;
+	appearance: none;
+	display: none;
+}
+
+.form-input.center form .inputs .phone-input input[type="radio"]:checked {
+	display: inline;
+	--display: block;
+}
+
+.form-input.center form .inputs .phone-input input[type="radio"]:after {
+	content: attr(title);
+	display: inline;
+	color: #f76e6d;
+}
+
+.form-input.center form .inputs .phone-input ul.list {
+	counter-reset: labels;
+}
+
+.form-input.center form .inputs .phone-input label {
+	width: 100%;
+	display: flex;
+	cursor: pointer;
+	justify-content: space-between;
+}
+
+.form-input.center form .inputs .phone-input label span {
+	--display: none;
+	display: var(--display);
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid #727272;
+	border-radius: 3px;
+}
+
+/* circle price */
+.circle-range {
+	position: relative;
+	width: 20rem;
+	height: 20rem;
+	background-color: transparent;
+	border: 1rem solid red;
+	border-radius: 50%;
+}
+
+.circle-range .info {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: dodgerblue;
+	border-radius: inherit;
+	width: 5rem;
+	height: 5rem;
+	text-align: center;
+	color: white;
+	font-family: serif;
+	font-size: initial;
+	font-weight: bold;
+	line-height: 5rem;
+	user-select: none;
+}
+
+.circle-range .slider {
+	position: absolute;
+	width: 5%;
+	height: 54%;
+	left: 47.5%;
+	top: 0;
+	transform: rotate(0deg);
+	transform-origin: center bottom;
+}
+
+.circle-range .slider::before {
+	content: '';
+	position: absolute;
+	background-color: green;
+	width: 2rem;
+	height: 2rem;
+	transform: translate(-25%, -25%);
+	border-radius: 50%;
+	cursor: pointer;
 }
