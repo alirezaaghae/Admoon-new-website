@@ -1,8 +1,6 @@
 <!-- include html setting (head) -->
 <?php include('head.php'); ?>
 
-<!-- col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24 -->
-
 <!-- page -->
 <body id="homePage">
     <div class="wrapper index-page" id="main-page">
@@ -15,7 +13,7 @@
                         <a href="#ProvideForYou">What we do for you</a>
                     </div>
                     <div class="img">
-                        <img src="assets/images/homeHeaderObj.svg" alt="Admoon-header-Obj" title="Admoon-header-Obj">
+                        <!-- <img src="assets/images/homeHeaderObj.svg" alt="Admoon-header-Obj" title="Admoon-header-Obj"> -->
                     </div>
                 </div>
             </div>
@@ -77,7 +75,7 @@
                                     <div class="content">
                                         <div class="text">
                                             <h3>Zarif Bar</h3>
-                                            <div class="icon-more-info"><img src="assets/images/search-icon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
+                                            <div class="icon-more-info"><img src="assets/images/searchIcon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
                                             <p>Tour Gasht achieve a 250%+ boost in Return on Ad Spend</p>
                                         </div>
                                         <div class="item">
@@ -108,7 +106,7 @@
                                     <div class="content">
                                         <div class="text">
                                             <h3>Spa Iranian</h3>
-                                            <div class="icon-more-info"><img src="assets/images/search-icon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
+                                            <div class="icon-more-info"><img src="assets/images/searchIcon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
                                             <p>Spa Iranina Save 40% on costs</p>
                                         </div>
                                         <div class="item">
@@ -139,7 +137,7 @@
                                     <div class="content">
                                         <div class="text">
                                             <h3>Tour Gasht</h3>
-                                            <div class="icon-more-info"><img src="assets/images/search-icon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
+                                            <div class="icon-more-info"><img src="assets/images/searchIcon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
                                             <p>Tour Gasht achieve a 250%+ boost in Return on Ad Spend</p>
                                         </div>
                                         <div class="item">
@@ -163,7 +161,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="">Explore more <img src="assets/images/rightArrowIcon.svg"></a>
+                    <a href="">Explore more <img src="assets/images/rightArrowIcon.svg"><img src="assets/images/rightArrowIcon2.svg"></a>
                 </div>
             </section>
             <section id="ProvideForYou">
@@ -171,7 +169,8 @@
                     <h2>What we provide for you</h2>
                     <div class="boxs">
                         <ul class="row boxs">
-                            <li class="box AdsManagement col-xl-24 col-lg-24 col-md-24 col-sm-24 col-24">
+                            <li class=" col-xl-24 col-lg-24 col-md-24 col-sm-24 col-24">
+                                <div class="box AdsManagement">
                                 <div class="content">
                                     <h3>Ads Management</h3>
                                     <p>With our Ads Management service, expect optimized campaigns, targeted traffic, and exceptional results. Relax as we handle setup, monitoring, and clear reports.</p>
@@ -193,7 +192,7 @@
                                             <div class="value">
                                                 <strong>$1,000-$5,000</strong><strong>%15</strong>
                                             </div>
-                                        </li><hr>
+                                        </li><hr style="border-top: 1px solid #7F92FA;">
                                         <li>
                                             <div class="title">
                                                 <span>Monthly budget:</span><span>Wage:</span>
@@ -201,7 +200,7 @@
                                             <div class="value">
                                                 <strong>$5,001-$15,000</strong><strong><del>%12</del> %7</strong>
                                             </div>
-                                        </li><hr>
+                                        </li><hr style="border-top: 1px solid #7F92FA;">
                                         <li>
                                             <div class="title">
                                                 <span>Monthly budget:</span><span>Wage:</span>
@@ -213,8 +212,10 @@
                                     </ul>
                                     <a class="moreButton" href="AdsManagement.php">Check Service</a>
                                 </div>
+                               </div>
                             </li>
-                            <li class="box Audit col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
+                            <li class=" col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
+                                <div class="box Audit">
                                 <div class="content">
                                     <h3>Audit</h3>
                                     <p>We'll analyze every aspect of your campaign to uncover hidden potential, and provide you with a comprehensive report.</p>
@@ -231,8 +232,10 @@
                                     </div>
                                     <a class="moreButton" href="Audit.php">Check Service</a>
                                 </div>
+                               </div>
                             </li>
-                            <li class="box TuneUp col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
+                            <li class=" col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
+                                <div class="box TuneUp">
                                 <div class="content">
                                     <h3>Tune Up</h3>
                                     <p>Our Tune Up service offers comprehensive solutions for professional optimization and expert problem-solving.</p>
@@ -249,8 +252,10 @@
                                     </div>
                                     <a class="moreButton" href="TuneUp.php">Check Service</a>
                                 </div>
+                               </div>
                             </li>
-                            <li class="box AccountSuspension col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
+                            <li class=" col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
+                                <div class="box AccountSuspension">
                                 <div class="content">
                                     <h3>Account Suspension</h3>
                                     <p>Our Tune Up service offers comprehensive solutions for professional optimization and expert problem-solving.</p>
@@ -267,6 +272,7 @@
                                     </div>
                                     <a class="moreButton" href="AccountSuspension.php">Check Service</a>
                                 </div>
+                               </div>
                             </li>
                         </ul>
                     </div>
