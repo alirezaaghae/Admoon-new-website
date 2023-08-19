@@ -9,7 +9,7 @@
                 <?php include('nav.php'); ?>
             </header>
             <main>
-                <section id="AboutUs">
+                <section id="AboutUsIntro">
                     <div class="text"><h1>Who are we</h1><p>During the process of creating an audit for your Google Ads campaign, our team follows a meticulous and comprehensive approach to ensure no stone is left unturned. Here's a breakdown of what we do During the process of creating an audit for your Google Ads campaign, our team follows a meticulous and comprehensive approach to ensure no stone is left unturned.</p></div>
                     <div class="img"><img src="assets/images/aboutImage.jpg" alt="Admoon" title="Admoon"></div>
                     <div class="bottomItems">
@@ -66,6 +66,10 @@
                                             <span>Alireza</span>
                                             <span>Aghaei</span>
                                         </div>
+                                        <div class="text second">
+                                            <span>Alireza</span>
+                                            <span>Aghaei</span>
+                                        </div>
                                     </div>
                                     <div class="content">
                                         <div class="info">
@@ -115,6 +119,10 @@
                                             <span>Mobina</span>
                                             <span>Davari</span>
                                         </div>
+                                        <div class="text second">
+                                            <span>Mobina</span>
+                                            <span>Davari</span>
+                                        </div>
                                     </div>
                                     <div class="content">
                                         <div class="info">
@@ -161,6 +169,10 @@
                                     <div class="cover"><img src="assets/images/ourTeam/zahra.png" alt="zahra-profile" title="zahra-profile"></div>
                                     <div class="name">
                                         <div class="text">
+                                            <span>Zahra</span>
+                                            <span>Molai</span>
+                                        </div>
+                                        <div class="text second">
                                             <span>Zahra</span>
                                             <span>Molai</span>
                                         </div>

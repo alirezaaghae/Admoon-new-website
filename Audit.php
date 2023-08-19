@@ -4,7 +4,7 @@
 <!-- page -->
 <body id="Audit">
     <div class="wrapper Audit-page">
-        <header>
+        <header id="ServicesHeader">
             <div class="container">
                 <?php include('nav.php'); ?>
                 <div class="content">
@@ -24,7 +24,7 @@
                 </div>
             </div> 
         </header>
-        <main>
+        <main id="ServicesMain">
             <section id="Intro">
                 <div class="container">
                     <h2>The Audit steps we take for you</h2>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </section>
-            <section id="Form">
+            <section id="Form" class="sfm">
                 <div class="container">
                     <div class="box">
                         <div class="priceInfo">
@@ -64,7 +64,7 @@
                                 <label value="2">Phone Number<input type="radio" class="radio-input Phone_menu2" name="top_label_menu" value="2"></label>
                                 <label value="3">Website URL<input type="radio" class="radio-input Budget_menu2" name="top_label_menu" value="3"></label>
                             </div>
-                            <form class="from">
+                            <form>
                                 <div class="inputs">
                                     <div class="Email-input">
                                         <input type="email" name="email" placeholder="Email">
@@ -163,7 +163,7 @@
                 </div>
             </section>
             <!-- <section id="statistics"></section> -->
-            <section id="Form2">
+            <section id="Form2" class="sfm">
                 <div class="container">
                     <div class="box">
                         <div class="priceInfo">
@@ -210,8 +210,8 @@
             <section id="Questions">
                 <div class="container">
                     <h2>Frequently Asked Questions</h2>
-                        <div class="items">
-                          <div class="panel-group" id="accordion">
+                    <div class="items">
+                        <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
                             <div>
                                 <h4 class="panel-title">
@@ -297,7 +297,6 @@
                                 <div class="panel-body"><p>Yes, we take data security and confidentiality seriously. We follow strict protocols to ensure the privacy and security of your data throughout the audit process. Your campaign information and sensitive data will be handled with the utmost care and stored securely.</p></div>
                             </div>
                             </div>
-                            
                         </div> 
                     </div>
                 </div>
@@ -305,7 +304,7 @@
             <section id="FinalIntro">
                 <div class="container">
                     <div class="content">
-                        <div class="img"><img src="assets/images/ceoProfile.png" alt="Ali-Hajizadeh(CEO-on-Admoon)" title="Ali-Hajizadeh(CEO-on-Admoon)"><div class="mobile"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div></div>
+                        <div class="img"><a href="AboutUs.php"><img src="assets/images/ceoProfile.png" alt="Ali-Hajizadeh(CEO-on-Admoon)" title="Ali-Hajizadeh(CEO-on-Admoon)"></a><div class="mobile"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div></div>
                         <div class="text"><div class="desktop"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div><p>Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns. No more guesswork; I'll let data-driven decisions and my expert guidance light the way to success. Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns.</p></div>
                     </div>
                 </div>

@@ -28,13 +28,13 @@
                 </ul>
                 <ul class="mobile">
                     <li>
-                        <div class="owl-carousel-mobile">
+                        <div class="items">
                             <div class="item"><strong>$500k</strong><span>Ads Budget Saving</span></div>
                             <div class="item"><strong>$5M</strong><span>in Ads Budget Managed Last Year</span></div>
                         </div>
                     </li>
                     <li>
-                        <div class="owl-carousel-mobile">
+                        <div class="items">
                             <div class="item"><strong>50</strong><span>Accounts Tuned Up weekly</span></div>
                             <div class="item"><strong>%95</strong><span>Customer Retention</span></div>
                         </div>
@@ -66,7 +66,7 @@
             <section id="ProvenSuccess" class="Provens">
                 <div class="container">
                     <h2>We have proven success</h2>
-                    <div class="boxs">
+                    <div class="box customers">
                         <ul class="row">
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
                                 <a href="Zarifbar.php">
@@ -163,13 +163,13 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="">Explore more <img src="" alt=""></a>
+                    <a href="">Explore more <img src="assets/images/rightArrowIcon.svg"></a>
                 </div>
             </section>
             <section id="ProvideForYou">
                 <div class="container">
                     <h2>What we provide for you</h2>
-                    <div class="box">
+                    <div class="boxs">
                         <ul class="row boxs">
                             <li class="box AdsManagement col-xl-24 col-lg-24 col-md-24 col-sm-24 col-24">
                                 <div class="content">
@@ -211,7 +211,7 @@
                                             </div>
                                         </li>
                                     </ul>
-                                    <a href="AdsManagement.php">Check Service</a>
+                                    <a class="moreButton" href="AdsManagement.php">Check Service</a>
                                 </div>
                             </li>
                             <li class="box Audit col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
@@ -227,9 +227,9 @@
                                     </ul>
                                     <div class="pricing">
                                         <span>Pricing</span><br>
-                                        <strong><i>$200</i> $50</strong>
+                                        <strong><del>$200</del> $50</strong>
                                     </div>
-                                    <a href="Audit.php">Check Service</a>
+                                    <a class="moreButton" href="Audit.php">Check Service</a>
                                 </div>
                             </li>
                             <li class="box TuneUp col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
@@ -247,7 +247,7 @@
                                         <span>Pricing</span><br>
                                         <strong>$1,500</strong>
                                     </div>
-                                    <a href="TuneUp.php">Check Service</a>
+                                    <a class="moreButton" href="TuneUp.php">Check Service</a>
                                 </div>
                             </li>
                             <li class="box AccountSuspension col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
@@ -265,7 +265,7 @@
                                         <span>Pricing</span><br>
                                         <strong>$1,500</strong>
                                     </div>
-                                    <a href="AccountSuspension.php">Check Service</a>
+                                    <a class="moreButton" href="AccountSuspension.php">Check Service</a>
                                 </div>
                             </li>
                         </ul>
@@ -287,8 +287,8 @@
                                 </div>
                                 <p>Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns. No more guesswork; I'll let data-driven decisions and my expert guidance light the way to success.</p>
                                 <div class="profile">
-                                    <div class="img"></div>
-                                    <div class="name">
+                                    <div class="img"><img src="assets/images/C1Profile2.png" alt="customer-profile" title="customer-profile"></div>
+                                    <div class="info">
                                         <span class="name">Ali Hajizadeh</span>
                                         <span class="field">CEO on Admoon</span>
                                     </div>
@@ -304,8 +304,8 @@
                                 </div>
                                 <p>Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns. No more guesswork; I'll let data-driven decisions and my expert guidance light the way to success.</p>
                                 <div class="profile">
-                                    <div class="img"></div>
-                                    <div class="name">
+                                    <div class="img"><img src="assets/images/C1Profile2.png" alt="customer-profile" title="customer-profile"></div>
+                                    <div class="info">
                                         <span class="name">Ali Hajizadeh</span>
                                         <span class="field">CEO on Admoon</span>
                                     </div>
@@ -321,8 +321,8 @@
                                 </div>
                                 <p>Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns. No more guesswork; I'll let data-driven decisions and my expert guidance light the way to success.</p>
                                 <div class="profile">
-                                    <div class="img"></div>
-                                    <div class="name">
+                                    <div class="img"><img src="assets/images/C1Profile2.png" alt="customer-profile" title="customer-profile"></div>
+                                    <div class="info">
                                         <span class="name">Ali Hajizadeh</span>
                                         <span class="field">CEO on Admoon</span>
                                     </div>

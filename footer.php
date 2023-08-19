@@ -22,7 +22,7 @@
         <div id="footerform">
             <form class="form">
                 <span>We can help you with</span>
-                <div class="custom-select package">
+                <div class="custom-select footer-select">
                     <select>
                       <option value="Audit">Audit</option>
                       <option value="TuneUp">Tune up</option>
@@ -30,30 +30,30 @@
                       <option value="AccountSuspension">Account Suspension</option>
                     </select>
                 </div>
-                <div class="FullName">
+                <div class="FullName footer-input">
                     <label>Full Name
                         <input type="text" name="name" min="2" max="20">
                     </label>
                     <div class="bottom-line"><div class="fill-line"></div></div>
                 </div>
-                <div class="MailAddress">
+                <div class="MailAddress footer-input">
                     <label>Email
                         <input type="email" name="email">
                     </label>
                     <div class="bottom-line"><div class="fill-line"></div></div>
                 </div>
-                <div class="WebsiteAddress">
+                <div class="WebsiteAddress footer-input">
                     <label>Website URL
                     <input type="text" name="Website"></label>
                     <div class="bottom-line"><div class="fill-line"></div></div>
                 </div>
-                <div class="PhoneNumber">
+                <div class="PhoneNumber footer-input">
                     <label>Phone Number
                         <input type="tel" name="phone" maxlength="11">
                     </label>
                     <div class="bottom-line"><div class="fill-line"></div></div>
                 </div>
-                <div class="button">
+                <div class="button footer-button">
                     <button class="send_button">Submit</button>
                 </div>
             </form>
@@ -64,7 +64,7 @@
         <div class="logo">
             <img src="assets/images/admoonLogoWhite.svg" alt="admoon-logo" title="admoon-logo">
         </div>
-        <div class="navbar">
+        <div class="footerNavBar">
             <ul class="navv">
                 <li>
                     <strong>Services</strong>
@@ -121,7 +121,7 @@
         </div>
     </div>
     <div class="footerNav mobile">
-        <div class="navbar">
+        <div class="footerNavBar">
             <ul class="navv">
              <div class="panel-group">
                 <div class="panel">

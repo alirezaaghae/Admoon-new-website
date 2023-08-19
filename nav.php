@@ -1,10 +1,11 @@
-<div id="navbar">
+<div id="MainNavBar">
+  <div id="navbar">
     <div class="logo">
         <img src="assets/images/admoonLogoBlue.svg" alt="admoon-logo" title="admoon-logo">
     </div>
     <nav>
         <ul>
-            <li id="Services">
+            <li class="navIcon" id="Services">
                 <span>Services</span>
                 <a href="#">Services</a>
             </li>
@@ -16,7 +17,7 @@
                 <span>Solution for industry</span>
                 <a href="Industry.php">Solution for industry</a>
             </li>
-            <li id="LearnAbout">
+            <li class="navIcon" id="LearnAbout">
                 <span>Learn about</span>
                 <a href="#">Learn about</a>
             </li>
@@ -30,9 +31,9 @@
             </li>
         </ul>
     </nav>
-</div>
+  </div>
 
-<div class="ServicesNav">
+  <div class="selectBox ServicesNav">
     <ul>
         <li>
             <span>Audit</span>
@@ -51,9 +52,9 @@
             <a href="AccountSuspension.php">Account Suspension</a>
         </li>
     </ul>
-</div>
+  </div>
 
-<div class="LearnAbout">
+  <div class="selectBox LearnAbout">
     <ul>
         <li>
             <span>Search campaign</span>
@@ -76,4 +77,5 @@
             <a href="#">Application campaign</a>
         </li>
     </ul>
+  </div>
 </div>

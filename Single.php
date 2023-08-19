@@ -170,7 +170,7 @@
         <section id="FinalIntro">
             <div class="container">
                 <div class="content">
-                    <div class="img"><img src="assets/images/ceoProfile.png" alt="Ali-Hajizadeh(CEO-on-Admoon)" title="Ali-Hajizadeh(CEO-on-Admoon)"><div class="mobile"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div></div>
+                    <div class="img"><a href="AboutUs.php"><img src="assets/images/ceoProfile.png" alt="Ali-Hajizadeh(CEO-on-Admoon)" title="Ali-Hajizadeh(CEO-on-Admoon)"></a><div class="mobile"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div></div>
                     <div class="text"><div class="desktop"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div><p>Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns. No more guesswork; I'll let data-driven decisions and my expert guidance light the way to success. Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns.</p></div>
                 </div>
             </div>

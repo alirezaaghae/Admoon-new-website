@@ -8,13 +8,13 @@
             <header>
                 <?php include('nav.php'); ?>
             </header>
-            <main>
+            <main> 
                 <section id="CaseStudies"  class="Provens">
                     <div class="title">
                         <h1>We have proven success</h1>
                         <p>Admoon has helped data-driven retailers unlock the full potential of Google Camapigns</p>
                     </div>
-                    <div class="boxs">
+                    <div class="box customers">
                         <ul class="row">
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
                                 <a href="Zarifbar.php">

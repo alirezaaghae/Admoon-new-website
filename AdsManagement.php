@@ -4,7 +4,7 @@
 <!-- page -->
 <body id="AdsManage">
     <div class="wrapper AdsManage-page">
-        <header>
+        <header id="ServicesHeader">
             <div class="container">
                 <?php include('nav.php'); ?>
                 <div class="content">
@@ -22,7 +22,7 @@
                 </div>
             </div> 
         </header>
-        <main>
+        <main id="ServicesMain">
             <section id="Intro">
                 <div class="container">
                     <h2>Our Expert Team Delivers Winning Results!</h2>
@@ -57,7 +57,7 @@
                             <div class="selectItems">
                                 <ul>
                                     <li>
-                                        <div class="button select" item="1" >
+                                        <div class="button selected" item="1" >
                                             <span>$1,000-$5,000</span>
                                             <b>Wage: <strong>%15</strong></b>
                                         </div>
@@ -80,7 +80,7 @@
                                 <ul>
                                     <li><span>Wage fee:</span><strong class="WageFee">$0</strong></li>
                                     <li><span>Setup fee:</span><strong class="SetupFee">$100</strong></li>
-                                    <li><span>Budget fee:</span><strong class="BudgetFee">$0</strong></li>
+                                    <li class="BudgetFeeLi"><span>Budget fee:</span><strong class="BudgetFee">$0</strong></li>
                                 </ul>
                                 <hr>
                                 <p><span>Total fee:</span><strong class="TotalFee">$100</strong></p>
@@ -311,7 +311,7 @@
             <section id="FinalIntro">
                 <div class="container">
                     <div class="content">
-                        <div class="img"><img src="assets/images/ceoProfile.png" alt="Ali-Hajizadeh(CEO-on-Admoon)" title="Ali-Hajizadeh(CEO-on-Admoon)"><div class="mobile"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div></div>
+                        <div class="img"><a href="AboutUs.php"><img src="assets/images/ceoProfile.png" alt="Ali-Hajizadeh(CEO-on-Admoon)" title="Ali-Hajizadeh(CEO-on-Admoon)"></a><div class="mobile"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div></div>
                         <div class="text"><div class="desktop"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div><p>Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns. No more guesswork; I'll let data-driven decisions and my expert guidance light the way to success. Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns.</p></div>
                     </div>
                 </div>

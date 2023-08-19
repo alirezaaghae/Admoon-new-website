@@ -8,7 +8,7 @@
             <header>
                 <?php include('nav.php'); ?>
             </header>
-            <main>
+            <main> 
                 <section id="links">
                     <div class="title">
                         <h1>Lets work together</h1>
