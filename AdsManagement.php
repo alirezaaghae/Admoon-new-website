@@ -17,7 +17,7 @@
                         </div>
                     </div>
                     <div class="img">
-                        <img src="assets/images/adsManageHeaderObj.svg" alt="AdsManagement-header-Obj" title="AdsManagement-header-Obj">
+                        <!-- <img src="assets/images/adsManageHeaderObj.svg" alt="AdsManagement-header-Obj" title="AdsManagement-header-Obj"> -->
                     </div>
                 </div>
             </div> 
@@ -34,10 +34,26 @@
                     <h2>What happens in our management service!</h2>
                     <div class="content">
                         <ul>
-                            <li><strong class="desktop">Pre-Run Research</strong><b>1</b><div class="paragraph"><strong class="mobile">Pre-Run Research</strong><p>We analyze your Google Ads account structure, settings, and targeting to optimize campaign reach and alignment with business goals.</p></div></li>
-                            <li><strong class="desktop">Campaign Setup</strong><b>2</b><div class="paragraph"><strong class="mobile">Campaign Setup</strong><p>Metrics like CTR, conversion rates, CPA, and ROAS are assessed to identify strengths and weaknesses, guiding improvements.</p></div></li>
-                            <li><strong class="desktop">Ongoing Management and Optimization</strong><b>3</b><div class="paragraph"><strong class="mobile">Ongoing Management and Optimization</strong><p>We conduct keyword analysis to refine targeting and reduce ad spend, while improving ad copy and extensions for better click-through and conversion rates.</p></div></li>
-                            <li><strong class="desktop">Your Strategic Partner for Boosted Success</strong><b>4</b><div class="paragraph"><strong class="mobile">Your Strategic Partner for Boosted Success</strong><p>Maximize ROI with reviewed bidding strategies, bid adjustments, and automated options, based on campaign objectives and data analysis.</p></div></li>
+                            <li>
+                                <div class="title"><strong class="desktop">Pre-Run Research</strong></div>    
+                                <div class="number"><b>1</b></div>
+                                <div class="text"><div class="paragraph"><strong class="mobile">Pre-Run Research</strong><p>We analyze your Google Ads account structure, settings, and targeting to optimize campaign reach and alignment with business goals.</p></div></div>
+                            </li>
+                            <li>
+                                <div class="title"><strong class="desktop">Campaign Setup</strong></div>    
+                                <div class="number"><b>2</b></div>
+                                <div class="text"><div class="paragraph"><strong class="mobile">Campaign Setup</strong><p>Metrics like CTR, conversion rates, CPA, and ROAS are assessed to identify strengths and weaknesses, guiding improvements.</p></div></div>
+                            </li>
+                            <li>
+                                <div class="title"><strong class="desktop">Ongoing Management and Optimization</strong></div>    
+                                <div class="number"><b>3</b></div>
+                                <div class="text"><div class="paragraph"><strong class="mobile">Ongoing Management and Optimization</strong><p>We conduct keyword analysis to refine targeting and reduce ad spend, while improving ad copy and extensions for better click-through and conversion rates.</p></div></div>
+                            </li>
+                            <li>
+                                <div class="title"><strong class="desktop">Your Strategic Partner for Boosted Success</strong></div>    
+                                <div class="number"><b>4</b></div>
+                                <div class="text"><div class="paragraph"><strong class="mobile">Your Strategic Partner for Boosted Success</strong><p>Maximize ROI with reviewed bidding strategies, bid adjustments, and automated options, based on campaign objectives and data analysis.</p></div></div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -130,45 +146,57 @@
                     <div class="items">
                         <ul class="row">
                             <li class="col-xl-8 col-lg-8 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/adsManageService1Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Dedicated Expert Team</h3>
-                                    <p>Passionate partners guiding your success.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/adsManageService1Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Dedicated Expert Team</h3>
+                                        <p>Passionate partners guiding your success.</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/adsManageService2Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Proven Success</h3>
-                                    <p>Tangible outcomes from winning strategies.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/adsManageService2Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Proven Success</h3>
+                                        <p>Tangible outcomes from winning strategies.</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/adsManageService3Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Tailored Approach</h3>
-                                    <p>Customized strategies for your vision.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/adsManageService3Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Tailored Approach</h3>
+                                        <p>Customized strategies for your vision.</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/adsManageService4Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Years of Experience</h3>
-                                    <p>Proven results across diverse industries.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/adsManageService4Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Years of Experience</h3>
+                                        <p>Proven results across diverse industries.</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/adsManageService5Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Industry Knowledge</h3>
-                                    <p>Staying ahead with cutting-edge insights.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/adsManageService5Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Industry Knowledge</h3>
+                                        <p>Staying ahead with cutting-edge insights.</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/adsManageService6Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Exceptional Service</h3>
-                                    <p>Exceeding expectations with seamless support.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/adsManageService6Icon.svg" alt="adsManage-Service-Icon" title="adsManage-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Exceptional Service</h3>
+                                        <p>Exceeding expectations with seamless support.</p>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -176,7 +204,7 @@
                 </div>
             </section>
             <!-- <section id="statistics"></section> -->
-            <section id="Form2">
+            <section id="Form2" class="sfm">
                 <div class="container">
                     <div class="box">
                         <div class="priceInfo">

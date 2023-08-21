@@ -20,7 +20,7 @@
             </div>
         </div>
         <div id="footerform">
-            <form class="form">
+            <form class="form customForm">
                 <span>We can help you with</span>
                 <div class="custom-select footer-select">
                     <select>

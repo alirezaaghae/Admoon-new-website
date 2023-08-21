@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="img">
-                        <img src="assets/images/tuneUpHeaderObj.svg" alt="TuneUp-header-Obj" title="TuneUp-header-Obj">
+                        <!-- <img src="assets/images/tuneUpHeaderObj.svg" alt="TuneUp-header-Obj" title="TuneUp-header-Obj"> -->
                     </div>
                 </div>
             </div> 
@@ -36,16 +36,36 @@
                     <h2>Step into Success with Tune Up</h2>
                     <div class="content">
                         <ul>
-                            <li><strong class="desktop">Comprehensive Evaluation</strong><b>1</b><div class="paragraph"><strong class="mobile">Comprehensive Evaluation</strong><p>Our Tune Up process begins with a thorough evaluation that spans at least three days. We conduct in-depth market research, analyze your competitors' strategies, review your landing pages, perform meticulous target audience analysis, and dive into pro keyword research.</p></div></li>
-                            <li><strong class="desktop">Strategic Recommendations</strong><b>2</b><div class="paragraph"><strong class="mobile">Strategic Recommendations</strong><p>Armed with valuable insights, we develop strategic recommendations tailored to your campaign's needs. We optimize bidding strategies, refine ad copies, and implement data-driven recommendations to enhance your campaign's performance.</p></div></li>
-                            <li><strong class="desktop">Fine-Tuning and Optimization</strong><b>3</b><div class="paragraph"><strong class="mobile">Fine-Tuning and Optimization</strong><p>Our expert team works diligently to fine-tune your campaign, ensuring that every aspect is optimized to its fullest potential. We adjust targeting, bidding, and ad placements to maximize your reach and drive better results.</p></div></li>
-                            <li><strong class="desktop">Rapid Implementation</strong><b>4</b><div class="paragraph"><strong class="mobile">Rapid Implementation</strong><p>Unlike traditional services, Tune Up includes one-time rapid implementation of the recommended changes. We swiftly put the optimization strategies into action, minimizing downtime and ensuring a seamless transition.</p></div></li>
-                            <li><strong class="desktop">Result Evaluation</strong><b>5</b><div class="paragraph"><strong class="mobile">Result Evaluation</strong><p>After implementing the optimizations, we closely monitor your campaign's performance, tracking key metrics and evaluating the impact of the changes made. This enables us to fine-tune and adjust further, ensuring continued success.</p></div></li>
+                            <li>
+                                <div class="title"><strong class="desktop">Comprehensive Evaluation</strong></div>    
+                                <div class="number"><b>1</b></div>    
+                                <div class="text"><div class="paragraph"><strong class="mobile">Comprehensive Evaluation</strong><p>Our Tune Up process begins with a thorough evaluation that spans at least three days. We conduct in-depth market research, analyze your competitors' strategies, review your landing pages, perform meticulous target audience analysis, and dive into pro keyword research.</p></div></div>    
+                            </li>
+                            <li>
+                                <div class="title"><strong class="desktop">Strategic Recommendations</strong></div>    
+                                <div class="number"><b>2</b></div>    
+                                <div class="text"><div class="paragraph"><strong class="mobile">Strategic Recommendations</strong><p>Armed with valuable insights, we develop strategic recommendations tailored to your campaign's needs. We optimize bidding strategies, refine ad copies, and implement data-driven recommendations to enhance your campaign's performance.</p></div></div>
+                            </li>
+                            <li>
+                                <div class="title"><strong class="desktop">Fine-Tuning and Optimization</strong></div>    
+                                <div class="number"><b>3</b></div>    
+                                <div class="text"><div class="paragraph"><strong class="mobile">Fine-Tuning and Optimization</strong><p>Our expert team works diligently to fine-tune your campaign, ensuring that every aspect is optimized to its fullest potential. We adjust targeting, bidding, and ad placements to maximize your reach and drive better results.</p></div></div>    
+                            </li>
+                            <li>
+                                <div class="title"><strong class="desktop">Rapid Implementation</strong></div>    
+                                <div class="number"><b>4</b></div>    
+                                <div class="text"><div class="paragraph"><strong class="mobile">Rapid Implementation</strong><p>Unlike traditional services, Tune Up includes one-time rapid implementation of the recommended changes. We swiftly put the optimization strategies into action, minimizing downtime and ensuring a seamless transition.</p></div></div>    
+                            </li>
+                            <li>
+                                <div class="title"><strong class="desktop">Result Evaluation</strong></div>    
+                                <div class="number"><b>5</b></div>    
+                                <div class="text"><div class="paragraph"><strong class="mobile">Result Evaluation</strong><p>After implementing the optimizations, we closely monitor your campaign's performance, tracking key metrics and evaluating the impact of the changes made. This enables us to fine-tune and adjust further, ensuring continued success.</p></div></div>    
+                            </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section id="Form">
+            <section id="Form" class="sfm">
                 <div class="container">
                     <div class="box">
                         <div class="priceInfo">
@@ -131,31 +151,39 @@
                     <div class="items">
                         <ul class="row">
                             <li class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/TuneUpService1Icon.svg" alt="TuneUp-Service-Icon" title="TuneUp-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Rapid Optimization</h3>
-                                    <p>Experience rapid implementation of recommended changes, while minimizing downtime.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/TuneUpService1Icon.svg" alt="TuneUp-Service-Icon" title="TuneUp-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Rapid Optimization</h3>
+                                        <p>Experience rapid implementation of recommended changes, while minimizing downtime.</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/TuneUpService2Icon.svg" alt="TuneUp-Service-Icon" title="TuneUp-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Comprehensive Evaluation</h3>
-                                    <p>by conducting in-depth market research, competitor analysis and target audience analysis we provide you with a holistic understanding of your campaign's potential.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/TuneUpService2Icon.svg" alt="TuneUp-Service-Icon" title="TuneUp-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Comprehensive Evaluation</h3>
+                                        <p>by conducting in-depth market research, competitor analysis and target audience analysis we provide you with a holistic understanding of your campaign's potential.</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/TuneUpService3Icon.svg" alt="TuneUp-Service-Icon" title="TuneUp-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Expertise and Experience</h3>
-                                    <p>Trust in 8 years of experience and skill to fine-tune your campaign for exceptional results.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/TuneUpService3Icon.svg" alt="TuneUp-Service-Icon" title="TuneUp-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Expertise and Experience</h3>
+                                        <p>Trust in 8 years of experience and skill to fine-tune your campaign for exceptional results.</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/TuneUpService4Icon.svg" alt="TuneUp-Service-Icon" title="TuneUp-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Customer-Centric Approach</h3>
-                                    <p>We prioritize your concerns and tailor our strategies to address your unique needs. We understand the importance of timely optimization and problem-solving, ensuring your satisfaction every step of the way.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/TuneUpService4Icon.svg" alt="TuneUp-Service-Icon" title="TuneUp-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Customer-Centric Approach</h3>
+                                        <p>We prioritize your concerns and tailor our strategies to address your unique needs. We understand the importance of timely optimization and problem-solving, ensuring your satisfaction every step of the way.</p>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -163,7 +191,7 @@
                 </div>
             </section>
             <!-- <section id="statistics"></section> -->
-            <section id="Form2">
+            <section id="Form2" class="sfm">
                 <div class="container">
                     <div class="box">
                         <div class="priceInfo">

@@ -71,7 +71,7 @@
                         <p>We’ll do our best to get back to you as soon as possible.</p>
                     </div>
                     <div class="form contactUs">
-                        <form class="form">
+                        <form class="form customForm">
                             <span>We can help you with</span>
                             <div class="custom-select package">
                                 <select>

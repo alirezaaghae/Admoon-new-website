@@ -1,7 +1,7 @@
 <div id="MainNavBar">
   <div id="navbar">
     <div class="logo">
-        <img src="assets/images/admoonLogoBlue.svg" alt="admoon-logo" title="admoon-logo">
+        <a href="index.php"><img src="assets/images/admoonLogoBlue.svg" alt="admoon-logo" title="admoon-logo"></a>
     </div>
     <nav>
         <ul>

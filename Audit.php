@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="img">
-                        <img src="assets/images/auditHeaderObj.svg" alt="Audit-header-Obj" title="Audit-header-Obj">
+                        <!-- <img src="assets/images/auditHeaderObj.svg" alt="Audit-header-Obj" title="Audit-header-Obj"> -->
                     </div>
                 </div>
             </div> 
@@ -36,11 +36,31 @@
                     <h2>Step into Success with Tune Up</h2>
                     <div class="content">
                         <ul>
-                            <li><strong class="desktop">Account Analysis & Optimization</strong><b>1</b><div class="paragraph"><strong class="mobile">Account Analysis & Optimization</strong><p>We analyze your Google Ads account structure, settings, and targeting to optimize campaign reach and alignment with business goals.</p></div></li>
-                            <li><strong class="desktop">Performance Evaluation</strong><b>2</b><div class="paragraph"><strong class="mobile">Performance Evaluation</strong><p>Metrics like CTR, conversion rates, CPA, and ROAS are assessed to identify strengths and weaknesses, guiding improvements.</p></div></li>
-                            <li><strong class="desktop">Keyword & Ad Copy Refinement</strong><b>3</b><div class="paragraph"><strong class="mobile">Keyword & Ad Copy Refinement</strong><p>We conduct keyword analysis to refine targeting and reduce ad spend, while improving ad copy and extensions for better click-through and conversion rates.</p></div></li>
-                            <li><strong class="desktop">Bidding Strategy Optimization</strong><b>4</b><div class="paragraph"><strong class="mobile">Bidding Strategy Optimization</strong><p>Maximize ROI with reviewed bidding strategies, bid adjustments, and automated options, based on campaign objectives and data analysis.</p></div></li>
-                            <li><strong class="desktop">Competitor Analysis & Detailed Report</strong><b>5</b><div class="paragraph"><strong class="mobile">Competitor Analysis & Detailed Report</strong><p>Thorough competitor analysis identifies areas for differentiation and provides a detailed report with data-driven insights, recommendations, and action steps for enhanced campaign performance.</p></div></li>
+                            <li>
+                                <div class="title"><strong class="desktop">Account Analysis & Optimization</strong></div>    
+                                <div class="number"><b>1</b></div>
+                                <div class="text"><div class="paragraph"><strong class="mobile">Account Analysis & Optimization</strong><p>We analyze your Google Ads account structure, settings, and targeting to optimize campaign reach and alignment with business goals.</p></div></div>
+                            </li>
+                            <li>
+                                <div class="title"><strong class="desktop">Performance Evaluation</strong></div>
+                                <div class="number"><b>2</b></div>
+                                <div class="text"><div class="paragraph"><strong class="mobile">Performance Evaluation</strong><p>Metrics like CTR, conversion rates, CPA, and ROAS are assessed to identify strengths and weaknesses, guiding improvements.</p></div></div>
+                            </li>
+                            <li>
+                                <div class="title"><strong class="desktop">Keyword & Ad Copy Refinement</strong></div>
+                                <div class="number"><b>3</b></div>
+                                <div class="text"><div class="paragraph"><strong class="mobile">Keyword & Ad Copy Refinement</strong><p>We conduct keyword analysis to refine targeting and reduce ad spend, while improving ad copy and extensions for better click-through and conversion rates.</p></div></div>    
+                            </li>
+                            <li>
+                                <div class="title"><strong class="desktop">Bidding Strategy Optimization</strong></div>
+                                <div class="number"><b>4</b></div>
+                                <div class="text"><div class="paragraph"><strong class="mobile">Bidding Strategy Optimization</strong><p>Maximize ROI with reviewed bidding strategies, bid adjustments, and automated options, based on campaign objectives and data analysis.</p></div></div>
+                            </li>
+                            <li>
+                                <div class="title"><strong class="desktop">Competitor Analysis & Detailed Report</strong></div>
+                                <div class="number"><b>5</b></div>
+                                <div class="text"><div class="paragraph"><strong class="mobile">Competitor Analysis & Detailed Report</strong><p>Thorough competitor analysis identifies areas for differentiation and provides a detailed report with data-driven insights, recommendations, and action steps for enhanced campaign performance.</p></div></div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -131,31 +151,39 @@
                     <div class="items">
                         <ul class="row">
                             <li class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/AuditService1Icon.svg" alt="Audit-Service-Icon" title="Audit-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Dedicated Experts</h3>
-                                    <p>Our team comprises certified Google specialists with more than 8 years of experience and a proven track record.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/AuditService1Icon.svg" alt="Audit-Service-Icon" title="Audit-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Dedicated Experts</h3>
+                                        <p>Our team comprises certified Google specialists with more than 8 years of experience and a proven track record.</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/AuditService2Icon.svg" alt="Audit-Service-Icon" title="Audit-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Tailored Insights</h3>
-                                    <p>We go beyond generic analysis, delving into the nuances of your industry to provide customized recommendations aligned with your goals.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/AuditService2Icon.svg" alt="Audit-Service-Icon" title="Audit-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Tailored Insights</h3>
+                                        <p>We go beyond generic analysis, delving into the nuances of your industry to provide customized recommendations aligned with your goals.</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/AuditService3Icon.svg" alt="Audit-Service-Icon" title="Audit-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Unlock Hidden Potential</h3>
-                                    <p>Our experts have a keen eye for optimization and can uncover untapped opportunities within your campaign.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/AuditService3Icon.svg" alt="Audit-Service-Icon" title="Audit-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Unlock Hidden Potential</h3>
+                                        <p>Our experts have a keen eye for optimization and can uncover untapped opportunities within your campaign.</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
-                                <div class="img"><img src="assets/images/AuditService4Icon.svg" alt="Audit-Service-Icon" title="Audit-Service-icon"></div>
-                                <div class="text">
-                                    <h3>Genuine Partnership</h3>
-                                    <p>We are committed to your success and work closely with you to develop strategies that drive results.</p>
+                                <div class="box">
+                                    <div class="img"><img src="assets/images/AuditService4Icon.svg" alt="Audit-Service-Icon" title="Audit-Service-icon"></div>
+                                    <div class="text">
+                                        <h3>Genuine Partnership</h3>
+                                        <p>We are committed to your success and work closely with you to develop strategies that drive results.</p>
+                                    </div>
                                 </div>
                             </li>
                         </ul>

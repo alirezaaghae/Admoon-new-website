@@ -434,17 +434,17 @@
    #ServicesMain>#collaborating .container>.title{}
    #ServicesMain>#collaborating .container>.title h2{}
    #ServicesMain>#collaborating .container>.title p{}
-   #ServicesMain>#collaborating .container>.item{}
-   #ServicesMain>#collaborating .container>.item>ul{}
-   #ServicesMain>#collaborating .container>.item>ul>li{}
-   #ServicesMain>#collaborating .container>.item>ul>li::before{}
-   #ServicesMain>#collaborating .container>.item>ul>li:nth-child(1):before{}
-   #ServicesMain>#collaborating .container>.item>ul>li:nth-child(2):before{}
-   #ServicesMain>#collaborating .container>.item>ul>li:nth-child(3):before{}
-   #ServicesMain>#collaborating .container>.item>ul>li:nth-child(4):before{}
-   #ServicesMain>#collaborating .container>.item>ul>li>.content{}
-   #ServicesMain>#collaborating .container>.item>ul>li>.content img{}
-   #ServicesMain>#collaborating .container>.item>ul>li>.content p{}
+   #ServicesMain>#collaborating .container>.items{}
+   #ServicesMain>#collaborating .container>.items>ul{}
+   #ServicesMain>#collaborating .container>.items>ul>li{}
+   #ServicesMain>#collaborating .container>.items>ul>li::before{}
+   #ServicesMain>#collaborating .container>.items>ul>li:nth-child(1)>.content:before{}
+   #ServicesMain>#collaborating .container>.items>ul>li:nth-child(2)>.content:before{}
+   #ServicesMain>#collaborating .container>.items>ul>li:nth-child(3)>.content:before{}
+   #ServicesMain>#collaborating .container>.items>ul>li:nth-child(4)>.content:before{}
+   #ServicesMain>#collaborating .container>.items>ul>li>.content{}
+   #ServicesMain>#collaborating .container>.items>ul>li>.content img{}
+   #ServicesMain>#collaborating .container>.items>ul>li>.content p{}
    
    #ServicesMain>#WhyChooseOurService{}
    #ServicesMain>#WhyChooseOurService .container{}
@@ -453,11 +453,12 @@
    #ServicesMain>#WhyChooseOurService .container>.items{}
    #ServicesMain>#WhyChooseOurService .container>.items>ul{}
    #ServicesMain>#WhyChooseOurService .container>.items>ul>li{}
-   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.img{}
-   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.img img{}
-   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.text{}
-   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.text h3{}
-   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.text p{}
+   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box{}
+   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.img{}
+   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.img img{}
+   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text{}
+   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text h3{}
+   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text p{}
    
    #ServicesMain>#Form2{}
    

@@ -119,8 +119,8 @@ $('#homePage .owl-carousel').owlCarousel({
     autoplay: true,
     autoplayHoverPause: true,
     singleItem:true,
-    autoplayTimeout: 2000,
-    navText : ["<img src='assets/images/rightArrowSlider.svg' width='54px'>","<img src='assets/images/leftArrowSlider.svg' width='54px'>"],
+    autoplayTimeout: 6000,
+    navText : ["<img src='assets/images/leftArrowSlider.svg' width='54px'>","<img src='assets/images/rightArrowSlider.svg' width='54px'>"],
     responsive:{
       0:{
           items:1
@@ -344,7 +344,7 @@ $('.top-label label').click(function (e) {
 
 // label form
 // inputs form
-$('form>div').click(function (e) {
+$('.customForm>div').click(function (e) {
   e.preventDefault();
   $(this).addClass('active');
   $(this).find( "input" ).focus();
