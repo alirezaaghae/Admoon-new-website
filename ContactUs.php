@@ -5,7 +5,7 @@
 <body id="ContactUs">
     <div class="wrapper ContactUs-page">
         <div class="container">
-            <header>
+            <header id="WhiteMenu">
                 <?php include('nav.php'); ?>
             </header>
             <main> 
@@ -112,8 +112,8 @@
                     <div class="bottomText">
                         <strong>Connect with us elsewhere</strong>
                         <ul class="items">
-                            <li class="item"><a href="#" target="_blank"><img src="assets/images/linkedin0.svg" alt="linkedin-icon"></a></li>
-                            <li class="item"><a href="#" target="_blank"><img src="assets/images/instagramIcon0.svg" alt="instagram-icon"></a></li>
+                            <li class="item"><a href="#" class="linkedin" target="_blank"><img src="assets/images/linkedin0.svg" alt="linkedin-icon"></a></li>
+                            <li class="item"><a href="#" class="instagram" target="_blank"><img src="assets/images/instagramIcon0.svg" alt="instagram-icon"></a></li>
                         </ul>
                     </div>
                 </section>

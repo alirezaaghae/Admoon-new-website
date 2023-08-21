@@ -139,7 +139,7 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 20px;
+    height: 23px;
     cursor: pointer;
     margin: 0px 27px;
 }
@@ -1227,7 +1227,7 @@ footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel
 #ServicesMain>#Steps .container>.content>ul{
     position: relative;
 }
-#ServicesMain>#Steps .container>.content>ul::before{content:'';position: absolute;left: 328px;top: 0;bottom: 0;margin: auto;z-index: -1;width: 4px;height: 80%;border-right: 3px dashed #C3CBF8;}
+#ServicesMain>#Steps .container>.content>ul::before{content:'';position: absolute;left: 328px;top: 0;bottom: 0;margin: auto;z-index: -1;height: 80%;border-left: 3px solid transparent;border-image: url(../images/border.svg) 30 round;}
 #ServicesMain>#Steps .container>.content>ul>li{
     display: flex;
     align-items: center;
@@ -1354,38 +1354,181 @@ footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel
 #ServicesMain>#PricingForm{}
 #ServicesMain>#PricingForm .container{}
 #ServicesMain>#PricingForm .container>h2{}
-#ServicesMain>#PricingForm .container>.boxs{}
-#ServicesMain>#PricingForm .container>.boxs>.circleInput{}
+#ServicesMain>#PricingForm .container>.boxs{
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.circleInput{
+    position: relative;
+    z-index: 0;
+    width: 50%;
+}
 #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range{}
 #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>.info{}
 #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>span{}
 #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>.slider{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices{}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices{
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
 #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems{}
 #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul{}
 #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button span{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button b{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button strong{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button.selected{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button.selected span{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button.selected b{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button.selected strong{}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button{
+    border-radius: 12px;
+    border: 1px solid #7997FF;
+    padding: 13px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button span{
+    color: #7997FF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.22px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button b{
+    color: #aebff9;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.176px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button strong{
+    color: #7997FF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.275px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button.selected,#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button:hover{
+    background-color: #7997FF;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button.selected span,#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button:hover span{
+    color: white;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button.selected b,#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button:hover b{
+    color: white;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button.selected strong,#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul>li>.button:hover strong{
+    color: white;
+}
 #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li>span{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li>strong{}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul{
+    list-style: outside;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li>span{
+    color: #757575;
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li>span::before{content:'ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢';color: #D4D4D4;font-size: 20px;margin-right: 5px;}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li>strong{
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.475px;
+}
 #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li.BudgetFeeLi{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>p{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>p>span{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>p>strong{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>.checkBox{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>.checkBox input{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>.checkBox p{}
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>button{}
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting{}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>p{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>p>span{
+    color: #757575;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>p>strong{
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 60px */
+    letter-spacing: -0.76px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>.checkBox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>.checkBox input{margin-top: 0;margin-right: 15px;}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>.checkBox p{
+    color: #606060;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>button{
+    border-radius: 12px;
+    background: #252E60;
+    border: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+    padding: 20px 90px;
+    margin-top: 20px;
+    border:1px solid #252e60;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>button:hover{background-color:white; color:#252e60;border:1px solid #252e60;}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
 #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top{}
 #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top span{}
 #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top button{}
@@ -1745,18 +1888,53 @@ footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel
 /* ------------------ /AdsManagment.php ------------ */
 
 /* ------------------- CaseStudy.php --------------- */
-#CaseStudy{}
-#CaseStudy>.wrapper{}
-#CaseStudy>.wrapper .container{}
-#CaseStudy>.wrapper .container>header{}
-#CaseStudy>.wrapper .container>header #MainNavBar{}
+
+#WhiteMenu #MainNavBar #navbar{background: #252E60;color:white;}
+#WhiteMenu #MainNavBar>#navbar>.logo img{filter: brightness(10);}
+#WhiteMenu #MainNavBar>#navbar>nav>ul>.navIcon::after{filter: brightness(10);}
+#WhiteMenu #MainNavBar>.selectBox>ul>li a:hover{background: #252E60;color: white;}
+#WhiteMenu #MainNavBar>.selectBox{    background: #252E60;}
+#WhiteMenu #MainNavBar>.selectBox>ul>li a{color:white}
+#WhiteMenu #MainNavBar>#navbar>nav>ul>li>a{color:#c5ceff}
+#WhiteMenu #MainNavBar>.selectBox>ul>li a:hover{background:white; color:#252E60;}
 #CaseStudy>.wrapper .container>main{}
-#CaseStudy>.wrapper .container>main>section{}
-#CaseStudies{}
-#CaseStudies>.title{}
-#CaseStudies>.title h1{}
-#CaseStudies>.title p{}
-#CaseStudies>.box{}
+#CaseStudy>.wrapper .container>main>section{
+    margin-top: 130px;
+}
+#CaseStudy #CaseStudies{
+    margin-top: 70px;
+}
+#CaseStudies>.title{
+    margin-bottom: 70px;
+}
+#CaseStudies>.title h1{
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.475px;
+}
+#CaseStudies>.title p{
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.22px;
+    margin-top: 10px;
+}
+#CaseStudies>.box{
+}
+#CaseStudies>.box.customers>ul>li>a{
+    border-radius: 25px;
+    border: 1px solid #DFDFDF;
+    background: #FFF;
+}
 /* ------------------ /CaseStudy.php --------------- */
 
 /* ------------------- Single.php ------------------ */
@@ -1766,79 +1944,321 @@ footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel
 #Single header .container{}
 #Single header #MainNavBar{}
 #Single>.wrapper>main{}
-#Single>.wrapper>main>section{}
+#Single>.wrapper>main>section{
+    margin-top: 100px;
+}
 
 #SingleCover{}
 #SingleCover .container{}
-#SingleCover .container>.box{}
-#SingleCover .container>.box>.content{}
-#SingleCover .container>.box>.content>.logo{}
+#SingleCover .container>.box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#SingleCover .container>.box>.content{
+    position: relative;
+    width: 60%;
+}
+#SingleCover .container>.box>.content>.logo{
+    margin-bottom: 20px;
+}
 #SingleCover .container>.box>.content>.logo img{}
 #SingleCover .container>.box>.content>.text{}
-#SingleCover .container>.box>.content>.text>h1{}
-#SingleCover .container>.box>.content>.text>p{}
-#SingleCover .container>.box>.content>.text>.icon-more-info{}
-#SingleCover .container>.box>.content>.text>.icon-more-info img{}
-#SingleCover .container>.box>.content>.text>.icon-more-info span{}
-#SingleCover .container>.box>.img{}
+#SingleCover .container>.box>.content>.text>h1{
+    color: #252E60;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.275px;
+}
+#SingleCover .container>.box>.content>.text>p{
+    color: #3E3E3E;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.22px;
+}
+#SingleCover .container>.box>.content>.text>.icon-more-info{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#SingleCover .container>.box>.content>.text>.icon-more-info img{
+    margin-right: 10px;
+}
+#SingleCover .container>.box>.content>.text>.icon-more-info span{
+    color: #252E60;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+}
+#SingleCover .container>.box>.img{
+    border-radius: 36px;
+    background: #374073;
+    overflow: hidden;
+    width: 35%;
+}
 #SingleCover .container>.box>.img img{}
 
-#SingleIcons{}
+#SingleIcons{
+    border-radius: 40px;
+    background: #F2F4FF;
+    padding: 50px;
+    width: 90%;
+    margin: auto;
+}
 #SingleIcons .container{}
 #SingleIcons .container>ul{}
-#SingleIcons .container>ul>li{}
-#SingleIcons .container>ul>li>.img{}
+#SingleIcons .container>ul>li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 0;
+}
+#SingleIcons .container>ul>li>.img{
+    margin-right: 20px;
+}
 #SingleIcons .container>ul>li>.img>img{}
-#SingleIcons .container>ul>li>.text{}
-#SingleIcons .container>ul>li>.text strong{}
-#SingleIcons .container>ul>li>.text span{}
+#SingleIcons .container>ul>li>.text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#SingleIcons .container>ul>li>.text strong{
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2; /* 20.34px */
+    letter-spacing: -0.198px;
+}
+#SingleIcons .container>ul>li>.text.blue strong{color:#4755A5;}
+#SingleIcons .container>ul>li>.text.red strong{color:#EF416B;}
+#SingleIcons .container>ul>li>.text.green strong{color:#049430;}
+#SingleIcons .container>ul>li>.text span{
+    color: #5E5D5D;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 113%;
+    letter-spacing: -0.198px;
+}
+#SingleAbout h2{
+    color: #252E60;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.275px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#SingleAbout{
+    width: 90%;
+    margin: auto;
+}
+#SingleAbout .content{}
+#SingleAbout .content>.text{}
+#SingleAbout .content>.text>h2{}
+#SingleAbout .content>.text>p{
+    color: #3E3E3E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+    width: 60%;
+    margin: auto;
+}
+#SingleAbout .content>.img{
+    border-radius: 40px;
+    background: #F2F4FF;
+    overflow: hidden;
+    margin-top: 40px;
+}
+#SingleAbout .content>.img img{}
 
-#SingleAbout{}
-#SingleAbout .container{}
-#SingleAbout .container>.text{}
-#SingleAbout .container>.text>h2{}
-#SingleAbout .container>.text>p{}
-#SingleAbout .container>.img{}
-#SingleAbout .container>.img img{}
-
-#SingleRoad{}
+#SingleRoad{
+    background: #F2F4FF;
+    padding: 40px;
+    padding-bottom: 10px;
+}
 #SingleRoad .container{}
-#SingleRoad .container>ul{}
-#SingleRoad .container>ul::before{content: '';}
-#SingleRoad .container>ul>li{}
-#SingleRoad .container>ul>li>.text{}
-#SingleRoad .container>ul>li>.text::before{content: '';}
-#SingleRoad .container>ul>li>.text>h3{}
-#SingleRoad .container>ul>li>.text>p{}
+#SingleRoad .container>ul{
+    display: flex;
+    position: relative;
+}
+#SingleRoad .container>ul::before{content: '';border-left: 3px solid transparent;border-image: url(../images/border.svg) 30 round;position: absolute;height: 68%;left: -37px;top: 5px;}
+#SingleRoad .container>ul>li{
+    position: relative;
+    width: 90%;
+}
+#SingleRoad .container>ul>li>.text{position: relative;margin-bottom: 36px;}
+#SingleRoad .container>ul>li>.text::before{content: '';width: 28px;height: 28px;display: flex;background-color: #4755A5;border-radius: 100%;position: absolute;left: -50px;top: 2px;z-index: 2;box-shadow: 0px 0px 8px 7px #9FBAFF;}
+#SingleRoad .container>ul>li>.text>h3{
+    color: #252E60;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.275px;
+}
+#SingleRoad .container>ul>li>.text>p{
+    color: #3E3E3E;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+}
 
 #CaseSpecialist{}
 #CaseSpecialist .container{}
-#CaseSpecialist .container>.box{}
-#CaseSpecialist .container>.box>.profile{}
-#CaseSpecialist .container>.box>.profile>img{}
-#CaseSpecialist .container>.box>.profile>.socials{}
-#CaseSpecialist .container>.box>.profile>.socials>.icons{}
+#CaseSpecialist .container>.box{
+    position: relative;
+    display: flex;
+}
+#CaseSpecialist .container>.box>.profile{
+    border-radius: 20px;
+    background: #252E60;
+    overflow: hidden;
+    height: 100%;
+}
+#CaseSpecialist .container>.box>.profile>img{
+    width: 100%;
+}
+#CaseSpecialist .container>.box>.profile>.socials{
+    background: #252E60;
+}
+#CaseSpecialist .container>.box>.profile>.socials>.icons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+}
 #CaseSpecialist .container>.box>.profile>.socials>.icons>a{}
 #CaseSpecialist .container>.box>.profile>.socials>.icons>a:hover{}
-#CaseSpecialist .container>.box>.profile>.socials>.icons>a>img{}
-#CaseSpecialist .container>.box>.content{}
-#CaseSpecialist .container>.box>.content>h3{}
-#CaseSpecialist .container>.box>.content>span{}
+#CaseSpecialist .container>.box>.profile>.socials>.icons>a>img{transition:all .3s;}
+#CaseSpecialist .container>.box>.profile>.socials>.icons>a.linkedin:hover img{transform:scale(1.2);filter: drop-shadow(1px 1px 3px #20A0E1);}
+#CaseSpecialist .container>.box>.profile>.socials>.icons>a.whatsapp:hover img{transform:scale(1.2);filter: drop-shadow(1px 1px 3px #4FCE5D);}
+#CaseSpecialist .container>.box>.profile>.socials>.icons>a.phone:hover img{transform:scale(1.2);filter: drop-shadow(1px 1px 3px #B150FD);}
+#CaseSpecialist .container>.box>.content{
+    position: relative;
+    width: 100%;
+    padding: 25px;
+}
+#CaseSpecialist .container>.box>.content>h3{
+    color: #252E60;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.275px;
+}
+#CaseSpecialist .container>.box>.content>span{
+    color: #252E60;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.22px;
+}
 #CaseSpecialist .container>.box>.content>.info{}
 #CaseSpecialist .container>.box>.content>.info>span{}
-#CaseSpecialist .container>.box>.content>.info>.icon{}
-#CaseSpecialist .container>.box>.content>.info>.icon>ul{}
-#CaseSpecialist .container>.box>.content>.info>.icon>ul>li{}
-#CaseSpecialist .container>.box>.content>.info>.icon>ul>li>img{}
-#CaseSpecialist .container>.box>.content>.info>.icon>ul>li>span{}
-#CaseSpecialist .container>.box>.content>.info>p{}
-#CaseSpecialist .container>.box>.content>.info>span{}
-#CaseSpecialist .container>.box>.content>.info>ul{}
+#CaseSpecialist .container>.box>.content>.info>.icon{
+    margin: 10px 0;
+}
+#CaseSpecialist .container>.box>.content>.info>.icon>ul{
+    position: relative;
+    display: flex;
+}
+#CaseSpecialist .container>.box>.content>.info>.icon>ul>li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#CaseSpecialist .container>.box>.content>.info>.icon>ul>li>img{
+    width: 30px;
+}
+#CaseSpecialist .container>.box>.content>.info>.icon>ul>li>span{
+    color: #252E60;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+    margin: 0 10px;
+}
+#CaseSpecialist .container>.box>.content>.info>p{
+    color: #3E3E3E;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+    margin-bottom: 10px;
+}
+#CaseSpecialist .container>.box>.content>.info>span{
+    color: #A0A0A0;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.176px;
+}
+#CaseSpecialist .container>.box>.content>.info>ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 4px;
+}
 #CaseSpecialist .container>.box>.content>.info>ul>li{}
-#CaseSpecialist .container>.box>.content>.info>ul>li>a{}
-#CaseSpecialist .container>.box>.content>.info>ul>li>a:hover{}
-#CaseSpecialist .container>.box>.content>.info>ul>li>a>span{}
-#CaseSpecialist .container>.box>.content>.info>ul>li>a>img{}
+#CaseSpecialist .container>.box>.content>.info>ul>li>a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 20px;
+    transition: all 3s;
+}
+#CaseSpecialist .container>.box>.content>.info>ul>li>a:hover{filter: hue-rotate(305deg);}
+#CaseSpecialist .container>.box>.content>.info>ul>li>a>span{
+    color: #6288E8;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.154px;
+    text-decoration-line: underline;
+}
+#CaseSpecialist .container>.box>.content>.info>ul>li>a>img{
+    width: 17px;
+    height: 17px;
+    margin-left: 5px;
+}
 /* ------------------ /Single.php ------------------ */
 
 /* ------------------- AboutUs.php ----------------- */
@@ -1938,37 +2358,174 @@ footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel
 #ContactUs>.wrapper .container>header{}
 #ContactUs>.wrapper .container>header #MainNavBar{}
 #ContactUs>.wrapper .container>main{}
-#ContactUs>.wrapper .container>main section{}
+#ContactUs>.wrapper .container>main section{
+    margin-top: 70px;
+}
 #ContactUs #links{}
-#ContactUs #links>.title{}
-#ContactUs #links>.title>h1{}
-#ContactUs #links>.title>p{}
-#ContactUs #links>.locationInfo{}
-#ContactUs #links>.locationInfo>.map{}
-#ContactUs #links>.locationInfo>.map>a{}
+#ContactUs #links>.title{
+    margin-bottom: 20px;
+}
+#ContactUs #links>.title>h1{
+    color: #252E60;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.275px;
+    text-align: center;
+}
+#ContactUs #links>.title>p{
+    color: #3E3E3E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+    text-align: center;
+}
+#ContactUs #links>.locationInfo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    border-radius: 40px;
+    background: #252E60;
+    overflow: hidden;
+}
+#ContactUs #links>.locationInfo>.map{
+    position: relative;
+    z-index: 0;
+    /* height: 100%; */
+    width: 100%;
+}
+#ContactUs #links>.locationInfo>.map>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
 #ContactUs #links>.locationInfo>.map>a:hover{}
-#ContactUs #links>.locationInfo>.map>a img{}
-#ContactUs #links>.locationInfo>.textBox{}
-#ContactUs #links>.locationInfo>.textBox>ul{}
-#ContactUs #links>.locationInfo>.textBox>ul>li{}
-#ContactUs #links>.locationInfo>.textBox>ul>li>img{}
-#ContactUs #links>.locationInfo>.textBox>ul>li a{}
+#ContactUs #links>.locationInfo>.map>a img{
+    height: 100%;
+}
+#ContactUs #links>.locationInfo>.textBox{
+    position: absolute;
+    z-index: 1;
+    border-radius: 30px;
+    background: #FFF;
+    padding: 44px;
+    height: 83%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 30px;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ContactUs #links>.locationInfo>.textBox>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ContactUs #links>.locationInfo>.textBox>ul>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ContactUs #links>.locationInfo>.textBox>ul>li>img{
+    margin-bottom: 10px;
+    height: 32px;
+}
+#ContactUs #links>.locationInfo>.textBox>ul>li a{
+    margin-bottom: 30px;
+}
 #ContactUs #links>.locationInfo>.textBox>ul>li a:hover{}
-#ContactUs #links>.locationInfo>.textBox>ul>li p{}
-#ContactUs #links>.socialsNetwork{}
-#ContactUs #links>.socialsNetwork>ul{}
+#ContactUs #links>.locationInfo>.textBox>ul>li p{
+    color: #252E60;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+}
+#ContactUs #links>.socialsNetwork{
+    margin-top: 50px;
+}
+#ContactUs #links>.socialsNetwork>ul{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 #ContactUs #links>.socialsNetwork>ul>li{}
-#ContactUs #links>.socialsNetwork>ul>li>a{}
-#ContactUs #links>.socialsNetwork>ul>li>a:hover{}
-#ContactUs #links>.socialsNetwork>ul>li>a>img{}
-#ContactUs #links>.socialsNetwork>ul>li>a>span{}
+#ContactUs #links>.socialsNetwork>ul>li>a{
+    border-radius: 25px;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+}
+#ContactUs #links>.socialsNetwork>ul>li>a:hover{border: 1px solid #242e61;}
+#ContactUs #links>.socialsNetwork>ul>li>a>img{margin-bottom: 20px;}
+#ContactUs #links>.socialsNetwork>ul>li>a>span{
+    color: #252E60;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2; /* 36.63px */
+    letter-spacing: -0.198px;
+}
 #ContactUs #mainForm{}
 #ContactUs #mainForm>.title{}
-#ContactUs #mainForm>.title>h2{}
-#ContactUs #mainForm>.title>p{}
-#ContactUs #mainForm>.form.contactUs{}
+#ContactUs #mainForm>.title>h2{
+    color: #252E60;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.275px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#ContactUs #mainForm>.title>p{
+    color: #3E3E3E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+}
+#ContactUs #mainForm>.form.contactUs{
+    margin-top: 30px;
+}
 #ContactUs #mainForm form{}
-#ContactUs #mainForm form>span{}
+#ContactUs #mainForm form>span{
+    color: #BCBCBC;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.154px;
+}
 #ContactUs #mainForm form>.custom-select{}
 #ContactUs #mainForm form>.custom-select>select{}
 #ContactUs #mainForm form>.custom-select>select option{}
@@ -1978,16 +2535,68 @@ footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel
 #ContactUs #mainForm form>.custom-input input::placeholder{}
 #ContactUs #mainForm form>.custom-input .bottom-line{}
 #ContactUs #mainForm form>.custom-input .bottom-line .fill-line{}
-#ContactUs #mainForm form>.button{}
-#ContactUs #mainForm form>.button button{}
-#ContactUs #mainForm .bottomText{}
-#ContactUs #mainForm .bottomText>strong{}
-#ContactUs #mainForm .bottomText>ul{}
-#ContactUs #mainForm .bottomText>ul>li{}
-#ContactUs #mainForm .bottomText>ul>li>a{}
+#ContactUs #mainForm form>.button{
+    text-align: center;
+}
+#ContactUs #mainForm form>.button button{
+    border-radius: 12px;
+    background: #252E60;
+    padding: 24px 120px;
+    width: fit-content;
+    border: 1px solid #252E60;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    display: flex;
+    margin: auto;
+}
+#ContactUs #mainForm form>.button button:hover{background: #fff; color:#252E60;}
+#ContactUs #mainForm .bottomText{
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+#ContactUs #mainForm .bottomText>strong{
+    color: #252E60;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.275px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#ContactUs #mainForm .bottomText>ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ContactUs #mainForm .bottomText>ul>li{
+    margin: 20px;
+}
+#ContactUs #mainForm .bottomText>ul>li>a{
+    border-radius: 10px;
+    background: white;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #ContactUs #mainForm .bottomText>ul>li>a:hover{}
-#ContactUs #mainForm .bottomText>ul>li:nth-child(1)>a:hover{}
-#ContactUs #mainForm .bottomText>ul>li:nth-child(2)>a:hover{}
+#ContactUs #mainForm .bottomText>ul>li>a.linkedin:hover{background: #007AB9;}
+#ContactUs #mainForm .bottomText>ul>li>a.linkedin:hover img{filter: brightness(4);}
+#ContactUs #mainForm .bottomText>ul>li>a.instagram:hover{background: #7E00B9;}
+#ContactUs #mainForm .bottomText>ul>li>a.instagram:hover img{filter: brightness(4);}
 #ContactUs #mainForm .bottomText>ul>li>a:hover img{}
-#ContactUs #mainForm .bottomText>ul>li>a>img{}
+#ContactUs #mainForm .bottomText>ul>li>a>img{
+    height: 33px;
+    filter: brightness(0.5);
+    transition: all .3s;
+}
 /* ------------------ /ContactUs.php --------------- */

@@ -5,7 +5,7 @@
 <body id="AboutUs">
     <div class="wrapper AboutUs-page">
         <div class="container">
-            <header>
+            <header id="WhiteMenu">
                 <?php include('nav.php'); ?>
             </header>
             <main>

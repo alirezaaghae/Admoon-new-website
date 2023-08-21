@@ -5,7 +5,7 @@
 <body id="CaseStudy">
     <div class="wrapper CaseStudy-page">
         <div class="container">
-            <header>
+            <header id="WhiteMenu">
                 <?php include('nav.php'); ?>
             </header>
             <main> 
@@ -17,7 +17,7 @@
                     <div class="box customers">
                         <ul class="row">
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
-                                <a href="Zarifbar.php">
+                                <a href="Single.php">
                                     <div class="img">
                                         <img src="assets/images/C1Home.png" alt="Zarifbar-img" title="Zarifbar-img">
                                         <img src="assets/images/C1Logo.svg" alt="Zarifbar-logo" title="Zarifbar-logo">
@@ -25,7 +25,7 @@
                                     <div class="content">
                                         <div class="text">
                                             <h3>Zarif Bar</h3>
-                                            <div class="icon-more-info"><img src="assets/images/search-icon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
+                                            <div class="icon-more-info"><img src="assets/images/searchIcon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
                                             <p>Tour Gasht achieve a 250%+ boost in Return on Ad Spend</p>
                                         </div>
                                         <div class="item">
@@ -48,7 +48,7 @@
                                 </a>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
-                                <a href="spa.php">
+                                <a href="Single.php">
                                     <div class="img">
                                         <img src="assets/images/C2Home.png" alt="spa-img" title="spa-img">
                                         <img src="assets/images/C2Logo.svg" alt="spa-logo" title="spa-logo">
@@ -56,7 +56,7 @@
                                     <div class="content">
                                         <div class="text">
                                             <h3>Spa Iranian</h3>
-                                            <div class="icon-more-info"><img src="assets/images/search-icon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
+                                            <div class="icon-more-info"><img src="assets/images/searchIcon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
                                             <p>Spa Iranina Save 40% on costs</p>
                                         </div>
                                         <div class="item">
@@ -79,7 +79,7 @@
                                 </a>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
-                                <a href="TourGasht.php">
+                                <a href="Single.php">
                                     <div class="img">
                                         <img src="assets/images/C3Home.png" alt="TourGasht-img" title="TourGasht-img">
                                         <img src="assets/images/C3Logo.svg" alt="TourGasht-logo" title="TourGasht-logo">
@@ -87,7 +87,7 @@
                                     <div class="content">
                                         <div class="text">
                                             <h3>Tour Gasht</h3>
-                                            <div class="icon-more-info"><img src="assets/images/search-icon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
+                                            <div class="icon-more-info"><img src="assets/images/searchIcon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
                                             <p>Tour Gasht achieve a 250%+ boost in Return on Ad Spend</p>
                                         </div>
                                         <div class="item">

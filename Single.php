@@ -15,12 +15,12 @@
                 <div class="box">
                     <div class="content">
                         <div class="logo">
-                            <img src="assets/images/C1Logo.svg" alt="spa-iranian" title="spa-iranian">
+                            <img src="assets/images/SingleLogo.svg" alt="spa-iranian" title="spa-iranian">
                         </div>
                         <div class="text">
                             <h1>Zarif Bar</h1>
-                            <div class="icon-more-info"><img src="assets/images/search-icon.svg" alt="search-icon" title="search-icon"><span>Search campaign</span></div>
-                            <p>Tour Gasht achieve a 250%+ boost in Return on Ad Spend</p>
+                            <div class="icon-more-info"><img src="assets/images/searchIcon.svg" alt="searchIcon" title="searchIcon"><span>Search campaign</span></div>
+                            <p>Zarife Bar achieve a 250%+ boost in Return on Ad Spend with our expert campaign management</p>
                         </div>
                     </div>
                     <div class="img">
@@ -34,69 +34,69 @@
                 <ul class="row icons">
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon1.svg" alt="time" title="time"></div>
-                        <div class="text"><strong>May 26, 2022 – April 27, 2023</strong><span>Time period</span></div>
+                        <div class="text blue"><strong>May 26, 2022 – April 27, 2023</strong><span>Time period</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon2.svg" alt="location" title="location"></div>
-                        <div class="text"><strong>Dubai</strong><span>Location</span></div>
+                        <div class="text blue"><strong>Dubai</strong><span>Location</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon3.svg" alt="ads-spend" title="ads-spend"></div>
-                        <div class="text"><strong>$35,000</strong><span>Total ad spend</span></div>
+                        <div class="text blue"><strong>$35,000</strong><span>Total ad spend</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon4.svg" alt="click" title="click"></div>
-                        <div class="text"><strong>$2.5</strong><span>Average cost per click</span></div>
+                        <div class="text blue"><strong>$2.5</strong><span>Average cost per click</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon5.svg" alt="Total-sale" title="Total-sale"></div>
-                        <div class="text"><strong>%52</strong><span>Total sale</span></div>
+                        <div class="text blue"><strong>%52</strong><span>Total sale</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon6.svg" alt="revenue" title="revenue"></div>
-                        <div class="text"><strong>$55,000</strong><span>revenue</span></div>
+                        <div class="text blue"><strong>$55,000</strong><span>revenue</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon7.svg" alt="Total-conversions" title="Total-conversions"></div>
-                        <div class="text"><strong>%42</strong><span>Total conversions</span></div>
+                        <div class="text blue"><strong>%42</strong><span>Total conversions</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon8.svg" alt="ROAS" title="ROAS"></div>
-                        <div class="text"><strong>%250</strong><span>Increase</span></div>
+                        <div class="text green"><strong>%250</strong><span>Increase</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon9.svg" alt="RIO" title="RIO"></div>
-                        <div class="text"><strong>%40</strong><span>Increase</span></div>
+                        <div class="text green"><strong>%40</strong><span>Increase</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon10.svg" alt="CPC" title="CPC"></div>
-                        <div class="text"><strong>%35</strong><span>Increase</span></div>
+                        <div class="text green"><strong>%35</strong><span>Increase</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon11.svg" alt="CTR" title="CTR"></div>
-                        <div class="text"><strong>%25</strong><span>Increase</span></div>
+                        <div class="text green"><strong>%25</strong><span>Increase</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon12.svg" alt="Con.rate" title="Con.rate"></div>
-                        <div class="text"><strong>%80</strong><span>Increase</span></div>
+                        <div class="text green"><strong>%80</strong><span>Increase</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon13.svg" alt="CPA" title="CPA"></div>
-                        <div class="text"><strong>%20</strong><span>Decrease</span></div>
+                        <div class="text red"><strong>%20</strong><span>Decrease</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon14.svg" alt="Cost" title="Cost"></div>
-                        <div class="text"><strong>%30</strong><span>Decrease</span></div>
+                        <div class="text red"><strong>%30</strong><span>Decrease</span></div>
                     </li>
                     <li class="icon col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="img"><img src="assets/images/singleIcons/singleIcon15.svg" alt="Con.rate" title="Con.rate"></div>
-                        <div class="text"><strong>%80</strong><span>Decrease</span></div>
+                        <div class="text red"><strong>%80</strong><span>Decrease</span></div>
                     </li>
                 </ul>
             </div>
         </section>
         <section id="SingleAbout">
-            <div class="container">
+            <div class="content">
                 <div class="text">
                     <h2>About Zarif bar</h2>
                     <p>During the process of creating an audit for your Google Ads campaign, our team follows a meticulous and comprehensive approach to ensure no stone is left unturned. Here's a breakdown of what we do During the process of creating an audit for your Google Ads campaign, our team follows a meticulous and comprehensive approach to ensure no stone is left unturned. Here's a breakdown of what we do During the process of creating an audit for your Google Ads campaign, our team follows a meticulous and comprehensive approach to ensure no stone is left unturned. Here's a breakdown of what we do:</p>
@@ -137,9 +137,9 @@
                         <img src="assets/images/Armin.png" alt="profile" title="profile">
                         <div class="socials">
                             <div class="icons">
-                                <a href="#" target="_blank"><img src="assets/images/LinkdinIcon.svg" alt="linkedin" title="linkedin"></a>
-                                <a href="#" target="_blank"><img src="assets/images/whatsappIcon.svg" alt="whatsapp" title="whatsapp"></a>
-                                <a href="#" target="_blank"><img src="assets/images/phoneIcon.svg" alt="phone" title="phone"></a>
+                                <a href="#" class="linkedin" target="_blank"><img src="assets/images/LinkdinIcon.svg" alt="linkedin" title="linkedin"></a>
+                                <a href="#" class="whatsapp" target="_blank"><img src="assets/images/whatsappIcon.svg" alt="whatsapp" title="whatsapp"></a>
+                                <a href="#" class="phone" target="_blank"><img src="assets/images/phoneIcon.svg" alt="phone" title="phone"></a>
                             </div>
                         </div>
                     </div>
