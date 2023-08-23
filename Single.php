@@ -4,7 +4,7 @@
 <!-- page -->
 <body id="Single">
     <div class="wrapper Single-page">
-    <header>
+    <header id="WhiteMenu">
         <div class="container">
             <?php include('nav.php'); ?>
         </div>

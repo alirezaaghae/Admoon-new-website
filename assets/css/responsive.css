@@ -11,6 +11,7 @@
 
 @media only screen and (min-width: 320px) and (max-width: 760px) {
    /* mobile */
+   .mobile{display: inherit;}.desktop{display: none !important;}
    .wrapper{}
    .wrapper>.container{}
    .wrapper>.container>header{}
@@ -31,7 +32,9 @@
    .form .select-hide {}
    .form .select-items div:hover, .same-as-selected {}
    .form{}
-   .form>div{}
+   .form>div{
+    margin-bottom: 0;
+}
    .bottom-line{}
    .bottom-line .fill-line{}
    .form input{}
@@ -62,14 +65,23 @@
    /* center form */
    .form-input.center[state="success"]{}
    .form-input.center{}
-   .form-input.center .top-label{}
+   .form-input.center .top-label{
+    left: 0;
+}
    .form-input.center .top-label input{}
-   .form-input.center .top-label label{}
+   .form-input.center .top-label label{
+    font-size: 11px;
+}
    .form-input.center[state="email"] .top-label label[value="0"], .form-input.center[state="name"] .top-label label[value="1"], .form-input.center[state="phone"] .top-label label[value="2"], .form-input.center[state="website"] .top-label label[value="3"]{}
    .form-input.center .top-label label:hover{}
    .form-input.center form{}
-   .form-input form{}
-   .form-input.center form .inputs{}
+   .form-input form{
+    flex-direction: column;
+    height: 160px;
+}
+   .form-input.center form .inputs{
+    width: 100%;
+}
    .form-input.center form .inputs .Email-input{}
    .form-input.center form .inputs .Email-input input{}
    .form-input.center form .inputs input{}
@@ -88,7 +100,11 @@
    .form-input.center form .inputs .website-input{}
    .form-input.center form .inputs .website-input input{}
    .form-input.center form .inputs .website-input input::placeholder{}
-   .form-input.center form .next_button{}
+   .form-input.center form .next_button{
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
+}
    .form-input.center form .next_button:hover{}
    .wrapper .form-input form .inputs .website-input{}  
    .form-input[state='email'] form .inputs .Email-input, .form-input[state='name'] form .inputs .Name-input, .form-input[state='phone'] form .inputs .phone-input, .form-input[state='website'] form .inputs .website-input{top:0;}
@@ -112,8 +128,16 @@
    
    /* ------------------- navbar.php ------------------ */
    #MainNavBar{}
-   #MainNavBar>#navbar{}
-   #MainNavBar>#navbar>.logo{}
+   #MainNavBar>#navbar{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+   #MainNavBar>#navbar>.logo{
+    filter: brightness(10);
+}
    #MainNavBar>#navbar>.logo img{}
    #MainNavBar>#navbar>nav{}
    #MainNavBar>#navbar>nav>ul{}
@@ -138,36 +162,69 @@
    
    /* ------------------- footer.php ------------------ */
    footer{}
-   footer.site-footer{}
-   footer.site-footer>.footerContact{}
-   footer.site-footer>.footerContact>.container{}
-   footer.site-footer>.footerContact>.container .location{}
-   footer.site-footer>.footerContact>.container .location .map{}
+   footer.site-footer{
+    margin: 40px auto 0 auto;
+    width: 100%;
+}
+   footer.site-footer>.footerContact{
+    padding: 15px 0px;
+    overflow: hidden;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: -20px;
+}
+   footer.site-footer>.footerContact>.container{
+    flex-direction: column-reverse;
+}
+   footer.site-footer>.footerContact>.container .location{
+    width: 100%;
+}
+   footer.site-footer>.footerContact>.container .location .map{
+    border-radius: 0;
+    transform: scale(1.1);
+}
    footer.site-footer>.footerContact>.container .location .map:hover{}
    footer.site-footer>.footerContact>.container .location .map img{}
    footer.site-footer>.footerContact>.container .location .text{}
    footer.site-footer>.footerContact>.container .location .text>ul{}
-   footer.site-footer>.footerContact>.container .location .text>ul>li{}
-   footer.site-footer>.footerContact>.container .location .text>ul>li img{}
-   footer.site-footer>.footerContact>.container .location .text>ul>li a{}
+   footer.site-footer>.footerContact>.container .location .text>ul>li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+   footer.site-footer>.footerContact>.container .location .text>ul>li img{
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+   footer.site-footer>.footerContact>.container .location .text>ul>li a{
+    margin-right: 0;
+}
    footer.site-footer>.footerContact>.container .location .text>ul>li a:hover{}
+
+   footer.site-footer>.footerContact>.container #footerform{
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+   footer.site-footer>.footerContact>.container #footerform form{}
+   footer.site-footer>.footerContact>.container #footerform form>span{}
+   footer.site-footer>.footerContact>.container #footerform form>.footer-select{}
+   footer.site-footer>.footerContact>.container #footerform form>.footer-select>select{}
+   footer.site-footer>.footerContact>.container #footerform form>.footer-select>select option{}
+   footer.site-footer>.footerContact>.container #footerform form>.footer-input{}
+   footer.site-footer>.footerContact>.container #footerform form>.footer-input label{}
+   footer.site-footer>.footerContact>.container #footerform form>.footer-input input{}
+   footer.site-footer>.footerContact>.container #footerform form>.footer-input input::placeholder{}
+   footer.site-footer>.footerContact>.container #footerform form>.footer-input .bottom-line{}
+   footer.site-footer>.footerContact>.container #footerform form>.footer-input .bottom-line .fill-line{}
+   footer.site-footer>.footerContact>.container #footerform form>.footer-button{}
+   footer.site-footer>.footerContact>.container #footerform form>.footer-button button{}
    
-   footer.site-footer>.footerContact>.container .footerform{}
-   footer.site-footer>.footerContact>.container .footerform form{}
-   footer.site-footer>.footerContact>.container .footerform form>span{}
-   footer.site-footer>.footerContact>.container .footerform form>.footer-select{}
-   footer.site-footer>.footerContact>.container .footerform form>.footer-select>select{}
-   footer.site-footer>.footerContact>.container .footerform form>.footer-select>select option{}
-   footer.site-footer>.footerContact>.container .footerform form>.footer-input{}
-   footer.site-footer>.footerContact>.container .footerform form>.footer-input label{}
-   footer.site-footer>.footerContact>.container .footerform form>.footer-input input{}
-   footer.site-footer>.footerContact>.container .footerform form>.footer-input input::placeholder{}
-   footer.site-footer>.footerContact>.container .footerform form>.footer-input .bottom-line{}
-   footer.site-footer>.footerContact>.container .footerform form>.footer-input .bottom-line .fill-line{}
-   footer.site-footer>.footerContact>.container .footerform form>.footer-button{}
-   footer.site-footer>.footerContact>.container .footerform form>.footer-button button{}
-   
-   footer.site-footer>.footerNav.desktop{}
+   footer.site-footer>.footerNav.desktop{
+    display: none;
+}
    footer.site-footer>.footerNav.desktop>.logo{}
    footer.site-footer>.footerNav.desktop>.logo>img{}
    footer.site-footer>.footerNav.desktop>.footerNavBar{}
@@ -190,70 +247,179 @@
    footer.site-footer>.footerNav.desktop>.trustUs>.Social ul li a img{}
    footer.site-footer>.footerNav.desktop>.trustUs>.Social ul li a:hover{}
    
-   footer.site-footer>.footerNav.mobile{}
+   footer.site-footer>.footerNav.mobile{
+    border-radius: 20px 20px 0px 0px;
+    background: #252E60;
+    overflow: hidden;
+}
    footer.site-footer>.footerNav.mobile .footerNavBar{}
    footer.site-footer>.footerNav.mobile .footerNavBar>ul{}
    footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group{}
-   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel{}
-   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-heading{}
-   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-heading h4{}
-   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-heading a{}
+   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel{
+    background: #252E60;
+    text-align: center;
+    color: white;
+}
+   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-heading{
+    padding: 20px;
+}
+   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-heading h4{
+    position: relative;
+    display: block;
+}
+   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-heading a{display: block;color: #E6E6E6;font-family: Inter;font-size: 18px;font-style: normal;font-weight: 700;line-height: 150%; /* 27px */letter-spacing: -0.198px;}
    footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-heading a:hover{}
-   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-heading a img{}
+   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-heading a img{
+    margin-left: 10px;
+}
    footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-collapse{}
    footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-collapse ul{}
-   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-collapse ul li{}
-   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-collapse ul li a{}
+   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-collapse ul li{
+    background: #1a214c;
+    text-align: center;
+    border: none;
+    padding: 20px;
+}
+   footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-collapse ul li a{
+    color: #E6E6E6;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+}
    footer.site-footer>.footerNav.mobile .footerNavBar>ul>.panel-group>.panel>.panel-collapse ul li a:hover{}
    /* ------------------ /footer.php ------------------ */
    
    /* ------------------- index.php ------------------- */
    #homePage{}
    #homePage>.wrapper{}
-   #homePage>.wrapper>header{}
+   #homePage>.wrapper>header{
+    background-image: url(../images/homeHeaderBGmobile.jpg);
+    background-position: 100% 1%;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    height: 100vh;
+}
    #homePage>.wrapper>header>.container{}
    #homePage>.wrapper>header>.container #MainNavBar{}
-   #homePage>.wrapper>header>.container>.content{}
-   #homePage>.wrapper>header>.container>.content>.text{}
-   #homePage>.wrapper>header>.container>.content>.text h1{}
-   #homePage>.wrapper>header>.container>.content>.text h1 span{}
-   #homePage>.wrapper>header>.container>.content>.text a{}
+   #homePage>.wrapper>header>.container>.content{
+    /* margin-top: 100%; */
+    position: relative;
+    top: 36%;
+}
+   #homePage>.wrapper>header>.container>.content>.text{
+    text-align: center;
+}
+   #homePage>.wrapper>header>.container>.content>.text h1{
+    font-size: 20px;
+    text-align: center;
+}
+   #homePage>.wrapper>header>.container>.content>.text h1 span{
+    font-size: 30px;
+}
+   #homePage>.wrapper>header>.container>.content>.text a{
+    margin: 20px auto;
+}
    #homePage>.wrapper>header>.container>.content>.img{}
    #homePage>.wrapper>header>.container>.content>.img img{}
-   #homePage>.wrapper>header>.container>.content>.bottomItems{}
-   #homePage>.wrapper>header>.container>.content>.bottomItems ul.desktop{}
-   #homePage>.wrapper>header>.container>.content>.bottomItems ul.desktop li strong{}
-   #homePage>.wrapper>header>.container>.content>.bottomItems ul.desktop li span{}
-   #homePage>.wrapper>header>.container>.content>.bottomItems ul.mobile{}
-   #homePage>.wrapper>header>.container>.content>.bottomItems ul.mobile li{}
-   #homePage>.wrapper>header>.container>.content>.bottomItems ul.mobile li .items{}
-   #homePage>.wrapper>header>.container>.content>.bottomItems ul.mobile li .items .item{}
-   #homePage>.wrapper>header>.container>.content>.bottomItems ul.mobile li .items .item strong{}
-   #homePage>.wrapper>header>.container>.content>.bottomItems ul.mobile li .items .item span{}
+   #homePage>.wrapper>header>.bottomItems{
+    width: 90%;
+}
+   #homePage>.wrapper>header>.bottomItems ul.desktop{}
+   #homePage>.wrapper>header>.bottomItems ul.desktop li strong{}
+   #homePage>.wrapper>header>.bottomItems ul.desktop li span{}
+   #homePage>.wrapper>header>.bottomItems ul.mobile{
+    display: flex;
+    justify-content: space-between;
+}
+   #homePage>.wrapper>header>.bottomItems ul.mobile li{
+    border-radius: 18px 18px 0px 0px;
+    background: #FFF;
+    width: 49%;
+}
+   #homePage>.wrapper>header>.bottomItems ul.mobile li .items{
+    padding: 23px;
+    overflow: hidden;
+}
+   #homePage>.wrapper>header>.bottomItems ul.mobile li .items .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+   #homePage>.wrapper>header>.bottomItems ul.mobile li .items .item strong{
+    color: #1128A7;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+}
+   #homePage>.wrapper>header>.bottomItems ul.mobile li .items .item span{
+    color: #727272;
+    text-align: center;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+}
    
    #homePage>.wrapper>main{}
-   #homePage>.wrapper>main>section{}
-   #homePage>.wrapper>main>section h2{}
+   #homePage>.wrapper>main>section{
+    margin-top: 50px;
+}
+   #homePage>.wrapper>main>section h2{
+    font-size: 25px;
+}
    #WhoAreWe{}
    #WhoAreWe>.container{}
    #WhoAreWe>.container h2{}
-   #WhoAreWe>.container>.content{}
-   #WhoAreWe>.container>.content>.text{}
-   #WhoAreWe>.container>.content>.text>p{}
+   #WhoAreWe>.container>.content{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+}
+   #WhoAreWe>.container>.content>.text{
+    width: 90%;
+    margin-top: 20px;
+    text-align: center;
+}
+   #WhoAreWe>.container>.content>.text>p{
+    font-size: 16px;
+    text-align: left;
+}
    #WhoAreWe>.container>.content>.text>ul{}
-   #WhoAreWe>.container>.content>.text>ul>li{}
-   #WhoAreWe>.container>.content>.text>ul>li strong{}
-   #WhoAreWe>.container>.content>.text>ul>li span{}
+   #WhoAreWe>.container>.content>.text>ul>li{
+    display: flex;
+}
+   #WhoAreWe>.container>.content>.text>ul>li strong{
+    width: 20%;
+}
+   #WhoAreWe>.container>.content>.text>ul>li span{
+    width: 100%;
+}
    #WhoAreWe>.container>.content>.text>a{}
    #WhoAreWe>.container>.content>.text>a:hover{}
-   #WhoAreWe>.container>.content>.img{}
+   #WhoAreWe>.container>.content>.img{
+    width: 100%;
+}
    #WhoAreWe>.container>.content>.img img{}
-   #ProvenSuccess{}
+   #ProvenSuccess{
+    padding: 40px 10px;
+}
    #ProvenSuccess>.container{}
    #ProvenSuccess>.container>h2{}
-   .box.customers{}
+   .box.customers{
+    margin-top: 20px;
+}
    .box.customers>ul{}
-   .box.customers>ul>li{}
+   .box.customers>ul>li{
+    margin-bottom: 20px;
+}
    .box.customers>ul>li>a{}
    .box.customers>ul>li>a .img{}
    .box.customers>ul>li>a .img img:nth-child(1){}
@@ -282,9 +448,14 @@
    #ProvideForYou{}
    #ProvideForYou .container{}
    #ProvideForYou .container>h2{}
-   #ProvideForYou .container>.boxs{}
+   #ProvideForYou .container>.boxs{
+    margin-top: 20px;
+}
    #ProvideForYou .container>.boxs>ul{}
    #ProvideForYou .container>.boxs>ul>li{}
+   #ProvideForYou .container>.boxs>ul>li>.box{
+    padding: 30px;
+}
    #ProvideForYou .container>.boxs>ul>li.box{}
    #ProvideForYou .container>.boxs>ul>li.box>.content{}
    #ProvideForYou .container>.boxs>ul>li.box>.content>h3{}
@@ -305,20 +476,67 @@
    #ProvideForYou .container>.boxs>ul>li.box>.pricing strong{}
    #ProvideForYou .container>.boxs>ul>li.box>.pricing strong del{}
    #ProvideForYou .container>.boxs>ul>li .moreButton{}
-   #ProvideForYou .container>.boxs>ul>li.box.AdsManagement{}
-   #ProvideForYou .container>.boxs>ul>li.box.Audit{}
-   #ProvideForYou .container>.boxs>ul>li.box.TuneUp{}
-   #ProvideForYou .container>.boxs>ul>li.box.AccountSuspension{}
+   #ProvideForYou .container>.boxs>ul>li>.box.AdsManagement{display: flex;flex-direction: column;padding: 30px;background: linear-gradient(180deg, #252E60 47.54%, #5D76FF 100%);}
+   #ProvideForYou .container>.boxs>ul>li>.box.AdsManagement>.content{
+    width: 100%;
+    padding: 0;}
+   #ProvideForYou .container>.boxs>ul>li>.box.Audit{
+}
+   #ProvideForYou .container>.boxs>ul>li>.box>.prices{
+    width: 100%;
+    padding: 0;
+}
+#ProvideForYou .container>.boxs>ul>li>.box>.prices>ul{
+}
+#ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li{}
+#ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .title{
+}
+#ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .title span{
+}
+#ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .value{
+
+}
+#ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .value strong{font-weight: 500;font-size: 21px;}
+#ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .value strong del{
+}
+#ProvideForYou .container>.boxs>ul>li>.box .pricing{margin-top: 60px;}
+#ProvideForYou .container>.boxs>ul>li>.box .pricing span{
+}
+#ProvideForYou .container>.boxs>ul>li>.box .pricing strong{
+}
+#ProvideForYou .container>.boxs>ul>li>.box .pricing strong del{
+}
+   
+   #ProvideForYou .container>.boxs>ul>li>.box>.vl{
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+}
+   #ProvideForYou .container>.boxs>ul>li>.box.TuneUp{}
+   #ProvideForYou .container>.boxs>ul>li>.box.AccountSuspension{}
    
    #OurCustomers{}
    #OurCustomers .container{}
    #OurCustomers .container>h2{}
-   #OurCustomers .container>.slider{}
+   #OurCustomers .container>.slider{
+    margin-top: 30px;
+    padding: 30px 20px;
+}
+   #OurCustomers .container>.slider .owl-nav{display:none;}
    #OurCustomers .container>.slider>.owl-carousel{}
-   #OurCustomers .container>.slider>.owl-carousel .item{}
+   #OurCustomers .container>.slider>.owl-carousel .item{
+    min-height: 438px;
+    display: flex;
+    justify-content: space-evenly;
+}
    #OurCustomers .container>.slider>.owl-carousel .item>.stars{}
    #OurCustomers .container>.slider>.owl-carousel .item>.stars>img{}
-   #OurCustomers .container>.slider>.owl-carousel .item>p{}
+   #OurCustomers .container>.slider>.owl-carousel .item>p{
+    width: 100%;
+    line-height: 1.7;
+    font-size: 18px;
+    font-weight: 200;
+}
    #OurCustomers .container>.slider>.owl-carousel .item>p::before{}
    #OurCustomers .container>.slider>.owl-carousel .item>p::after{}
    #OurCustomers .container>.slider>.owl-carousel .item>.profile{}
@@ -330,11 +548,26 @@
    /* ------------------ /index.php ------------------- */
    
    /* ---------- Audit,TuneUp,AdsManagment ------------------- */
-   #ServicesHeader{}
-   #ServicesHeader .container{}
+   #ServicesHeader{
+    background-position: 100% 0%;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    min-height: 100vh;
+    padding: 10px;
+}
+   #ServicesHeader .container{
+    position: relative;
+}
    #ServicesHeader .container #MainNavBar{}
-   #ServicesHeader .container>.content{}
-   #ServicesHeader .container>.content>.text{}
+   #ServicesHeader .container>.content{
+    margin-top: 0;
+    width: 100%;
+    margin-top: 90%;
+}
+   #ServicesHeader .container>.content>.text{
+}
    #ServicesHeader .container>.content>.text h1{}
    #ServicesHeader .container>.content>.text>span{}
    #ServicesHeader .container>.content>.text>p{}
@@ -342,24 +575,55 @@
    #ServicesHeader .container>.content>.text .price span{}
    #ServicesHeader .container>.content>.text .price strong{}
    #ServicesHeader .container>.content>.text .price strong del{}
-   #ServicesHeader .container>.content>.text .price a{}
+   #ServicesHeader .container>.content>.text .price a{
+    margin: 30px auto;
+}
    #ServicesHeader .container>.content>.text .price a:hover{}
    #ServicesHeader .container>.content>.img{}
    #ServicesHeader .container>.content>.img img{}
    
    #ServicesMain{}
-   #ServicesMain>#Intro{}
+   #ServicesMain>#Intro{
+    margin: 30px auto;
+}
    #ServicesMain>#Intro .container{}
    #ServicesMain>#Intro .container h2{}
    #ServicesMain>#Intro .container p{}
-   
+   #ServicesMain>section{
+    margin-top: 40px;
+}
    #ServicesMain>#Steps{}
    #ServicesMain>#Steps .container{}
    #ServicesMain>#Steps .container>h2{}
-   #ServicesMain>#Steps .container>.content{}
+   #ServicesMain>#Steps .container>.content{
+}
    #ServicesMain>#Steps .container>.content>ul{}
-   #ServicesMain>#Steps .container>.content>ul>li{}
-   #ServicesMain>#Steps .container>.content>ul>li strong{}
+   #ServicesMain>#Steps .container>.content>ul::before{display:none;}
+   #ServicesMain>#Steps .container>.content>ul>li{
+    flex-direction: column;
+}
+   #ServicesMain>#Steps .container>.content>ul>li strong{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 18px;
+}
+   #ServicesMain>#Steps .container>.content>ul>li .paragraph p{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 2;
+    margin-top: 20px;
+}
+   #ServicesMain>#Steps .container>.content>ul>li>.number{
+    transform: translate(0px, 15px);
+}
+   #ServicesMain>#Steps .container>.content>ul>li .paragraph{
+    padding: 30px 25px;
+}
    #ServicesMain>#Steps .container>.content>ul>li b{}
    #ServicesMain>#Steps .container>.content>ul>li b::after{}
    #ServicesMain>#Steps .container>.content>ul>li>.paragraph{}
@@ -367,14 +631,28 @@
    
    #ServicesMain>.sfm{}
    #ServicesMain>.sfm .container{}
-   #ServicesMain>.sfm .container>.box{}
-   #ServicesMain>.sfm .container>.box>.priceInfo{}
-   #ServicesMain>.sfm .container>.box>.priceInfo>.text{}
+   #ServicesMain>.sfm .container>.box{
+    padding: 20px;
+}
+   #ServicesMain>.sfm .container>.box>.priceInfo{
+    flex-direction: column;
+}
+   #ServicesMain>.sfm .container>.box>.priceInfo>.text{
+    text-align: center;
+}
    #ServicesMain>.sfm .container>.box>.priceInfo>.text span{}
-   #ServicesMain>.sfm .container>.box>.priceInfo>.text b{}
-   #ServicesMain>.sfm .container>.box>.priceInfo>.text strong{}
+   #ServicesMain>.sfm .container>.box>.priceInfo>.text b{
+    margin: 20px 0;
+}
+   #ServicesMain>.sfm .container>.box>.priceInfo>.text strong{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
    #ServicesMain>.sfm .container>.box>.priceInfo>.text del{}
-   #ServicesMain>.sfm .container>.box>.priceInfo>.button{}
+   #ServicesMain>.sfm .container>.box>.priceInfo>.button{
+    width: 100%;
+}
    #ServicesMain>.sfm .container>.box>.priceInfo>.button button{}
    #ServicesMain>.sfm .container>.box>.form-input.center{}
    #ServicesMain>.sfm .container>.box>.form-input.center .next_button{}
@@ -432,33 +710,77 @@
    #ServicesMain>#collaborating{}
    #ServicesMain>#collaborating .container{}
    #ServicesMain>#collaborating .container>.title{}
-   #ServicesMain>#collaborating .container>.title h2{}
-   #ServicesMain>#collaborating .container>.title p{}
-   #ServicesMain>#collaborating .container>.items{}
+   #ServicesMain>#collaborating .container>.title h2{
+    font-size: 20px;
+}
+   #ServicesMain>#collaborating .container>.title p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+   #ServicesMain>#collaborating .container>.items{
+    margin: 20px;
+}
    #ServicesMain>#collaborating .container>.items>ul{}
-   #ServicesMain>#collaborating .container>.items>ul>li{}
+   #ServicesMain>#collaborating .container>.items>ul>li{
+    margin-bottom: 15px;
+}
    #ServicesMain>#collaborating .container>.items>ul>li::before{}
-   #ServicesMain>#collaborating .container>.items>ul>li:nth-child(1)>.content:before{}
+    #ServicesMain>#collaborating .container>.items>ul>li>.content:before{
+    left: -30px;
+}
+   #ServicesMain>#collaborating .container>.items>ul>li:nth-child(1)>.content:before{
+}
    #ServicesMain>#collaborating .container>.items>ul>li:nth-child(2)>.content:before{}
    #ServicesMain>#collaborating .container>.items>ul>li:nth-child(3)>.content:before{}
    #ServicesMain>#collaborating .container>.items>ul>li:nth-child(4)>.content:before{}
-   #ServicesMain>#collaborating .container>.items>ul>li>.content{}
-   #ServicesMain>#collaborating .container>.items>ul>li>.content img{}
-   #ServicesMain>#collaborating .container>.items>ul>li>.content p{}
+   #ServicesMain>#collaborating .container>.items>ul>li>.content{flex-direction: column;padding: 42px 30px;min-height: 270px;}
+   #ServicesMain>#collaborating .container>.items>ul>li>.content img{
+    margin-right: 0;
+    margin-bottom: 28px;
+}
+   #ServicesMain>#collaborating .container>.items>ul>li>.content p{
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.7;
+    color: #000000ad;
+}
    
-   #ServicesMain>#WhyChooseOurService{}
+   #ServicesMain>#WhyChooseOurService{
+    margin-top: 20px;
+    padding: 40px 20px;
+}
    #ServicesMain>#WhyChooseOurService .container{}
    #ServicesMain>#WhyChooseOurService .container>h2{}
+   #ServicesMain h2{
+    font-size: 20px;
+}
    #ServicesMain>#WhyChooseOurService .container>p{}
    #ServicesMain>#WhyChooseOurService .container>.items{}
    #ServicesMain>#WhyChooseOurService .container>.items>ul{}
-   #ServicesMain>#WhyChooseOurService .container>.items>ul>li{}
-   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box{}
-   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.img{}
+   #ServicesMain>#WhyChooseOurService .container>.items>ul>li{
+    margin-bottom: 20px;
+}
+   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box{
+    min-height: 315px;
+    height: auto;
+}
+   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.img{
+    text-align: center;
+    height: auto;
+    margin-bottom: 10px;
+}
    #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.img img{}
-   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text{}
+   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text{
+    text-align: center;
+}
    #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text h3{}
-   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text p{}
+   #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text p{
+    line-height: 2;
+    margin-top: 20px;
+}
    
    #ServicesMain>#Form2{}
    
@@ -470,19 +792,29 @@
    #ServicesMain>#Questions .container>.items>.panel-group>.panel-default{}
    #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div{}
    #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div>h4{}
-   #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div>a{}
-   #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div>a:hover{}
-   #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div>a>div{}
-   #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div>a>div>span{}
-   #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div>a>div>img{}
+   #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div>h4>a{}
+   #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div>h4>a:hover{}
+   #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div>h4>a>div{}
+   #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div>h4>a>div>span{
+    font-size: 15px;
+    width: 90%;
+}
+   #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>div>h4>a>div>img{}
    #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>.panel-collapse{}
    #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>.panel-collapse>.panel-body{}
    #ServicesMain>#Questions .container>.items>.panel-group>.panel-default>.panel-collapse>.panel-body>p{}
    
    #FinalIntro{}
    #FinalIntro .container{}
-   #FinalIntro .container>.content{}
-   #FinalIntro .container>.content>.img{}
+   #FinalIntro .container>.content{
+    display: flex;
+    flex-direction: column;
+}
+   #FinalIntro .container>.content>.img{
+    display: flex;
+    min-width: auto;
+    aspect-ratio: auto;
+}
    #FinalIntro .container>.content>.img a{}
    #FinalIntro .container>.content>.img a:hover{}
    #FinalIntro .container>.content>.img a::after{}
@@ -501,7 +833,9 @@
    /* ------------------ /Audit,TuneUp,AdsManagment ------------------- */
    
    /* ------------------- Audit.php ------------------- */
-   #Audit #ServicesHeader{}
+   #Audit #ServicesHeader{
+    background-image: url(../images/auditHeaderBGmobile.jpg);
+}
    #Audit #ServicesHeader .container>.content>.text>span{}
    #Audit #ServicesHeader .container>.content>.text .price strong{}
    #Audit #ServicesHeader .container>.content>.text .price strong del{}
@@ -647,8 +981,10 @@
    #AboutUsIntro>.img img{}
    #AboutUsIntro>.bottomItems{}
    #AboutUsIntro>.bottomItems ul.desktop{}
-   #AboutUsIntro>.bottomItems ul.desktop li strong{}
-   #AboutUsIntro>.bottomItems ul.desktop li span{}
+   #AboutUsIntro>.bottomItems ul.desktop li{}
+   #AboutUsIntro>.bottomItems ul.desktop li .box{}
+   #AboutUsIntro>.bottomItems ul.desktop li .box strong{}
+   #AboutUsIntro>.bottomItems ul.desktop li .box span{}
    #AboutUsIntro>.bottomItems ul.mobile{}
    #AboutUsIntro>.bottomItems ul.mobile li{}
    #AboutUsIntro>.bottomItems ul.mobile li .items{}

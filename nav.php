@@ -1,4 +1,4 @@
-<div id="MainNavBar">
+<div id="MainNavBar" class="desktop">
   <div id="navbar">
     <div class="logo">
         <a href="index.php"><img src="assets/images/admoonLogoBlue.svg" alt="admoon-logo" title="admoon-logo"></a>
@@ -68,5 +68,14 @@
             <a href="#">Application campaign</a>
         </li>
     </ul>
+  </div>
+</div>
+
+<!-- mobile -->
+<div id="MainNavBar" class="mobile">
+  <div id="navbar">
+    <div class="logo">
+        <a href="index.php"><img src="assets/images/admoonLogoBlue.svg" alt="admoon-logo" title="admoon-logo"></a>
+    </div>
   </div>
 </div>

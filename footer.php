@@ -112,10 +112,10 @@
             </div>
             <div class="Social">
                 <ul>
-                    <li><a target="_blank" href="#"><img src="assets/images/LinkdinIcon.svg" alt="Linkdin-Icon" title="Linkdin-Icon"></a></li>
-                    <li><a target="_blank" href="#"><img src="assets/images/telegramIcon.svg" alt="telegram-Icon" title="telegram-Icon"></a></li>
-                    <li><a target="_blank" href="#"><img src="assets/images/whatsappIcon.svg" alt="whatsapp-Icon" title="whatsapp-Icon"></a></li>
-                    <li><a target="_blank" href="#"><img src="assets/images/instagramIcon.svg" alt="instagram-Icon" title="instagram-Icon"></a></li>
+                    <li><a class="linkedin" target="_blank" href="#"><img src="assets/images/LinkdinIcon.svg" alt="Linkdin-Icon" title="Linkdin-Icon"></a></li>
+                    <li><a class="telegram" target="_blank" href="#"><img src="assets/images/telegramIcon.svg" alt="telegram-Icon" title="telegram-Icon"></a></li>
+                    <li><a class="whatsapp" target="_blank" href="#"><img src="assets/images/whatsappIcon.svg" alt="whatsapp-Icon" title="whatsapp-Icon"></a></li>
+                    <li><a class="instagram" target="_blank" href="#"><img src="assets/images/instagramIcon.svg" alt="instagram-Icon" title="instagram-Icon"></a></li>
                 </ul>
             </div>
         </div>
@@ -192,6 +192,22 @@
                 </div>
               </div> 
             </ul>
+        </div>
+        <div class="trustUs">
+            <div class="GPartner">
+                <a target="_blank" href="https://www.google.com/partners/agency?id=6288273986" class="footerbottomgpartner"><img src="assets/images/GPartner.png"></a>
+            </div>
+            <div class="Social">
+                <ul>
+                    <li><a class="linkedin" target="_blank" href="#"><img src="assets/images/LinkdinIcon.svg" alt="Linkdin-Icon" title="Linkdin-Icon"></a></li>
+                    <li><a class="telegram" target="_blank" href="#"><img src="assets/images/telegramIcon.svg" alt="telegram-Icon" title="telegram-Icon"></a></li>
+                    <li><a class="whatsapp" target="_blank" href="#"><img src="assets/images/whatsappIcon.svg" alt="whatsapp-Icon" title="whatsapp-Icon"></a></li>
+                    <li><a class="instagram" target="_blank" href="#"><img src="assets/images/instagramIcon.svg" alt="instagram-Icon" title="instagram-Icon"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="assets/images/admoonLogoWhite.svg" alt="admoon-logo" title="admoon-logo">
         </div>
     </div>
 </footer>

@@ -123,10 +123,12 @@ $('#homePage .owl-carousel').owlCarousel({
     navText : ["<img src='assets/images/leftArrowSlider.svg' width='54px'>","<img src='assets/images/rightArrowSlider.svg' width='54px'>"],
     responsive:{
       0:{
-          items:1
+          items:1,
+          nav:false
       },
       600:{
-          items:1
+          items:1,
+          nav:false
       },
       1000:{
           items:1
@@ -402,3 +404,17 @@ $( "#LearnAbout,.LearnAbout" ).hover(
     $('.selectBox.LearnAbout').css("height", "0");
   }
 );
+
+// about us
+// open box
+
+$('#OurTeam>.boxs>ul>li').click(function () {
+  $('#OurTeam>.boxs>ul>li').removeClass('open');
+  $(this).addClass('open');
+});
+$('#OurTeam .closeButton').click(function () {
+  setTimeout(function(){ 
+    $('#OurTeam>.boxs>ul>li').removeClass('open');
+    console.log('sss');
+  }, 100);
+});
