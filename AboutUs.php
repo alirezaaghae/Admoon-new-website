@@ -21,14 +21,14 @@
                         </ul>
                         <ul class="mobile">
                             <li>
-                                <div class="owl-carousel-mobile">
-                                    <div class="item"><strong>10M</strong><span>Leads Generated in the Last Year</span></div>
+                                <div class="items">
+                                    <div class="item showw"><strong>10M</strong><span>Leads Generated in the Last Year</span></div>
                                     <div class="item"><strong>50</strong><span>Accounts Tuned Up Weekly</span></div>
                                 </div>
                             </li>
                             <li>
-                                <div class="owl-carousel-mobile">
-                                    <div class="item"><strong>100</strong><span>Accounts Reactivated Monthly</span></div>
+                                <div class="items">
+                                    <div class="item showw"><strong>100</strong><span>Accounts Reactivated Monthly</span></div>
                                     <div class="item"><strong>10</strong><span>Account Managers & 5 Campaign Strategists</span></div>
                                 </div>
                             </li>

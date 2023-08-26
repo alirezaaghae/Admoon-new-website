@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="box">
                     <div class="content">
-                        <div class="logo">
+                        <div class="logo desktop">
                             <img src="assets/images/SingleLogo.svg" alt="spa-iranian" title="spa-iranian">
                         </div>
                         <div class="text">
@@ -25,6 +25,9 @@
                     </div>
                     <div class="img">
                         <img src="assets/images/C1Image.jpg" alt="spa-iranian" title="spa-iranian">
+                    </div>
+                    <div class="logo mobile">
+                        <img src="assets/images/SingleLogo.svg" alt="spa-iranian" title="spa-iranian">
                     </div>
                 </div>
             </div>

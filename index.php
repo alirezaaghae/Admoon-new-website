@@ -27,13 +27,13 @@
                 <ul class="mobile">
                     <li>
                         <div class="items">
-                            <div class="item"><strong>$500k</strong><span>Ads Budget Saving</span></div>
+                            <div class="item showw"><strong>$500k</strong><span>Ads Budget Saving</span></div>
                             <div class="item"><strong>$5M</strong><span>in Ads Budget Managed Last Year</span></div>
                         </div>
                     </li>
                     <li>
                         <div class="items">
-                            <div class="item"><strong>50</strong><span>Accounts Tuned Up weekly</span></div>
+                            <div class="item showw"><strong>50</strong><span>Accounts Tuned Up weekly</span></div>
                             <div class="item"><strong>%95</strong><span>Customer Retention</span></div>
                         </div>
                     </li>
