@@ -1,3 +1,8 @@
+<?php 
+    global $title;
+    global $description;
+    global $colorTheme;
+?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US" class="no-js">
 <!-- include head setting -->
@@ -6,23 +11,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Single title -->
-    <meta itemprop="description" content="ROAS" />
+    <meta itemprop="description" content="<?php echo $description;?>" />
     <!-- Single image -->
-    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="theme-color" content="<?php echo $colorTheme;?>" />
     <!-- Site Unique Color -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-title" content="<?php echo $title;?>" />
     <!-- Site name | Site Description -->
     <meta name="description" content="ROAS" />
     <meta property="og:description" content="ROAS" />
     <meta name="twitter:description" content="" />
-    <meta name="twitter:title" content="" />
+    <meta name="twitter:title" content="<?php echo $title;?>" />
     <!-- Site Unique background Color -->
     <meta name="screen-orientation" content="portrait" />
     <!-- Author Name -->
-    <meta itemprop="name" content="Admoon" />
+    <meta itemprop="name" content="<?php echo $title;?>" />
     <meta name="author" content="Alireza-Aghaei">
     <!-- Site orientation in UC Browser -->
     <meta name="full-screen" content="yes" />
@@ -30,7 +35,7 @@
     <meta name="layoutmode" content="fitscreen" />
     <meta name="wap-font-scale" content="no" />
     <!-- Site index link -->
-    <title>ROAS</title>
+    <title><?php echo $title;?></title>
     <!--  slider  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/reset.min.css" />

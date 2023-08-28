@@ -1,6 +1,11 @@
 <!-- include html setting (head) -->
-<?php include('head.php'); ?>
-
+<?php 
+    $title = "About us"; 
+    $description = "About us Description";
+    $colorTheme = "#252E60";
+    include('head.php'); 
+?>
+ 
 <!-- page -->
 <body id="AboutUs">
     <div class="wrapper AboutUs-page">
@@ -389,5 +394,8 @@
         </div>
     </div>
 <!-- include footer and scripts -->
-<?php include('footer.php'); ?>
+<?php 
+    $formPage = '';
+    include('footer.php');
+?>
 </body>

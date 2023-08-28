@@ -30,9 +30,11 @@ for (i = 0; i < alireza.length; ++i) {
 }
 
 // input select 
-var x, i, j, l, ll, selElmnt, a, b, c;
+var x, i, j, l, ll, selElmnt, a, b, c, formPage;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
+const element = document.getElementById("FPS"); 
+formPage = element.getAttribute("page");
 l = x.length;
 for (i = 0; i < l; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
@@ -40,7 +42,12 @@ for (i = 0; i < l; i++) {
   /*for each element, create a new DIV that will act as the selected item:*/
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  if (formPage != ''){
+    a.innerHTML = formPage;
+  } else {
+    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  }
+
   x[i].appendChild(a);
   /*for each element, create a new DIV that will contain the option list:*/
   b = document.createElement("DIV");
@@ -415,6 +422,35 @@ $('#OurTeam>.boxs>ul>li').click(function () {
 $('#OurTeam .closeButton').click(function () {
   setTimeout(function(){ 
     $('#OurTeam>.boxs>ul>li').removeClass('open');
-    console.log('sss');
   }, 100);
+});
+
+$('.formDiscover').click(function () {
+  $('.box').addClass('open');
+});
+
+var cPlusPlus = 0;
+setInterval(function() {
+  if(cPlusPlus % 2 == 0 ){
+    $('.bottomItems ul.mobile li .items .item.showw').removeClass('showw');
+    $('.bottomItems ul.mobile li .items .item:nth-child(1)').addClass('showw');
+  } else {
+    $('.bottomItems ul.mobile li .items .item.showw').removeClass('showw');
+    $('.bottomItems ul.mobile li .items .item:nth-child(2)').addClass('showw');
+  }
+  cPlusPlus += 1;
+}, 2500);
+
+var MenuIsOpen = false;
+$('.hamRotate').click(function () {
+  if(MenuIsOpen){
+    $('.hamRotate').removeClass('active');
+    $('.headerNavBar').removeClass('open');
+    MenuIsOpen = false;
+  } else {
+    $('.hamRotate').addClass('active');
+    $('.headerNavBar').addClass('open');
+    MenuIsOpen = true;
+  }
+  
 });

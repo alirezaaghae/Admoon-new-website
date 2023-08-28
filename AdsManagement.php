@@ -1,6 +1,11 @@
 <!-- include html setting (head) -->
-<?php include('head.php'); ?>
-
+<?php 
+    $title = "Ads Management"; 
+    $description = "Ads Management Description";
+    $colorTheme = "#232d61";
+    include('head.php'); 
+?>
+ 
 <!-- page -->
 <body id="AdsManage">
     <div class="wrapper AdsManage-page">
@@ -241,7 +246,7 @@
                                         <p>Thank you for ordering us! We will call you back</p>
                                     </div>
                                 </div>
-                                <button class="next_button" state="1">Next</button>
+                                <button class="next_button" state="0">Next</button>
                             </form>
                         </div>
                     </div>
@@ -347,5 +352,8 @@
         </main>
     </div>
 <!-- include footer and scripts -->
-<?php include('footer.php'); ?>
+<?php 
+    $formPage = 'Ads Management';
+    include('footer.php');
+?>
 </body>

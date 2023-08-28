@@ -62,8 +62,9 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
 .form .active .fill-line{width: 100%;}
 /* center form */
 .form-input.center[state="success"]{}
-.form-input.center{position: relative; margin-top: 40px; }
+.form-input.center{position: relative;/* margin-top: 40px; */}
 .form-input.center .top-label{transition: all .3s;top: 19px;left: 20px;position: absolute;}
+.form-input.center[state="success"] .top-label{opacity:0;}
 .form-input.center .top-label input{opacity: 0;}
 .form-input.center .top-label label{color: #4E599B;font-weight: 300;font-size: 12px;transition: all .3s;cursor: pointer;}
 .form-input.center[state="email"] .top-label label[value="0"], .form-input.center[state="name"] .top-label label[value="1"], .form-input.center[state="phone"] .top-label label[value="2"], .form-input.center[state="website"] .top-label label[value="3"]{color: #D0D6FA;font-weight: 500;}
@@ -104,21 +105,23 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
 .form-input.center form .inputs .phone-input label {width: 100%;display: flex;cursor: pointer;justify-content: space-between;}
 .form-input.center form .inputs .phone-input label span {--display: none;display: var(--display);width: 1rem;height: 1rem;border: 1px solid #727272;border-radius: 3px;}
 /* circle price */
-.circle-range {position: relative;width: 20rem;height: 20rem;background-color: transparent;border: 1rem solid red;border-radius: 50%;}
-.circle-range .info {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);background-color: dodgerblue;border-radius: inherit;width: 5rem;height: 5rem;text-align: center;color: white;font-family: serif;font-size: initial;font-weight: bold;line-height: 5rem;user-select: none;}
+.circle-range {position: relative;width: 100%;height: 100%;background-color: transparent;border: 3px dashed #CECECE;border-radius: 50%;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.circle-range .info {position: relative;width: 60%;margin-bottom: 20px;/* background-color: dodgerblue; *//* border-radius: inherit; *//* width: 5rem; *//* height: 5rem; */border-bottom: 1px solid #7897ff;user-select: none;color: #B9B9B9;text-align: center;font-family: Inter;font-size: 40px;font-style: normal;font-weight: 500;line-height: 150%; /* 60px */letter-spacing: -0.44px;}
 .circle-range .slider {position: absolute;width: 5%;height: 54%;left: 47.5%;top: 0;transform: rotate(0deg);transform-origin: center bottom;}
-.circle-range .slider::before {content: '';position: absolute;background-color: green;width: 2rem;height: 2rem;transform: translate(-25%, -25%);border-radius: 50%;cursor: pointer;}
+.circle-range .slider::before {content: '';position: absolute;background-color: #7997FF;width: 2rem;height: 2rem;transform: translate(-25%, -25%);border-radius: 50%;cursor: pointer;}
 /* ------------------- /main/css ------------------- */
 
 
 
 
 /* ------------------- navbar.php ------------------ */
+
 #MainNavBar{
     position: relative;
     margin-top: 30px;
     z-index: 20;
 }
+#MainNavBar.mobile{margin-top: 0px;}
 #MainNavBar>#navbar{
     background-color: white;
     border-radius: 25px;
@@ -127,7 +130,129 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
     align-items: center;
     padding: 20px 50px;
 }
+#MainNavBar.mobile>#navbar{
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+}
+#MainNavBar.mobile>.headerNavBar{
+    position: fixed;
+    top: -100vh;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #0f1035;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#MainNavBar.mobile>.headerNavBar.open{top:0;}
+#MainNavBar.mobile>.headerNavBar>ul{
+    width: 100%;
+}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group{
+    width: 100%;
+}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel{
+    background-color: transparent;
+    text-align: center;
+}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-heading{
+    padding: 12px 15px;
+}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-heading h4{}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-heading a{
+    color: #E6E6E6;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    position: relative;
+}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-heading a:hover{}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-heading a img{
+    margin: 7px 20px;
+    position: absolute;
+}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-collapse{}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-collapse ul{
+    border: transparent;
+    background-color: #030532;
+    padding: 10px 0;
+    box-shadow: inset 0em 0em 2px 0px #020318;
+}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-collapse ul li{
+    background-color: #030532;
+    border: none;
+    padding: 12px 10px;
+}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-collapse ul li a{
+    color: #E6E6E6;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    position: relative;
+}
+#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-collapse ul li a:hover{}
+
+/* Hamburger Menu */
+#MainNavBar .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 50px;
+  }
+  #MainNavBar .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  #MainNavBar .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  #MainNavBar .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #fff;
+    stroke-width: 3.5px;
+    stroke-linecap:round;
+  }
+  #MainNavBar .ham4 .top {
+    stroke-dasharray: 40 120;
+  }
+  #MainNavBar .ham4 .bottom {
+    stroke-dasharray: 40 121;
+  }
+  #MainNavBar .ham4.active .top {
+    stroke-dashoffset: -68px;
+  }
+  #MainNavBar .ham4.active .bottom {
+    stroke-dashoffset: -68px;
+  }
+/* End Hamburger Menu */
 #MainNavBar>#navbar>.logo{}
+#MainNavBar.mobile>#navbar>.logo{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+#MainNavBar>#navbar>.hamburgerMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    position: relative;
+}
 #MainNavBar>#navbar>.logo img{}
 #MainNavBar>#navbar>nav{}
 #MainNavBar>#navbar>nav>ul{
@@ -167,18 +292,24 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
 #MainNavBar>#navbar>nav>ul>li:hover:after{transform:rotate(180deg);}
 #MainNavBar>#navbar>nav>ul>li>a{
     position: relative;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.154px;
 }
 #MainNavBar>#navbar>nav>ul>li>a:hover{}
 
 #MainNavBar>.selectBox.ServicesNav{
     background: white;
     border-radius: 14px;
-    left: 19.7%;
+    left: 23%;
 }
 #MainNavBar>.selectBox.LearnAbout{
     background: white;
     border-radius: 14px;
-    right: 23%;
+    right: 22%;
 }
 #MainNavBar>.selectBox{
     position: absolute;
@@ -452,8 +583,23 @@ footer.site-footer>.footerNav.mobile>.logo img{
 }
 #homePage>.wrapper{}
 #homePage>.wrapper>header{background-image: url('../images/homeHeaderBG.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;height: 96vh;position: relative;display: flex;flex-direction: column;justify-content: space-between;align-items: center;border-radius: 45px;margin: 20px;}
-#homePage>.wrapper>header>.container{}
+#homePage>.wrapper>header>.container{
+}
 #homePage>.wrapper>header>.container #MainNavBar{}
+#homePage>.wrapper>header>.container #MainNavBar.mobile{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #0000001c;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin-top: 0;
+    /* border-bottom: .1px solid #9a9a9a; */
+    box-shadow: 0px 0px 2px #1c1c1c;
+}
 #homePage>.wrapper>header>.container>.content{
     position: relative;
     margin-top: 200px;
@@ -1088,17 +1234,25 @@ footer.site-footer>.footerNav.mobile>.logo img{
     position: relative;
     display: flex;
     height: 70px;
+    width: fit-content;
     align-items: center;
     margin-top: 40px;
 }
 #OurCustomers .container>.slider>.owl-carousel .item>.profile .img{
     height: 100%;
+    width: 75%;
     margin-right: 10px;
+    position: relative;
 }
 #OurCustomers .container>.slider>.owl-carousel .item>.profile .img img{
     height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
 }
 #OurCustomers .container>.slider>.owl-carousel .item>.profile .info{
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -1134,7 +1288,6 @@ footer.site-footer>.footerNav.mobile>.logo img{
     margin: 35px auto;
     width: 85%;
 }
-#ServicesHeader .container{}
 #ServicesHeader .container #MainNavBar{}
 #ServicesHeader .container>.content{
     margin-top: 64px;
@@ -1368,7 +1521,10 @@ footer.site-footer>.footerNav.mobile>.logo img{
 #ServicesMain>.sfm .container>.box>.priceInfo>.text del{}
 #ServicesMain>.sfm .container>.box>.priceInfo>.button{
     width: 30%;
+    transition: all .3s;
+    
 }
+#ServicesMain>.sfm .container>.box.open>.priceInfo>.button{transform: translateY(30px);opacity:0;cursor:inherit;}
 #ServicesMain>.sfm .container>.box>.priceInfo>.button button{
     background: #D0D6FA;
     border-radius: 12px;
@@ -1392,9 +1548,13 @@ footer.site-footer>.footerNav.mobile>.logo img{
     transform: translate(-3px, -3px);
 }
 #ServicesMain>.sfm .container>.box>.form-input.center{
-    border-top: 1px solid #4E599B;
-    padding-top: 50px;
+    border-top: 0px solid #4E599B;
+    overflow:hidden;
+    height:0;
+    transition: all .3s;
 }
+#ServicesMain>.sfm .container>.box.open>.form-input.center{border-top: 1px solid #4E599B;padding-top: 50px;margin-top: 40px;height:inherit;}
+
 #ServicesMain>.sfm .container>.box>.form-input.center .next_button{}
 
 #ServicesMain>#PricingForm{}
@@ -1404,15 +1564,25 @@ footer.site-footer>.footerNav.mobile>.logo img{
     position: relative;
     display: flex;
     margin-top: 50px;
+    justify-content: space-between;
 }
 #ServicesMain>#PricingForm .container>.boxs>.circleInput{
     position: relative;
     z-index: 0;
-    width: 50%;
+    width: 48%;
 }
 #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range{}
 #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>.info{}
-#ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>span{}
+#ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>span{
+    color: #9A9A9A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.22px;
+}
 #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>.slider{}
 #ServicesMain>#PricingForm .container>.boxs>.SelectPrices{
     position: relative;
@@ -1751,8 +1921,8 @@ footer.site-footer>.footerNav.mobile>.logo img{
     font-family: Poppins;
     font-size: 17px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 27px */
+    font-weight: 300;
+    line-height: 1.8;
     letter-spacing: -0.198px;
 }
 

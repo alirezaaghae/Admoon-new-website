@@ -1,5 +1,11 @@
 <!-- include html setting (head) -->
-<?php include('head.php'); ?>
+
+<?php 
+    $title = "Admoon"; 
+    $description = "Admoon Description";
+    $colorTheme = "#041541";
+    include('head.php'); 
+?>
 
 <!-- page -->
 <body id="homePage">
@@ -352,5 +358,8 @@
         </main>
     </div>
 <!-- include footer and scripts -->
-<?php include('footer.php'); ?>
+<?php 
+    $formPage = '';
+    include('footer.php');
+?>
 </body>

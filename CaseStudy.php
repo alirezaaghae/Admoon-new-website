@@ -1,6 +1,11 @@
 <!-- include html setting (head) -->
-<?php include('head.php'); ?>
-
+<?php 
+    $title = "Case Studies"; 
+    $description = "Case Studies Description";
+    $colorTheme = "#252E60";
+    include('head.php'); 
+?>
+ 
 <!-- page -->
 <body id="CaseStudy">
     <div class="wrapper CaseStudy-page">
@@ -116,5 +121,8 @@
         </div>
     </div>
 <!-- include footer and scripts -->
-<?php include('footer.php'); ?>
+<?php 
+    $formPage = '';
+    include('footer.php');
+?>
 </body>

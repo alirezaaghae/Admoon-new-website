@@ -1,3 +1,6 @@
+<?php 
+    global $formPage;
+?>
 <footer class="site-footer footer-index" role="contentinfo">
     <div class="footerContact">
     <div class="container">
@@ -23,7 +26,7 @@
             <form class="form customForm">
                 <span>We can help you with</span>
                 <div class="custom-select footer-select">
-                    <select>
+                    <select id="FPS" page="<?php echo $formPage;?>">
                       <option value="Audit">Audit</option>
                       <option value="TuneUp">Tune up</option>
                       <option value="AdsManagement">Ads Management</option>

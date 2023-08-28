@@ -1,6 +1,11 @@
 <!-- include html setting (head) -->
-<?php include('head.php'); ?>
-
+<?php 
+    $title = "Zarif Bar"; 
+    $description = "Zarif Bar Description";
+    $colorTheme = "#252E60";
+    include('head.php'); 
+?>
+ 
 <!-- page -->
 <body id="Single">
     <div class="wrapper Single-page">
@@ -181,5 +186,8 @@
     </main>
     </div>
 <!-- include footer and scripts -->
-<?php include('footer.php'); ?>
+<?php 
+    $formPage = '';
+    include('footer.php');
+?>
 </body>

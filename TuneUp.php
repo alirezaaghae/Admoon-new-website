@@ -1,6 +1,11 @@
 <!-- include html setting (head) -->
-<?php include('head.php'); ?>
-
+<?php 
+    $title = "Tune up"; 
+    $description = "Tune up Description";
+    $colorTheme = "#045349";
+    include('head.php'); 
+?>
+ 
 <!-- page -->
 <body id="TuneUp">
     <div class="wrapper TuneUp-page">
@@ -103,7 +108,7 @@
                                         <p>Thank you for ordering us! We will call you back</p>
                                     </div>
                                 </div>
-                                <button class="next_button" state="1">Next</button>
+                                <button class="next_button" state="0">Next</button>
                             </form>
                         </div>
                     </div>
@@ -229,7 +234,7 @@
                                         <p>Thank you for ordering us! We will call you back</p>
                                     </div>
                                 </div>
-                                <button class="next_button" state="1">Next</button>
+                                <button class="next_button" state="0">Next</button>
                             </form>
                         </div>
                     </div>
@@ -336,5 +341,8 @@
         </main>
     </div>
 <!-- include footer and scripts -->
-<?php include('footer.php'); ?>
-</body>
+<?php 
+    $formPage = 'Tune up';
+    include('footer.php');
+?>
+</body> 
