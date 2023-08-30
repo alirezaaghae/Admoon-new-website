@@ -361,40 +361,12 @@ $('.customForm>div').click(function (e) {
 });
 
 
-// circle price
-	// const circleRange = document.querySelector('.circle-range')	
-	// let isDragging
-	// circleRange.addEventListener('mousedown',()=>{isDragging = true})
-	// circleRange.addEventListener('mouseup',()=>{isDragging = false})
-	// window.addEventListener('mousemove',e=>{
-	// 	const slider = document.querySelector('.slider')
-	// 	const info = document.querySelector('.info')
-	// 	const box = circleRange.getBoundingClientRect()
-	// 	const {atan2, PI, round} = Math
-	// 	let angle 
-	// 	let centerX
-	// 	let centerY
-	// 	let deltaX
-	// 	let deltaY
-	// 	let posX
-	// 	let posY
-	// 	if(isDragging) {
-	// 		centerX = (circleRange.offsetWidth / 2) + box.left
-	// 		centerY = (circleRange.offsetHeight / 2) + box.top
-	// 		posX = e.pageX
-	// 		posY = e.pageY
-	// 		deltaY = centerY - posY
-	// 		deltaX = centerX - posX
-	// 		angle = atan2(deltaY, deltaX) * (180 / PI) 
-	// 		angle -= 90
-	// 		if(angle < 0)
-	// 			angle += 360
-	// 		angle = round(angle)
-	// 		slider.style.transform = `rotate(${angle}deg)`
-	// 		info.textContent = angle
-	// 	}
-	// 	console.log(angle)
-	// })
+
+
+
+
+
+
 
 $( "#Services,.ServicesNav" ).hover(
   function() {

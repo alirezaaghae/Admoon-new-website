@@ -69,7 +69,7 @@
                     <div class="boxs">
                         <div class="circleInput">
                             <div class="circle-range">
-                                <input class="info" type="number" value="" placeholder="Enter your budget">
+                                <input id="priceInfo" pattern="[0-9]{32}" class="priceInfo" type="text" value="" placeholder="Enter your budget" onkeyup="addListAfterKeypress()">
                                 <span>Monthly Budget</span>
                                 <div class="slider"></div>
                             </div>
@@ -85,13 +85,13 @@
                                     </li>
                                     <li>
                                         <div class="button" item="2">
-                                            <span>$5,001-$15,000</span>
+                                            <span>$5,000-$15,000</span>
                                             <b>Wage: <del>%12</del> <strong>%7</strong></b>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="button" item="3">
-                                            <span>$15,001-∞</span>
+                                            <span>$15,000-∞</span>
                                             <b>Wage: <del>%9</del> <strong>%5</strong></b>
                                         </div>
                                     </li>
@@ -356,4 +356,5 @@
     $formPage = 'Ads Management';
     include('footer.php');
 ?>
+<script src="assets/js/circle.js"></script>
 </body>
