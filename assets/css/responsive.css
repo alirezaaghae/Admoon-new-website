@@ -7,7 +7,9 @@
  /* input select Package */
  .form .custom-select {}
  .form .custom-select select {}
- .form .select-selected {}
+ .form .select-selected {
+    font-size: 19px;
+}
  /*style the arrow inside the select element:*/
  .form .select-selected:after {}
  /*point the arrow upwards when the select box is open (active):*/
@@ -58,7 +60,8 @@
  .form-input.center[state="email"] .top-label label[value="0"], .form-input.center[state="name"] .top-label label[value="1"], .form-input.center[state="phone"] .top-label label[value="2"], .form-input.center[state="website"] .top-label label[value="3"]{}
  .form-input.center .top-label label:hover{}
  .form-input.center form{}
- .form-input form{}
+ .form-input form{
+}
  .form-input.center form .inputs{}
  .form-input.center form .inputs .Email-input{}
  .form-input.center form .inputs .Email-input input{}
@@ -95,7 +98,7 @@
  /* circle price */
  .circle-range {}
  .circle-range .info {}
- .circle-range .slider {}
+ .circle-range .slider {top: -3%;height: 53%;}
  .circle-range .slider::before {}
  /* ------------------- /main/css ------------------- */
     
@@ -137,22 +140,33 @@
  footer.site-footer{
     width: 100%;
 }
- footer.site-footer>.footerContact{}
- footer.site-footer>.footerContact>.container{
-    flex-direction: column;
+ footer.site-footer>.footerContact{
+    border-radius: 0;
+    /* padding: 20px; */
+    padding-bottom: 70px;
 }
- footer.site-footer>.footerContact>.container .location{}
+ footer.site-footer>.footerContact>.container{
+    /* flex-direction: column; */
+    width: 100%;
+}
+ footer.site-footer>.footerContact>.container .location{
+    width: 50%;
+}
  footer.site-footer>.footerContact>.container .location .map{}
  footer.site-footer>.footerContact>.container .location .map:hover{}
  footer.site-footer>.footerContact>.container .location .map img{}
  footer.site-footer>.footerContact>.container .location .text{}
  footer.site-footer>.footerContact>.container .location .text>ul{}
  footer.site-footer>.footerContact>.container .location .text>ul>li{}
- footer.site-footer>.footerContact>.container .location .text>ul>li img{}
+ footer.site-footer>.footerContact>.container .location .text>ul>li img{
+    aspect-ratio: 1/1;
+}
  footer.site-footer>.footerContact>.container .location .text>ul>li a{}
  footer.site-footer>.footerContact>.container .location .text>ul>li a:hover{}
 
- footer.site-footer>.footerContact>.container #footerform{}
+ footer.site-footer>.footerContact>.container #footerform{
+    width: 48%;
+}
  footer.site-footer>.footerContact>.container #footerform form{}
  footer.site-footer>.footerContact>.container #footerform form>span{}
  footer.site-footer>.footerContact>.container #footerform form>.footer-select{}
@@ -167,14 +181,22 @@
  footer.site-footer>.footerContact>.container #footerform form>.footer-button{}
  footer.site-footer>.footerContact>.container #footerform form>.footer-button button{}
  
- footer.site-footer>.footerNav.desktop{}
- footer.site-footer>.footerNav.desktop>.logo{}
- footer.site-footer>.footerNav.desktop>.logo>img{}
- footer.site-footer>.footerNav.desktop>.footerNavBar{}
- footer.site-footer>.footerNav.desktop>.footerNavBar>ul{
-    flex-direction: column;
+ footer.site-footer>.footerNav.desktop{display: flex;flex-direction: column;border-radius: 0;transform: translate(0);}
+ footer.site-footer>.footerNav.desktop>.logo{
+    margin: 0;
 }
- footer.site-footer>.footerNav.desktop>.footerNavBar>ul>li{}
+ footer.site-footer>.footerNav.desktop>.logo>img{}
+ footer.site-footer>.footerNav.desktop>.footerNavBar{
+    margin: 20px 0;
+}
+ footer.site-footer>.footerNav.desktop>.footerNavBar>ul{
+    /* flex-direction: column; */
+}
+ footer.site-footer>.footerNav.desktop>.footerNavBar>ul>li{
+}
+ footer.site-footer>.footerNav.desktop>.footerNavBar>ul .vl{
+    margin: 0 20px;
+}
  footer.site-footer>.footerNav.desktop>.footerNavBar>ul>li>strong{}
  footer.site-footer>.footerNav.desktop>.footerNavBar>ul>li>ul{}
  footer.site-footer>.footerNav.desktop>.footerNavBar>ul>li>ul>li{}
@@ -356,16 +378,29 @@
     width: 100%;
     margin: 0;
     border-radius: 0;
+    background-position: 70%;
 }
  #ServicesHeader .container{}
  #ServicesHeader .container #MainNavBar{}
- #ServicesHeader .container>.content{}
+ #ServicesHeader .container>.content{
+    width: 50%;
+}
  #ServicesHeader .container>.content>.text{
 }
- #ServicesHeader .container>.content>.text h1{}
- #ServicesHeader .container>.content>.text>span{}
- #ServicesHeader .container>.content>.text>p{}
- #ServicesHeader .container>.content>.text .price{}
+ #ServicesHeader .container>.content>.text h1{
+    font-size: 30px;
+}
+ #ServicesHeader .container>.content>.text>span{
+    font-size: 20px;
+}
+ #ServicesHeader .container>.content>.text>p{
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+}
+ #ServicesHeader .container>.content>.text .price{
+    margin-top: 10px;
+}
  #ServicesHeader .container>.content>.text .price span{}
  #ServicesHeader .container>.content>.text .price strong{}
  #ServicesHeader .container>.content>.text .price strong del{}
@@ -376,20 +411,31 @@
  
  #ServicesMain{}
  #ServicesMain>#Intro{}
- #ServicesMain>#Intro .container{}
+ #ServicesMain>#Intro .container{
+    width: 100%;
+}
  #ServicesMain>#Intro .container h2{}
  #ServicesMain>#Intro .container p{}
- #ServicesMain>section{}
+ #ServicesMain>section{
+    margin-top: 100px;
+}
  #ServicesMain>#Steps{}
  #ServicesMain>#Steps .container{}
  #ServicesMain>#Steps .container>h2{}
  #ServicesMain>#Steps .container>.content{
 }
  #ServicesMain>#Steps .container>.content>ul{}
- #ServicesMain>#Steps .container>.content>ul::before{}
+ #ServicesMain>#Steps .container>.content>ul::before{
+    left: 195px;
+}
  #ServicesMain>#Steps .container>.content>ul>li{}
- #ServicesMain>#Steps .container>.content>ul>li strong{}
- #ServicesMain>#Steps .container>.content>ul>li .paragraph p{}
+ #ServicesMain>#Steps .container>.content>ul>li strong{
+    min-width: 145px;
+    text-align: center;
+}
+ #ServicesMain>#Steps .container>.content>ul>li .paragraph p{
+    font-size: 16px;
+}
  #ServicesMain>#Steps .container>.content>ul>li>.number{}
  #ServicesMain>#Steps .container>.content>ul>li .paragraph{}
  #ServicesMain>#Steps .container>.content>ul>li b{}
@@ -402,7 +448,9 @@
  #ServicesMain>.sfm .container>.box{}
  #ServicesMain>.sfm .container>.box>.priceInfo{}
  #ServicesMain>.sfm .container>.box>.priceInfo>.text{}
- #ServicesMain>.sfm .container>.box>.priceInfo>.text span{}
+ #ServicesMain>.sfm .container>.box>.priceInfo>.text span{
+    font-size: 18px;
+}
  #ServicesMain>.sfm .container>.box>.priceInfo>.text b{}
  #ServicesMain>.sfm .container>.box>.priceInfo>.text strong{}
  #ServicesMain>.sfm .container>.box>.priceInfo>.text del{}
@@ -415,10 +463,20 @@
  #ServicesMain>#PricingForm .container{}
  #ServicesMain>#PricingForm .container>h2{}
  #ServicesMain>#PricingForm .container>.boxs{}
- #ServicesMain>#PricingForm .container>.boxs>.circleInput{}
+ #ServicesMain>#PricingForm .container>.boxs>.circleInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
  #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range{}
- #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>.info{}
- #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>span{}
+ #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>.priceInfo{
+    font-size: 49px;
+    margin-bottom: 15px;
+}
+ #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>.priceInfo::placeholder{font-size: 23px;}
+ #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>span{
+    font-size: 16px;
+}
  #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>.slider{}
  #ServicesMain>#PricingForm .container>.boxs>.SelectPrices{}
  #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems{}
@@ -479,7 +537,9 @@
  #ServicesMain>#collaborating .container>.items>ul>li>.content img{}
  #ServicesMain>#collaborating .container>.items>ul>li>.content p{}
  
- #ServicesMain>#WhyChooseOurService{}
+ #ServicesMain>#WhyChooseOurService{
+    padding: 30px;
+}
  #ServicesMain>#WhyChooseOurService .container{}
  #ServicesMain>#WhyChooseOurService .container>h2{}
  #ServicesMain h2{}
@@ -516,7 +576,9 @@
  #FinalIntro{}
  #FinalIntro .container{}
  #FinalIntro .container>.content{}
- #FinalIntro .container>.content>.img{}
+ #FinalIntro .container>.content>.img{
+    margin-left: 35px;
+}
  #FinalIntro .container>.content>.img a{}
  #FinalIntro .container>.content>.img a:hover{}
  #FinalIntro .container>.content>.img a::after{}
@@ -525,7 +587,8 @@
  #FinalIntro .container>.content>.img>div{}
  #FinalIntro .container>.content>.img>div strong{}
  #FinalIntro .container>.content>.img>div span{}
- #FinalIntro .container>.content>.text{}
+ #FinalIntro .container>.content>.text{
+}
  #FinalIntro .container>.content>.text>div{}
  #FinalIntro .container>.content>.text p{}
  #FinalIntro .container>.content>.text p::before{}
