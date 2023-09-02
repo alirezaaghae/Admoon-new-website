@@ -13,7 +13,7 @@
             <header id="WhiteMenu">
                 <?php include('nav.php'); ?>
             </header>
-            <main> 
+            <main id="navbar_padding"> 
                 <section id="CaseStudies"  class="Provens">
                     <div class="title">
                         <h1>We have proven success</h1>

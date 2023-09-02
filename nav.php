@@ -156,5 +156,21 @@
                 </div>
               </div> 
             </ul>
+            <div class="socials">
+                <div class="number">
+                    <ul>
+                        <li> <a href="tel:+9685483422">+968 - 548 3422</a></li>
+                        <li><a href="tel:+9684692578">+968 - 469 2578</a></li>
+                    </ul>
+                </div>
+                <div class="Social icons">
+                    <ul>
+                        <li><a class="linkedin" target="_blank" href="#"><img src="assets/images/LinkdinIcon.svg" alt="Linkdin-Icon" title="Linkdin-Icon"></a></li>
+                        <li><a class="telegram" target="_blank" href="#"><img src="assets/images/telegramIcon.svg" alt="telegram-Icon" title="telegram-Icon"></a></li>
+                        <li><a class="whatsapp" target="_blank" href="#"><img src="assets/images/whatsappIcon.svg" alt="whatsapp-Icon" title="whatsapp-Icon"></a></li>
+                        <li><a class="instagram" target="_blank" href="#"><img src="assets/images/instagramIcon.svg" alt="instagram-Icon" title="instagram-Icon"></a></li>
+                    </ul>
+            </div>
+            </div>
         </div>
 </div>

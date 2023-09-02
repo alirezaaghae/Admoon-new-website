@@ -4,7 +4,7 @@
     global $colorTheme;
 ?>
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US" class="no-js">
+<html dir="ltr" lang="en-US" class="no-js <?php echo $title;?> ">
 <!-- include head setting -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

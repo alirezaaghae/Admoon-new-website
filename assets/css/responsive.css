@@ -105,8 +105,11 @@
  
  /* ------------------- navbar.php ------------------ */
  #MainNavBar{}
- #MainNavBar>#navbar{}
- #MainNavBar>#navbar>.logo{}
+ #MainNavBar>#navbar{
+    padding: 20px;
+    flex-direction: column;
+}
+ #MainNavBar>#navbar>.logo{margin-bottom: 20px;}
  #WhiteMenu #MainNavBar #navbar{}
  #WhiteMenu #MainNavBar>#navbar>.logo img{}
  #WhiteMenu #MainNavBar>#navbar>.logo{}
@@ -114,7 +117,8 @@
  #MainNavBar>#navbar>nav{}
  #MainNavBar>#navbar>nav>ul{}
  #MainNavBar>#navbar>nav>ul>li{
-    margin: 0 10px;
+    margin: 0;
+    margin-right: 15px;
 }
  #MainNavBar>#navbar>nav>ul>.navIcon{
 }
@@ -125,8 +129,12 @@
  #MainNavBar>#navbar>nav>ul>li>a{}
  #MainNavBar>#navbar>nav>ul>li>a:hover{}
  
- #MainNavBar>.selectBox.ServicesNav{}
- #MainNavBar>.selectBox.LearnAbout{}
+ #MainNavBar>.selectBox.ServicesNav{
+    left: 0px;
+}
+ #MainNavBar>.selectBox.LearnAbout{
+    right: 23%;
+}
  #MainNavBar>.selectBox{}
  #MainNavBar>.selectBox>ul{}
  #MainNavBar>.selectBox>ul>li{}
@@ -234,20 +242,39 @@
  /* ------------------- index.php ------------------- */
  #homePage{}
  #homePage>.wrapper{}
- #homePage>.wrapper>header{}
- #homePage>.wrapper>header>.container{}
- #homePage>.wrapper>header>.container #MainNavBar{}
- #homePage>.wrapper>header>.container>.content{}
+ #homePage>.wrapper>header{height: auto;border-radius: 20px;}
+ #homePage>.wrapper>header>.container{
+    padding: 20px;
+    width: 90%;
+}
+ #homePage>.wrapper>header>.container #MainNavBar.desktop{
+}
+ #homePage>.wrapper>header>.container #MainNavBar.mobile{
+    
+}
+ #homePage>.wrapper>header>.container>.content{margin: 70px 0;}
  #homePage>.wrapper>header>.container>.content>.text{}
  #homePage>.wrapper>header>.container>.content>.text h1{}
  #homePage>.wrapper>header>.container>.content>.text h1 span{}
  #homePage>.wrapper>header>.container>.content>.text a{}
  #homePage>.wrapper>header>.container>.content>.img{}
  #homePage>.wrapper>header>.container>.content>.img img{}
- #homePage>.wrapper>header>.bottomItems{}
- #homePage>.wrapper>header>.bottomItems ul.desktop{}
+ #homePage>.wrapper>header>.bottomItems{
+}
+ #homePage>.wrapper>header>.bottomItems ul.desktop{
+    justify-content: center;
+}
+ #homePage>.wrapper>header>.bottomItems ul.desktop li{
+    width: 21%;
+    flex-direction: column;
+    padding: 10px 20px;
+    display: flex;
+}
  #homePage>.wrapper>header>.bottomItems ul.desktop li strong{}
- #homePage>.wrapper>header>.bottomItems ul.desktop li span{}
+ #homePage>.wrapper>header>.bottomItems ul.desktop li span{
+    font-size: 13px;
+    /* text-align: center; */
+}
  #homePage>.wrapper>header>.bottomItems ul.mobile{}
  #homePage>.wrapper>header>.bottomItems ul.mobile li{}
  #homePage>.wrapper>header>.bottomItems ul.mobile li .items{}
@@ -276,7 +303,9 @@
  #WhoAreWe>.container>.content>.img{}
  #WhoAreWe>.container>.content>.img img{}
  #ProvenSuccess{}
- #ProvenSuccess>.container{}
+ #ProvenSuccess>.container{
+    width: 100%;
+}
  #ProvenSuccess>.container>h2{}
  .box.customers{}
  .box.customers>ul{}
@@ -286,7 +315,10 @@
  .box.customers>ul>li>a .img img:nth-child(1){}
  .box.customers>ul>li>a .img img:nth-child(2){}
  .box.customers>ul>li>a .content{}
- .box.customers>ul>li>a .content>.text{}
+ .box.customers>ul>li>a .content>.text{
+    height: auto;
+    padding-bottom: 20px;
+}
  .box.customers>ul>li>a .content>.text h3{}
  .box.customers>ul>li>a .content>.text .icon-more-info{}
  .box.customers>ul>li>a .content>.text .icon-more-info img{}
@@ -294,7 +326,9 @@
  .box.customers>ul>li>a .content>.text p{}
  .box.customers>ul>li>a .content>.item{}
  .box.customers>ul>li>a .content>.item ul{}
- .box.customers>ul>li>a .content>.item ul li{}
+ .box.customers>ul>li>a .content>.item ul li{
+    padding: 10px;
+}
  .box.customers>ul>li>a .content>.item ul li span{}
  .box.customers>ul>li>a .content>.item ul li strong{}
  .box.customers>ul>li>a .content>.item ul li b{}
@@ -312,37 +346,53 @@
  #ProvideForYou .container>.boxs{}
  #ProvideForYou .container>.boxs>ul{}
  #ProvideForYou .container>.boxs>ul>li{}
+ #ProvideForYou .container>.boxs>ul>li>.box{
+    padding: 20px;
+}
  #ProvideForYou .container>.boxs>ul>li>.box{}
- #ProvideForYou .container>.boxs>ul>li.box{}
- #ProvideForYou .container>.boxs>ul>li.box>.content{}
- #ProvideForYou .container>.boxs>ul>li.box>.content>h3{}
- #ProvideForYou .container>.boxs>ul>li.box>.content>p{}
- #ProvideForYou .container>.boxs>ul>li.box>.content>b{}
- #ProvideForYou .container>.boxs>ul>li.box>.content>ul{}
- #ProvideForYou .container>.boxs>ul>li.box>.content>ul>li{}
- #ProvideForYou .container>.boxs>ul>li.box>.vl{}
- #ProvideForYou .container>.boxs>ul>li.box>.prices{}
- #ProvideForYou .container>.boxs>ul>li.box>.prices>ul{}
- #ProvideForYou .container>.boxs>ul>li.box>.prices>ul>li{}
- #ProvideForYou .container>.boxs>ul>li.box>.prices>ul>li .title{}
- #ProvideForYou .container>.boxs>ul>li.box>.prices>ul>li .title span{}
- #ProvideForYou .container>.boxs>ul>li.box>.prices>ul>li .value{}
- #ProvideForYou .container>.boxs>ul>li.box>.prices>ul>li .value strong{}
- #ProvideForYou .container>.boxs>ul>li.box>.pricing{}
- #ProvideForYou .container>.boxs>ul>li.box>.pricing span{}
- #ProvideForYou .container>.boxs>ul>li.box>.pricing strong{}
- #ProvideForYou .container>.boxs>ul>li.box>.pricing strong del{}
- #ProvideForYou .container>.boxs>ul>li .moreButton{}
- #ProvideForYou .container>.boxs>ul>li>.box.AdsManagement{}
- #ProvideForYou .container>.boxs>ul>li>.box.AdsManagement>.content{}
- #ProvideForYou .container>.boxs>ul>li>.box.Audit{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.content{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.content>h3{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.content>p{
+    font-size: 14px;
+    text-align: left;
+}
+ #ProvideForYou .container>.boxs>ul>li>.box>.content>b{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.content>ul{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.content>ul>li{
+    font-size: 14px;
+    text-align: left;
+}
+ #ProvideForYou .container>.boxs>ul>li>.box>.vl{}
  #ProvideForYou .container>.boxs>ul>li>.box>.prices{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .title{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .title span{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .value{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .value strong{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.pricing{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.pricing span{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.pricing strong{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.pricing strong del{}
+ #ProvideForYou .container>.boxs>ul>li .moreButton{}
+ #ProvideForYou .container>.boxs>ul>li>.box.AdsManagement{
+    padding: 40px 30px;
+}
+ #ProvideForYou .container>.boxs>ul>li>.box.AdsManagement>.content{
+    padding-right: 10px;
+}
+ #ProvideForYou .container>.boxs>ul>li>.box.Audit{}
+ #ProvideForYou .container>.boxs>ul>li>.box>.prices{
+    padding-left: 10px;
+}
 #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul{}
 #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li{}
 #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .title{}
 #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .title span{}
 #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .value{}
-#ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .value strong{}
+#ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .value strong{
+    font-size: 21px;
+}
 #ProvideForYou .container>.boxs>ul>li>.box>.prices>ul>li .value strong del{}
 #ProvideForYou .container>.boxs>ul>li>.box .pricing{}
 #ProvideForYou .container>.boxs>ul>li>.box .pricing span{}
@@ -356,7 +406,9 @@
  #OurCustomers{}
  #OurCustomers .container{}
  #OurCustomers .container>h2{}
- #OurCustomers .container>.slider{}
+ #OurCustomers .container>.slider{
+    padding: 30px 20px;
+}
  #OurCustomers .container>.slider .owl-nav{}
  #OurCustomers .container>.slider>.owl-carousel{}
  #OurCustomers .container>.slider>.owl-carousel .item{}
@@ -378,7 +430,9 @@
     width: 100%;
     margin: 0;
     border-radius: 0;
-    background-position: 70%;
+    background-position: 60%;
+    min-height: auto;
+    padding-bottom: 30px;
 }
  #ServicesHeader .container{}
  #ServicesHeader .container #MainNavBar{}
@@ -410,7 +464,9 @@
  #ServicesHeader .container>.content>.img img{}
  
  #ServicesMain{}
- #ServicesMain>#Intro{}
+ #ServicesMain>#Intro{
+    padding: 50px;
+}
  #ServicesMain>#Intro .container{
     width: 100%;
 }
@@ -445,7 +501,9 @@
  
  #ServicesMain>.sfm{}
  #ServicesMain>.sfm .container{}
- #ServicesMain>.sfm .container>.box{}
+ #ServicesMain>.sfm .container>.box{
+    padding: 30px;
+}
  #ServicesMain>.sfm .container>.box>.priceInfo{}
  #ServicesMain>.sfm .container>.box>.priceInfo>.text{}
  #ServicesMain>.sfm .container>.box>.priceInfo>.text span{
@@ -533,7 +591,10 @@
  #ServicesMain>#collaborating .container>.items>ul>li:nth-child(2)>.content:before{}
  #ServicesMain>#collaborating .container>.items>ul>li:nth-child(3)>.content:before{}
  #ServicesMain>#collaborating .container>.items>ul>li:nth-child(4)>.content:before{}
- #ServicesMain>#collaborating .container>.items>ul>li>.content{}
+ #ServicesMain>#collaborating .container>.items>ul>li>.content{
+    padding: 30px 30px;
+    aspect-ratio: 1/1;
+}
  #ServicesMain>#collaborating .container>.items>ul>li>.content img{}
  #ServicesMain>#collaborating .container>.items>ul>li>.content p{}
  
@@ -544,13 +605,21 @@
  #ServicesMain>#WhyChooseOurService .container>h2{}
  #ServicesMain h2{}
  #ServicesMain>#WhyChooseOurService .container>p{}
- #ServicesMain>#WhyChooseOurService .container>.items{}
+ #ServicesMain>#WhyChooseOurService .container>.items{
+    margin-top: 50px;
+}
  #ServicesMain>#WhyChooseOurService .container>.items>ul{}
- #ServicesMain>#WhyChooseOurService .container>.items>ul>li{}
- #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box{}
+ #ServicesMain>#WhyChooseOurService .container>.items>ul>li{
+    margin-bottom: 30px;
+}
+ #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box{
+    height: auto;
+}
  #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.img{}
  #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.img img{}
- #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text{}
+ #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text{
+    margin-top: 20px;
+}
  #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text h3{}
  #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text p{}
  
@@ -598,7 +667,10 @@
  /* ------------------ /Audit,TuneUp,AdsManagment ------------------- */
  
  /* ------------------- Audit.php ------------------- */
- #Audit #ServicesHeader{}
+ #Audit #ServicesHeader{
+    background-size: cover;
+    background-position: 60%;
+}
  #Audit #ServicesHeader .container>.content>.text>span{}
  #Audit #ServicesHeader .container>.content>.text .price strong{}
  #Audit #ServicesHeader .container>.content>.text .price strong del{}
@@ -620,7 +692,8 @@
  /* ------------------ /TuneUp.php ------------------ */
  
  /* ------------------- AdsManagment.php ------------ */
- #AdsManage #ServicesHeader{}
+ #AdsManage #ServicesHeader{
+}
  #AdsManage #ServicesHeader .container>.content{}
  #AdsManage #ServicesHeader .container>.content>.text>span{}
  #AdsManage #ServicesHeader .container>.content>.text .price strong{}
@@ -630,7 +703,9 @@
  #AdsManage #ServicesMain>#PricingForm{}
  #AdsManage #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box{}
  #AdsManage #ServicesMain>#WhyChooseOurService .container>.items>ul{}
- #AdsManage #ServicesMain>#WhyChooseOurService .container>.items>ul>li{}
+ #AdsManage #ServicesMain>#WhyChooseOurService .container>.items>ul>li{
+    margin-bottom: inherit;
+}
  #AdsManage #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.img{}
  #AdsManage #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.text{}
  /* ------------------ /AdsManagment.php ------------ */
@@ -658,7 +733,9 @@
  #Single header .container{}
  #Single header #MainNavBar{}
  #Single>.wrapper>main{}
- #Single>.wrapper>main>section{}
+ #Single>.wrapper>main>section{
+    margin-top: 60px;
+}
  #SingleCover{}
  #SingleCover .container{}
  #SingleCover .container>.box{}
@@ -671,30 +748,57 @@
  #SingleCover .container>.box>.content>.text>.icon-more-info{}
  #SingleCover .container>.box>.content>.text>.icon-more-info img{}
  #SingleCover .container>.box>.content>.text>.icon-more-info span{}
- #SingleCover .container>.box>.img{}
- #SingleCover .container>.box>.img img{}
+ #SingleCover .container>.box>.img{
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+ #SingleCover .container>.box>.img img{
+    object-fit: cover;
+    height: 100%;
+    object-position: center;
+}
 
  #SingleIcons{}
  #SingleIcons .container{}
  #SingleIcons .container>ul{}
  #SingleIcons .container>ul>li{}
- #SingleIcons .container>ul>li>.img{}
- #SingleIcons .container>ul>li>.img>img{}
- #SingleIcons .container>ul>li>.text{}
+ #SingleIcons .container>ul>li>.img{
+    /* width: 60px; */
+}
+ #SingleIcons .container>ul>li>.img>img{
+    width: 75px;
+    display: inline-block;
+}
+ #SingleIcons .container>ul>li>.text{
+    width: 60%;
+}
  #SingleIcons .container>ul>li>.text strong{}
  #SingleIcons .container>ul>li>.text span{}
  #SingleAbout{}
  #SingleAbout .content{}
  #SingleAbout .content>.text{}
  #SingleAbout .content>.text>h2{}
- #SingleAbout .content>.text>p{}
- #SingleAbout .content>.img{}
- #SingleAbout .content>.img img{}
+ #SingleAbout .content>.text>p{
+    width: 90%;
+}
+ #SingleAbout .content>.img{
+    height: 250px;
+}
+ #SingleAbout .content>.img img{
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    object-position: left;
+}
  
  #SingleRoad{}
  #SingleRoad .container{}
- #SingleRoad .container>ul{}
- #SingleRoad .container>ul::before{}
+ #SingleRoad .container>ul{
+    justify-content: flex-end;
+}
+ #SingleRoad .container>ul::before{
+    left: 5%;
+}
  #SingleRoad .container>ul>li{}
  #SingleRoad .container>ul>li>.text{}
  #SingleRoad .container>ul>li>.text::before{}
@@ -711,7 +815,9 @@
  #CaseSpecialist .container>.box>.profile>.socials>.icons>a{}
  #CaseSpecialist .container>.box>.profile>.socials>.icons>a:hover{}
  #CaseSpecialist .container>.box>.profile>.socials>.icons>a>img{}
- #CaseSpecialist .container>.box>.content{}
+ #CaseSpecialist .container>.box>.content{
+    padding: 0 25px;
+}
  #CaseSpecialist .container>.box>.content>h3{}
  #CaseSpecialist .container>.box>.content>span{}
  #CaseSpecialist .container>.box>.content>.info{}
@@ -738,7 +844,9 @@
  #AboutUs>.wrapper .container>header{}
  #AboutUs>.wrapper .container>header #MainNavBar{}
  #AboutUs>.wrapper .container>main{}
- #AboutUs>.wrapper .container>main section{}
+ #AboutUs>.wrapper .container>main section{
+    margin-top: 60px;
+}
  
  #AboutUsIntro{}
  #AboutUsIntro>.text{}
@@ -749,8 +857,11 @@
  #AboutUsIntro>.bottomItems{}
  #AboutUsIntro>.bottomItems ul.desktop{}
  #AboutUsIntro>.bottomItems ul.desktop li{}
- #AboutUsIntro>.bottomItems ul.desktop li .box{}
- #AboutUsIntro>.bottomItems ul.desktop li .box strong{}
+ #AboutUsIntro>.bottomItems ul.desktop li .box{
+    padding: 20px;
+}
+ #AboutUsIntro>.bottomItems ul.desktop li .box strong{
+}
  #AboutUsIntro>.bottomItems ul.desktop li .box span{}
  #AboutUsIntro>.bottomItems ul.mobile{}
  #AboutUsIntro>.bottomItems ul.mobile li{}
@@ -763,41 +874,70 @@
  #OurStory{}
  #OurStory>h2{}
  #OurStory>.box{}
- #OurStory>.box::before{}
- #OurStory>.box>ul{}
- #OurStory>.box>ul>li{}
+ #OurStory>.box::before{
+}
+ #OurStory>.box>ul{background: none;}
+ #OurStory>.box>ul>li{
+}
  #OurStory>.box>ul>li:nth-child(2){}
+ #OurStory>.box>ul>li:nth-child(2)>.text{
+    padding-left: 50px;
+}
+ #OurStory>.box>ul>li:nth-child(2)>.text p{padding-right:0;}
  #OurStory>.box>ul>li>.text{}
  #OurStory>.box>ul>li>.text::before{}
+ #OurStory>.box>ul>li:nth-child(2)>.text::before{
+    left: 10px;
+}
  #OurStory>.box>ul>li>.text>h3{}
- #OurStory>.box>ul>li>.text>p{}
+ #OurStory>.box>ul>li>.text>p{
+    padding-right: 15px;
+}
  #OurStory>.box>ul>li>.img{}
  #OurStory>.box>ul>li>.img img{}
  
  #OurTeam{}
- #OurTeam>h2{}
- #OurTeam>.boxs{}
+ #OurTeam>h2{
+   font-size: 23px;
+}
+ #OurTeam>.boxs{
+   margin-top: 20px;
+}
  #OurTeam>.boxs>ul{}
- #OurTeam>.boxs>ul>li{}
- #OurTeam>.boxs>ul>li>.box{}
+ #OurTeam>.boxs>ul>li{
+    width: 50%;
+}
+ #OurTeam>.boxs>ul>li>.box{
+}
  #OurTeam>.boxs>ul>li>.box:nth-child(3n+1){}
  #OurTeam>.boxs>ul>li>.box:nth-child(3n+2){}
  #OurTeam>.boxs>ul>li>.box:nth-child(3n+3){}
- #OurTeam>.boxs>ul>li.open>.box{}
- #OurTeam>.boxs>ul>li.open>.box{}
+ #OurTeam>.boxs>ul>li.open>.box{
+}
+ #OurTeam>.boxs>ul>li.open>.box{
+}
  #OurTeam>.boxs>ul>li.open>.box{}
  #OurTeam>.boxs>ul>li>.box>.cover{}
- #OurTeam>.boxs>ul>li>.box>.cover>img{}
+ #OurTeam>.boxs>ul>li>.box>.cover>img{
+    object-position: bottom;
+    object-fit: contain;
+    height: 100%;
+}
+ 
  #OurTeam>.boxs>ul>li>.box>.name{}
- #OurTeam>.boxs>ul>li>.box>.name .text{}
+ #OurTeam>.boxs>ul>li.open>.box>.name{}
+ #OurTeam>.boxs>ul>li>.box>.name .text{
+}
 
- #OurTeam>.boxs>ul>li:nth-child(3n+1)>.box>.name .text{}
- #OurTeam>.boxs>ul>li:nth-child(3n+2)>.box>.name .text{}
- #OurTeam>.boxs>ul>li:nth-child(3n+3)>.box>.name .text{}
+ #OurTeam>.boxs>ul>li:nth-child(3n+1)>.box>.name .text{background: linear-gradient(180deg, rgba(37,46,96,0) 0%, rgb(37 46 96) 31%);}
+ #OurTeam>.boxs>ul>li:nth-child(3n+2)>.box>.name .text{background: linear-gradient(180deg, rgba(37,46,96,0) 0%, rgb(52 36 95) 31%);}
+ #OurTeam>.boxs>ul>li:nth-child(3n+3)>.box>.name .text{background: linear-gradient(180deg, rgba(37,46,96,0) 0%, rgb(9 89 56) 31%);}
  
  #OurTeam>.boxs>ul>li>.box>.name .text.second{}
- #OurTeam>.boxs>ul>li>.box>.name .text>span{}
- #OurTeam>.boxs>ul>li>.box>.name .text>span:nth-child(1){}
+ #OurTeam>.boxs>ul>li>.box>.name .text>span{
+}
+ #OurTeam>.boxs>ul>li>.box>.name .text>span:nth-child(1){
+}
  #OurTeam>.boxs>ul>li>.box>.name .text>span:nth-child(2){}
  #OurTeam>.boxs>ul>li>.box:nth-child(3n+1)>.name .text>span:nth-child(1){}
  #OurTeam>.boxs>ul>li>.box:nth-child(3n+2)>.name .text>span:nth-child(1){}
@@ -805,25 +945,40 @@
  #OurTeam>.boxs>ul>li>.box:nth-child(3n+1)>.name .text>span:nth-child(2){}
  #OurTeam>.boxs>ul>li>.box:nth-child(3n+2)>.name .text>span:nth-child(2){}
  #OurTeam>.boxs>ul>li>.box:nth-child(3n+3)>.name .text>span:nth-child(2){}
- #OurTeam>.boxs>ul>li>.box>.content{}
+ #OurTeam>.boxs>ul>li>.box>.content{
+}
  #OurTeam>.boxs>ul>li.open>.box>.content{}
  #OurTeam>.boxs>ul>li>.box>.content>.info{}
- #OurTeam>.boxs>ul>li>.box>.content>.info>span{}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>span{
+}
  #OurTeam>.boxs>ul>li>.box>.content>.info>.icon{}
- #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul{}
- #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul>li{}
- #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul>li>img{}
- #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul>li>span{}
- #OurTeam>.boxs>ul>li>.box>.content>.info>p{}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul{
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul>li{
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul>li>img{
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul>li>span{
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>p{
+}
  #OurTeam>.boxs>ul>li>.box>.content>.social{}
  #OurTeam>.boxs>ul>li>.box>.content>.social>ul{}
- #OurTeam>.boxs>ul>li>.box>.content>.social>ul>li{}
- #OurTeam>.boxs>ul>li.open>.box>.closeButton{}
- #OurTeam>.boxs>ul>li.open>.box>.closeButton button{}
+ #OurTeam>.boxs>ul>li>.box>.content>.social>ul>li{
+}
+ #OurTeam>.boxs>ul>li.open>.box>.closeButton{z-index:2;top: 25px;right: 25px;}
+ #OurTeam>.boxs>ul>li.open>.box>.closeButton button{
+}
  #OurTeam>.boxs>ul>li>.box>.content>.social>ul>li>a{}
  #OurTeam>.boxs>ul>li>.box>.content>.social>ul>li>a:hover{}
- #OurTeam>.boxs>ul>li>.box>.content>.social>ul>li>a>img{}
- #OurTeam>.boxs>ul>li>.socials{}
+ #OurTeam>.boxs>ul>li>.box>.content>.social>ul>li>a>img{
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>ul>li>a>span{
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>ul>li>a>img{
+}
+ #OurTeam>.boxs>ul>li>.socials{
+}
  #OurTeam>.boxs>ul>li>.socials>.content{}
  #OurTeam>.boxs>ul>li>.socials>.content>span{}
  #OurTeam>.boxs>ul>li>.socials>.content>.socialsIcon{}
@@ -841,7 +996,9 @@
  #ContactUs>.wrapper .container>header{}
  #ContactUs>.wrapper .container>header #MainNavBar{}
  #ContactUs>.wrapper .container>main{}
- #ContactUs>.wrapper .container>main section{}
+ #ContactUs>.wrapper .container>main section{
+    margin-top: 50px;
+}
  #ContactUs #links{}
  #ContactUs #links>.title{}
  #ContactUs #links>.title>h1{}
@@ -851,16 +1008,35 @@
  #ContactUs #links>.locationInfo>.map>a{}
  #ContactUs #links>.locationInfo>.map>a:hover{}
  #ContactUs #links>.locationInfo>.map>a img{}
- #ContactUs #links>.locationInfo>.textBox{}
- #ContactUs #links>.locationInfo>.textBox>ul{}
- #ContactUs #links>.locationInfo>.textBox>ul>li{}
- #ContactUs #links>.locationInfo>.textBox>ul>li>img{}
- #ContactUs #links>.locationInfo>.textBox>ul>li a{}
+ #ContactUs #links>.locationInfo>.textBox{
+    padding: 10px;
+    width: 40%;
+    right: 20px;
+}
+ #ContactUs #links>.locationInfo>.textBox>ul{
+    height: 100%;
+    justify-content: space-evenly;
+}
+ #ContactUs #links>.locationInfo>.textBox>ul>li{
+    flex-direction: row-reverse;
+}
+ #ContactUs #links>.locationInfo>.textBox>ul>li>img{
+    margin: 10px;
+}
+ #ContactUs #links>.locationInfo>.textBox>ul>li a{margin-bottom: 10px;}
  #ContactUs #links>.locationInfo>.textBox>ul>li a:hover{}
  #ContactUs #links>.locationInfo>.textBox>ul>li p{}
  #ContactUs #links>.socialsNetwork{}
- #ContactUs #links>.socialsNetwork>ul{}
- #ContactUs #links>.socialsNetwork>ul>li{}
+ #ContactUs #links>.socialsNetwork>ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ #ContactUs #links>.socialsNetwork>ul>li{
+    width: 30%;
+    margin: 7px;
+}
  #ContactUs #links>.socialsNetwork>ul>li:nth-child(1){}
  #ContactUs #links>.socialsNetwork>ul>li:nth-child(1) a{}
  #ContactUs #links>.socialsNetwork>ul>li>a{}
@@ -897,12 +1073,139 @@
  #ContactUs #mainForm .bottomText>ul>li>a>img{}
  /* ------------------ /ContactUs.php --------------- */
 }
+@media only screen and (min-width: 760px) and (max-width: 992px) {
+  #OurTeam{}
+ #OurTeam>h2{
+   font-size: 23px;
+}
+ #OurTeam>.boxs{
+   margin-top: 20px;
+}
+ #OurTeam>.boxs>ul{display: flex;flex-direction: row;}
+ #OurTeam>.boxs>ul>li{
+    width: 50%;
+}
+ #OurTeam>.boxs>ul>li>.box{
+    border-radius: 36px;
+}
+ #OurTeam>.boxs>ul>li>.box:nth-child(3n+1){}
+ #OurTeam>.boxs>ul>li>.box:nth-child(3n+2){}
+ #OurTeam>.boxs>ul>li>.box:nth-child(3n+3){}
+ #OurTeam>.boxs>ul>li.open>.box{
+   padding-right: 0;
+}
+ #OurTeam>.boxs>ul>li.open>.box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+ #OurTeam>.boxs>ul>li.open>.box{}
+ #OurTeam>.boxs>ul>li>.box>.cover{}
+ #OurTeam>.boxs>ul>li>.box>.cover>img{}
+ 
+ #OurTeam>.boxs>ul>li>.box>.name{
+   z-index: 1;
+   top: 29vw;
+}
+ #OurTeam>.boxs>ul>li.open>.box>.name{top: 71vw;}
+ #OurTeam>.boxs>ul>li>.box>.name .text{
+   width: 100%;
+   /* top: 230px; */
+   left: 0;
+}
 
+ #OurTeam>.boxs>ul>li:nth-child(3n+1)>.box>.name .text{background: linear-gradient(180deg, rgba(37,46,96,0) 0%, rgb(37 46 96) 31%);}
+ #OurTeam>.boxs>ul>li:nth-child(3n+2)>.box>.name .text{background: linear-gradient(180deg, rgba(37,46,96,0) 0%, rgb(52 36 95) 31%);}
+ #OurTeam>.boxs>ul>li:nth-child(3n+3)>.box>.name .text{background: linear-gradient(180deg, rgba(37,46,96,0) 0%, rgb(9 89 56) 31%);}
+ 
+ #OurTeam>.boxs>ul>li>.box>.name .text.second{}
+ #OurTeam>.boxs>ul>li>.box>.name .text>span{
+   font-size: 40px;
+   line-height: 1.7;
+}
+ #OurTeam>.boxs>ul>li>.box>.name .text>span:nth-child(1){
+   font-size: 60px;
+}
+ #OurTeam>.boxs>ul>li>.box>.name .text>span:nth-child(2){}
+ #OurTeam>.boxs>ul>li>.box:nth-child(3n+1)>.name .text>span:nth-child(1){}
+ #OurTeam>.boxs>ul>li>.box:nth-child(3n+2)>.name .text>span:nth-child(1){}
+ #OurTeam>.boxs>ul>li>.box:nth-child(3n+3)>.name .text>span:nth-child(1){}
+ #OurTeam>.boxs>ul>li>.box:nth-child(3n+1)>.name .text>span:nth-child(2){}
+ #OurTeam>.boxs>ul>li>.box:nth-child(3n+2)>.name .text>span:nth-child(2){}
+ #OurTeam>.boxs>ul>li>.box:nth-child(3n+3)>.name .text>span:nth-child(2){}
+ #OurTeam>.boxs>ul>li>.box>.content{
+   padding: 20px;
+   margin-top: 20px;
+}
+ #OurTeam>.boxs>ul>li.open>.box>.content{display:flex;flex-direction: column-reverse;margin-bottom: 20px;}
+ #OurTeam>.boxs>ul>li>.box>.content>.info{}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>span{
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>.icon{}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul{
+   flex-direction: column;
+   align-items: start;
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul>li{
+   margin-bottom: 10px;
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul>li>img{
+    width: 50px;
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>.icon>ul>li>span{
+    font-size: 20px;
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>p{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.social{}
+ #OurTeam>.boxs>ul>li>.box>.content>.social>ul{}
+ #OurTeam>.boxs>ul>li>.box>.content>.social>ul>li{
+   width: 100%;
+}
+ #OurTeam>.boxs>ul>li.open>.box>.closeButton{z-index:2;top: 25px;right: 25px;}
+ #OurTeam>.boxs>ul>li.open>.box>.closeButton button{
+   width: 40px;
+   height: 40px;
+   font-size: 20px;
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.social>ul>li>a{width: 100%;height: 80px;}
+ #OurTeam>.boxs>ul>li>.box>.content>.social>ul>li>a:hover{}
+ #OurTeam>.boxs>ul>li>.box>.content>.social>ul>li>a>img{
+    width: 40px;
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>ul>li>a>span{
+    font-size: 19px;
+}
+ #OurTeam>.boxs>ul>li>.box>.content>.info>ul>li>a>img{
+    width: 25px;
+    height: 25px;
+}
+ #OurTeam>.boxs>ul>li>.socials{
+    border-radius: 36px;
+}
+ #OurTeam>.boxs>ul>li>.socials>.content{}
+ #OurTeam>.boxs>ul>li>.socials>.content>span{}
+ #OurTeam>.boxs>ul>li>.socials>.content>.socialsIcon{}
+ #OurTeam>.boxs>ul>li>.socials>.content>.socialsIcon>ul{}
+ #OurTeam>.boxs>ul>li>.socials>.content>.socialsIcon>ul>li{}
+ #OurTeam>.boxs>ul>li>.socials>.content>.socialsIcon>ul>li>a{}
+ #OurTeam>.boxs>ul>li>.socials>.content>.socialsIcon>ul>li>a:hover{}
+ #OurTeam>.boxs>ul>li>.socials>.content>.socialsIcon>ul>li>a>img{}
+}
 
 @media only screen and (min-width: 320px) and (max-width: 760px) {
  /* mobile */
  .mobile{display: inherit;}.desktop{display: none !important;}
  .wrapper{}
+ html.Ads.Management{
+    scroll-snap-type: inherit;
+}
  .wrapper>.container{}
  .wrapper>.container>header{}
  /* input select Package */
@@ -1009,9 +1312,14 @@
  .form-input.center form .inputs .phone-input label {}
  .form-input.center form .inputs .phone-input label span {}
  /* circle price */
- .circle-range {}
+ .circle-range {
+    width: 100%;
+}
  .circle-range .info {}
- .circle-range .slider {}
+ .circle-range .slider {
+    top: -4%;
+    height: 54%;
+}
  .circle-range .slider::before {}
  /* ------------------- /main/css ------------------- */
     
@@ -1028,9 +1336,11 @@
  #MainNavBar>#navbar>.logo{
   filter: brightness(10);
  }
- #WhiteMenu #MainNavBar #navbar{background: inherit;color:#252E60;}
+ #WhiteMenu #MainNavBar #navbar{background: transparent;color:#252E60;}
  #WhiteMenu #MainNavBar>#navbar>.logo img{filter: inherit;}
- #WhiteMenu #MainNavBar>#navbar>.logo{filter: inherit;}
+ #WhiteMenu #MainNavBar>#navbar>.logo{
+    filter: inherit;
+}
  #MainNavBar>#navbar>.logo img{}
  #MainNavBar>#navbar>nav{}
  #MainNavBar>#navbar>nav>ul{}
@@ -1585,8 +1895,13 @@
    flex-direction: column;
    overflow: hidden;
 }
- #ServicesMain>#PricingForm .container>.boxs>.circleInput{width: 100%;}
+ #ServicesMain>#PricingForm .container>.boxs>.circleInput{width: 100%;padding:20px;}
  #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range{}
+ #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range .priceInfo{
+    font-size: 40px;
+    font-weight: 900;
+    color: #7a97ff;
+}
  #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>.info{}
  #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>span{}
  #ServicesMain>#PricingForm .container>.boxs>.circleInput>.circle-range>.slider{}
@@ -2029,7 +2344,8 @@
  #AboutUs>.wrapper{}
  #AboutUs>.wrapper .container{}
  #AboutUs>.wrapper .container>header{}
- #AboutUs>.wrapper .container>header #MainNavBar{}
+ #AboutUs>.wrapper .container>header #MainNavBar{
+}
  #AboutUs>.wrapper .container>main{}
  #AboutUs>.wrapper .container>main section{
    margin-top: 50px;
@@ -2164,7 +2480,10 @@
    margin-top: 20px;
 }
  #OurTeam>.boxs>ul{}
- #OurTeam>.boxs>ul>li{}
+ #OurTeam>.boxs>ul>li{
+    order: 0 !important;
+    margin-bottom: 30px;
+}
  #OurTeam>.boxs>ul>li>.box{
     border-radius: 36px;
 }
@@ -2492,9 +2811,19 @@
  #MainNavBar>#navbar>.logo{
   filter: brightness(10);
  }
- #WhiteMenu #MainNavBar #navbar{background: inherit;color:#252E60;}
+ #WhiteMenu #MainNavBar #navbar{background: transparent;color:#252E60;}
  #WhiteMenu #MainNavBar>#navbar>.logo img{filter: inherit;}
- #WhiteMenu #MainNavBar>#navbar>.logo{filter: inherit;}
+ #WhiteMenu #MainNavBar>#navbar>.logo{
+    filter: inherit;
+}
+ #WhiteMenu #MainNavBar>#navbar>.hamburgerMenu{
+    /* filter: brightness(0); */
+}
+ #WhiteMenu #MainNavBar .ham4 .line{
+    stroke: #252e60;
+}
+ #WhiteMenu #MainNavBar.mobile{background-color: #ffffff4d !important;}
+ #WhiteMenu #MainNavBar .ham4.active .line{stroke: #ffffff;}
  #MainNavBar>#navbar>.logo img{}
  #MainNavBar>#navbar>nav{}
  #MainNavBar>#navbar>nav>ul{}
@@ -2515,6 +2844,7 @@
  #MainNavBar>.selectBox>ul>li span{}
  #MainNavBar>.selectBox>ul>li a{}
  #MainNavBar>.selectBox>ul>li a:hover{}
+ 
  /* ------------------ /navbar.php ------------------ */
  
  /* ------------------- footer.php ------------------ */
@@ -2665,7 +2995,7 @@
  #homePage>.wrapper>header>.container>.content{
   /* margin-top: 100%; */
   position: relative;
-  top: 56%;
+  top: 36%;
 }
  #homePage>.wrapper>header>.container>.content>.text{
   text-align: center;
@@ -3628,7 +3958,8 @@
    margin-top: 20px;
 }
  #OurTeam>.boxs>ul{}
- #OurTeam>.boxs>ul>li{}
+ #OurTeam>.boxs>ul>li{
+}
  #OurTeam>.boxs>ul>li>.box{
     border-radius: 36px;
 }

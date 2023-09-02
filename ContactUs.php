@@ -13,7 +13,7 @@
             <header id="WhiteMenu">
                 <?php include('nav.php'); ?>
             </header>
-            <main> 
+            <main id="navbar_padding"> 
                 <section id="links">
                     <div class="title">
                         <h1>Lets work together</h1>

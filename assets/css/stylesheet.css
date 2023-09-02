@@ -122,7 +122,21 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
     margin-top: 30px;
     z-index: 20;
 }
-#MainNavBar.mobile{margin-top: 0px;}
+#MainNavBar.mobile{ margin-top: 10px;}
+#MainNavBar.mobile.fixed-top{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #0000001c;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin-top: 0;
+    box-shadow: 0px 0px 2px #1c1c1c;
+}
+
 #MainNavBar>#navbar{
     background-color: white;
     border-radius: 25px;
@@ -147,24 +161,35 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
     transition: all .3s;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px 20px;
 }
+#Audit #MainNavBar.mobile>.headerNavBar{background-color: #915f14;}
+#TuneUp #MainNavBar.mobile>.headerNavBar{background-color: #054035;}
+#AdsManage #MainNavBar.mobile>.headerNavBar{background-color: #212e62;}
+
 #MainNavBar.mobile>.headerNavBar.open{top:0;}
-#MainNavBar.mobile>.headerNavBar>ul{
+#MainNavBar.mobile>.headerNavBar>ul.navv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group{
     width: 100%;
 }
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group{
-    width: 100%;
-}
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel{
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group>.panel{
     background-color: transparent;
     text-align: center;
+    box-shadow: none;
+    border: none;
 }
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-heading{
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group>.panel>.panel-heading{
     padding: 12px 15px;
 }
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-heading h4{}
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-heading a{
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group>.panel>.panel-heading h4{}
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group>.panel>.panel-heading a{
     color: #E6E6E6;
     font-family: Inter;
     font-size: 18px;
@@ -172,24 +197,25 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
     font-weight: 700;
     position: relative;
 }
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-heading a:hover{}
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-heading a img{
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group>.panel>.panel-heading a:hover{}
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group>.panel>.panel-heading a img{
     margin: 7px 20px;
     position: absolute;
 }
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-collapse{}
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-collapse ul{
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group>.panel>.panel-collapse{}
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group>.panel>.panel-collapse ul{
     border: transparent;
-    background-color: #030532;
+    background-color: #0000001a;
     padding: 10px 0;
     box-shadow: inset 0em 0em 2px 0px #020318;
+    border-radius: 10px;
 }
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-collapse ul li{
-    background-color: #030532;
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group>.panel>.panel-collapse ul li{
+    background-color: #00000000;
     border: none;
     padding: 12px 10px;
 }
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-collapse ul li a{
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group>.panel>.panel-collapse ul li a{
     color: #E6E6E6;
     font-family: Inter;
     font-size: 16px;
@@ -197,7 +223,38 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
     font-weight: 200;
     position: relative;
 }
-#MainNavBar.mobile>.headerNavBar>ul>.panel-group>.panel>.panel-collapse ul li a:hover{}
+#MainNavBar.mobile>.headerNavBar>ul.navv>.panel-group>.panel>.panel-collapse ul li a:hover{}
+
+#MainNavBar.mobile>.headerNavBar>.socials{}
+#MainNavBar.mobile>.headerNavBar>.socials>.number{
+    margin-bottom: 20px;
+}
+#MainNavBar.mobile>.headerNavBar>.socials>.number>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#MainNavBar.mobile>.headerNavBar>.socials>.number>ul>li{
+    margin: 10px;
+}
+#MainNavBar.mobile>.headerNavBar>.socials>.number>ul>li>a{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.176px;
+}
+#MainNavBar.mobile>.headerNavBar>.socials>.icons{}
+#MainNavBar.mobile>.headerNavBar>.socials>.icons>ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#MainNavBar.mobile>.headerNavBar>.socials>.icons>ul>li{}
+#MainNavBar.mobile>.headerNavBar>.socials>.icons>ul>li>a{}
 
 /* Hamburger Menu */
 #MainNavBar .ham {
@@ -350,6 +407,7 @@ footer.site-footer{
     position: relative;
     margin: 130px auto 0 auto;
     width: 85%;
+    scroll-snap-align: center;
 }
 footer.site-footer>.footerContact{
     border-radius: 40px;
@@ -588,18 +646,7 @@ footer.site-footer>.footerNav.mobile>.logo img{
 }
 #homePage>.wrapper>header>.container #MainNavBar{}
 #homePage>.wrapper>header>.container #MainNavBar.mobile{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background-color: #0000001c;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    margin-top: 0;
-    /* border-bottom: .1px solid #9a9a9a; */
-    box-shadow: 0px 0px 2px #1c1c1c;
+    
 }
 #homePage>.wrapper>header>.container>.content{
     position: relative;
@@ -1372,7 +1419,8 @@ footer.site-footer>.footerNav.mobile>.logo img{
 #ServicesHeader .container>.content>.img{}
 #ServicesHeader .container>.content>.img img{}
 
-#ServicesMain{}
+#ServicesMain{
+}
 #ServicesMain>#Intro{
     position: relative;
     margin: 40px auto;
@@ -1407,6 +1455,7 @@ footer.site-footer>.footerNav.mobile>.logo img{
 }
 #ServicesMain>section{
     margin-top: 130px;
+    scroll-snap-align: center;
 }
 #ServicesMain>#Steps{}
 #ServicesMain>#Steps .container{}
@@ -1594,6 +1643,7 @@ footer.site-footer>.footerNav.mobile>.logo img{
     width: 50%;
     height: 100%;
     background-color: white;
+    padding: 20px;
 }
 #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems{}
 #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.selectItems>ul{}
@@ -1659,7 +1709,9 @@ footer.site-footer>.footerNav.mobile>.logo img{
     position: relative;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    z-index: 2;
 }
 #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li>span{
     color: #757575;
@@ -1682,7 +1734,12 @@ footer.site-footer>.footerNav.mobile>.logo img{
     line-height: 150%; /* 37.5px */
     letter-spacing: -0.475px;
 }
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li.BudgetFeeLi{}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li.BudgetFeeLi{
+    z-index: 1;
+    transition: all .3s;
+    margin-top: -50px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>ul>li.BudgetFeeLi.showww{margin-top: 0px;}
 #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>p{
     position: relative;
     display: flex;
@@ -1715,7 +1772,7 @@ footer.site-footer>.footerNav.mobile>.logo img{
     align-items: center;
     justify-content: flex-start;
 }
-#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>.checkBox input{margin-top: 0;margin-right: 15px;transform: scale(1.7);filter: hue-rotate(31deg);}
+#ServicesMain>#PricingForm .container>.boxs>.SelectPrices>.wageInfo>.checkBox input{margin-top: 0;margin-right: 15px;transform: scale(1.7);cursor: pointer;}
 #ServicesMain>#PricingForm input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
@@ -1756,21 +1813,90 @@ footer.site-footer>.footerNav.mobile>.logo img{
     top: 0;
     width: 50%;
     height: 100%;
+    transition: all .3s;
+    border-radius: 25px 0 0 25px;
+    background: #252E60;
+    padding: 30px 60px;
+    padding-top: 60px;
 }
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top{}
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top span{}
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top button{}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting.open{right: 50%;width: 51%;}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top span{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.22px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top button{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: #252e60;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.22px;
+}
 #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top button:hover{}
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form{}
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div{}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form{
+    margin-top: 34px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div{
+    margin: 30px 0;
+}
 #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div:not(.button){}
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div label{}
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div input{}
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div .bottom-line{}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div label{
+    color: rgb(116 127 184 / 68%);
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.22px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div input{
+    background-color: #252e60;
+    color: white;
+}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div .bottom-line{
+    background-color: #59639B;
+    height: 1.8px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting .bottom-line .fill-line{
+    background-color: #d0d6fa;
+}
 #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div .bottom-line .fill-line{}
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div.button{}
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div.button button{}
-#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div.button button:hover{}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div.button{
+}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div.button button{
+    border-radius: 12px;
+    background: #D0D6FA;
+    border: none;
+    width: 60%;
+    height: 70px;
+    color: #252E60;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.198px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div.button button:hover{background: #fff;}
 
 #ServicesMain>#collaborating{}
 #ServicesMain>#collaborating .container{}
@@ -2079,11 +2205,13 @@ footer.site-footer>.footerNav.mobile>.logo img{
 /* ------------------ /TuneUp.php ------------------ */
 
 /* ------------------- AdsManagment.php ------------ */
+html.Ads.Management{scroll-snap-type: mandatory;scroll-snap-points-y: repeat(3rem);scroll-snap-type: y mandatory;}
 #AdsManage ::-moz-selection {color: #fff;background: #252E60;}
 #AdsManage ::selection {color: #fff;background: #252E60;}
 #AdsManage #ServicesHeader{
     background-image: url(../images/adsmanageHeaderBG.jpg);
     background-color: #232d61;
+    scroll-snap-align: center;
 }
 #AdsManage #ServicesMain>#collaborating .container>.items>ul>li:nth-child(1)>.content{background: #EED2A7;}
 #AdsManage #ServicesMain>#collaborating .container>.items>ul>li:nth-child(2)>.content{background: #EEE3A7;}

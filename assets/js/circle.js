@@ -1,3 +1,13 @@
+const WageFee = $('.WageFee');
+const SetupFee = $('.SetupFee');
+const BudgetFee = $('.BudgetFee');
+const TotalFee = $('.TotalFee');
+var TotalFeeSum = 0;
+var WageFeeSum = 0;
+var SetupFeeSum = 100;
+var BudgetFeeSum = 0;
+SetupFee.text('$100');
+
 // circle price
 const circleRange = document.querySelector('.circle-range');
 const sliderRange = document.querySelector('.circle-range .slider');
@@ -18,13 +28,12 @@ let deltaX ;
 let deltaY ;
 let posX ;
 let posY ;
-  sliderRange.addEventListener('mousedown',()=>{isDragging = true});
-  body.addEventListener('mouseup',()=>{isDragging = false;
-  slider.style.transition = 'all .3s';
-});
 
-$('#PricingForm').on('mousemove', function (e) {
-  // window.addEventListener('mousemove',e=>{
+$('.circle-range .slider').bind( "mousedown touchstart", function() { isDragging = true; $('html, body').css({overflow: 'hidden' }); });
+$('body').bind( "mouseup touchend", function() { isDragging = false; slider.style.transition = 'all .3s'; $('html, body').css({overflow: 'auto'}); });
+
+  $('#PricingForm').bind( "mousemove touchmove", function(e) {
+  
   const box = circleRange.getBoundingClientRect();
   const priceInfo = document.querySelector('.priceInfo').value;
   if(isDragging) {    
@@ -34,17 +43,18 @@ $('#PricingForm').on('mousemove', function (e) {
       topSections = header.offsetHeight;
     }
     else {
-      topSections = header.offsetHeight + Intro.offsetHeight + Steps.offsetHeight + 300;
+      topSections = header.offsetHeight + Intro.offsetHeight + Steps.offsetHeight + 200;
     }
     
           centerX = (circleRange.offsetWidth / 2) + box.left;
           centerY = (circleRange.offsetHeight / 2) + box.top;
     // console.log("Left: " + box.left.toFixed() + ", Top: " + box.top.toFixed() + ", Width: " + box.width + ", Height: " + box.height);
-          posX = e.originalEvent.pageX ;
-          posY = e.originalEvent.pageY - topSections;
+          posX = e.originalEvent.pageX ? e.originalEvent.pageX : e.originalEvent.touches[0].pageX ;
+          posY = e.originalEvent.pageY ? e.originalEvent.pageY : e.originalEvent.touches[0].pageY ;
+          posY -= topSections;
           deltaY = centerY - posY ;
           deltaX = centerX - posX ;
-    // console.log('pageX: '+e.originalEvent.pageX+', pageY: '+e.originalEvent.pageY);
+    // console.log('pageX: '+posX+', pageY: '+posY);
     // console.log('deltaX: '+deltaX+', deltaY: '+deltaY);
           angle = atan2(deltaY, deltaX) * (180 / PI) ;
           angle -= 0 ;
@@ -60,8 +70,11 @@ $('#PricingForm').on('mousemove', function (e) {
           // priceInfo.textContent = angle ;
     // $('#priceInfo').val(pricePerDot);
     priceShow = '$'+ pricePerDot.toLocaleString('en');
+    BudgetFee.text(priceShow);
+    TotalFeeSum = WageFeeSum + SetupFeeSum;
+    TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
     $('#priceInfo').val(priceShow);
-    console.log(angle,priceInfo);
+    // console.log(angle,priceInfo);
     
       }
       
@@ -81,12 +94,18 @@ function selectItems(price){
   if (price < 5000){
     $('.selectItems>ul>li>.button').removeClass('selected');
     $('.selectItems>ul>li>.button[item="1"]').addClass('selected');
+    WageFeeSum = (price*15)/100;
+    WageFee.text('$'+WageFeeSum.toLocaleString('en'));
   } else if (5001 < price < 15000){
     $('.selectItems>ul>li>.button').removeClass('selected');
     $('.selectItems>ul>li>.button[item="2"]').addClass('selected');
+    WageFeeSum = (price*7)/100;
+    WageFee.text('$'+WageFeeSum.toLocaleString('en'));
   } if (15001 < price){
     $('.selectItems>ul>li>.button').removeClass('selected');
     $('.selectItems>ul>li>.button[item="3"]').addClass('selected');
+    WageFeeSum = (price*5)/100;
+    WageFee.text('$'+WageFeeSum.toLocaleString('en'));
   }
 }
 
@@ -98,16 +117,28 @@ $('.SelectPrices>.selectItems>ul>li>.button').click(function () {
   switch (item) {
     case '1':
       pricePerDot = 1000;
+      WageFeeSum = (pricePerDot*15)/100;
+      WageFee.text('$'+WageFeeSum.toLocaleString('en'));
+      TotalFeeSum = WageFeeSum + SetupFeeSum;
+      TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
       slider.style.transform = `rotate(-90deg)`;
       $('#priceInfo').val('$'+ pricePerDot.toLocaleString('en'));
       break;
     case '2':
       pricePerDot = 5000;
+      WageFeeSum = (pricePerDot*7)/100;
+      WageFee.text('$'+WageFeeSum.toLocaleString('en'));
+      TotalFeeSum = WageFeeSum + SetupFeeSum;
+      TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
       slider.style.transform = `rotate(-50deg)`;
       $('#priceInfo').val('$'+ pricePerDot.toLocaleString('en'));
       break;
     case '3':
       pricePerDot = 15000;
+      WageFeeSum = (pricePerDot*5)/100;
+      WageFee.text('$'+WageFeeSum.toLocaleString('en'));
+      TotalFeeSum = WageFeeSum + SetupFeeSum;
+      TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
       slider.style.transform = `rotate(50deg)`;
       $('#priceInfo').val('$'+ pricePerDot.toLocaleString('en'));
       break;
@@ -116,3 +147,16 @@ $('.SelectPrices>.selectItems>ul>li>.button').click(function () {
   
 });
   
+
+$('#payCheckbox').change(function() {
+  // this will contain a reference to the checkbox   
+  if (this.checked) {
+      $('.BudgetFeeLi').addClass('showww');
+      TotalFeeSum = WageFeeSum + pricePerDot + SetupFeeSum;
+      TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
+  } else {
+      $('.BudgetFeeLi').removeClass('showww');
+      TotalFeeSum = WageFeeSum + SetupFeeSum;
+      TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
+  }
+});

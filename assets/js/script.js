@@ -360,14 +360,6 @@ $('.customForm>div').click(function (e) {
   return false;
 });
 
-
-
-
-
-
-
-
-
 $( "#Services,.ServicesNav" ).hover(
   function() {
     $('.selectBox.ServicesNav').css("height", "224px");
@@ -390,6 +382,11 @@ $( "#LearnAbout,.LearnAbout" ).hover(
 $('#OurTeam>.boxs>ul>li').click(function () {
   $('#OurTeam>.boxs>ul>li').removeClass('open');
   $(this).addClass('open');
+  if ( window.innerWidth > 760) {
+    $('html, body').animate({
+      scrollTop: $("#OurTeam").offset().top
+    }, 0);
+  }
 });
 $('#OurTeam .closeButton').click(function () {
   setTimeout(function(){ 
@@ -426,3 +423,33 @@ $('.hamRotate').click(function () {
   }
   
 });
+
+// Fix mobile menu
+document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 50 && window.innerWidth < 760) {
+        // document.getElementById('MainNavBar').classList.add('fixed-top');
+        $('#MainNavBar.mobile').addClass('fixed-top');
+        // add padding top to show content behind navbar
+        // navbar_height = document.querySelector('MainNavBar').offsetHeight;
+        navbar_height = $('#MainNavBar.mobile').outerHeight() + 'px';
+        $('#navbar_padding').css("padding-top", navbar_height);
+        // document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        // document.getElementById('navbar_top').classList.remove('fixed-top');
+        $('#MainNavBar.mobile').removeClass('fixed-top');
+         // remove padding top from body
+        $('#navbar_padding').css("padding-top", '0');
+      } 
+  });
+}); 
+
+
+// open form Range
+$('.openFormButton').click(function () {
+  $('.formPriceSubmiting').addClass('open');
+});
+$('.formPriceSubmiting>.top button').click(function () {
+  $('.formPriceSubmiting').removeClass('open');
+});
+

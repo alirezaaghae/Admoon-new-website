@@ -13,7 +13,7 @@
         <header>
             <div class="container">
                 <?php include('nav.php'); ?>
-                <div class="content">
+                <div class="content" id="navbar_padding">
                     <div class="text">
                         <h1>Admoon help you<br><span>With Google ads</span></h1>
                         <a href="#ProvideForYou">What we do for you</a>

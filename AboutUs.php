@@ -13,7 +13,7 @@
             <header id="WhiteMenu">
                 <?php include('nav.php'); ?>
             </header>
-            <main>
+            <main id="navbar_padding">
                 <section id="AboutUsIntro">
                     <div class="text"><h1>Who are we</h1><p>During the process of creating an audit for your Google Ads campaign, our team follows a meticulous and comprehensive approach to ensure no stone is left unturned. Here's a breakdown of what we do During the process of creating an audit for your Google Ads campaign, our team follows a meticulous and comprehensive approach to ensure no stone is left unturned.</p></div>
                     <div class="img"><img src="assets/images/aboutImage.jpg" alt="Admoon" title="Admoon"></div>

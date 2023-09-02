@@ -14,7 +14,7 @@
             <?php include('nav.php'); ?>
         </div>
     </header>
-    <main>
+    <main id="navbar_padding">
         <section id="SingleCover">
             <div class="container">
                 <div class="box">

@@ -12,7 +12,7 @@
         <header id="ServicesHeader">
             <div class="container">
                 <?php include('nav.php'); ?>
-                <div class="content">
+                <div class="content" id="navbar_padding">
                     <div class="text">
                         <h1>Tune Up</h1>
                         <span>Revitalize Your Campaign with Tune Up</span>

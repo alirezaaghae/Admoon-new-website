@@ -12,7 +12,7 @@
         <header id="ServicesHeader">
             <div class="container">
                 <?php include('nav.php'); ?>
-                <div class="content">
+                <div class="content" id="navbar_padding">
                     <div class="text">
                         <h1>Ads Management</h1>
                         <span>Elevate Your Ads Management</span>
@@ -100,19 +100,19 @@
                             <div class="wageInfo">
                                 <ul>
                                     <li><span>Wage fee:</span><strong class="WageFee">$0</strong></li>
-                                    <li><span>Setup fee:</span><strong class="SetupFee">$100</strong></li>
+                                    <li><span>Setup fee:</span><strong class="SetupFee">$0</strong></li>
                                     <li class="BudgetFeeLi"><span>Budget fee:</span><strong class="BudgetFee">$0</strong></li>
                                 </ul>
                                 <hr>
-                                <p><span>Total fee:</span><strong class="TotalFee">$100</strong></p>
+                                <p><span>Total fee:</span><strong class="TotalFee">$0</strong></p>
                                 <hr>
                                 <div class="checkBox"><input type="checkbox" name="payCheckbox" id="payCheckbox"><p>I need to pay my account fee by your company </p></div> 
                             </div>
                             <button class="openFormButton">Start Now</button>
                         </div>
                         <div class="formPriceSubmiting">
-                            <div class="top"><span></span><button>X</button></div>
-                            <form class="form">
+                            <div class="top"><span>Let’s we learn about you</span><button>X</button></div>
+                            <form class="form customForm">
                                 <div class="WebsiteAddress">
                                     <label>Website URL
                                     <input type="text" name="Website"></label>
