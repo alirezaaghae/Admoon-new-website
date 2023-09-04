@@ -1,7 +1,5 @@
 <?php
 
-
-
 ini_set("soap.wsdl_cache_enabled", "0");
 error_reporting(0);
 if($_POST['ajax']=='true'){
@@ -12,9 +10,9 @@ if(!empty($_SERVER['HTTP_CLIENT_IP'])){$ip = $_SERVER['HTTP_CLIENT_IP'];}elseif(
 
 // database details
     $host = "localhost";
-    $username = "cafelead_alireza";
-    $password = "cafelead_alireza";
-    $dbname = "cafelead_Breast_prosthesis";
+    $username = "admoon_alireza";
+    $password = "AW?e3HyTmv92";
+    $dbname = "admoon_alireza";
 
     // creating a connection
     $db_connection = mysqli_connect($host, $username, $password, $dbname);
@@ -29,11 +27,21 @@ if(!empty($_SERVER['HTTP_CLIENT_IP'])){$ip = $_SERVER['HTTP_CLIENT_IP'];}elseif(
     date_default_timezone_set('Asia/Tehran');
     $datetime=date('Y-m-d H:i:s');
 
-    $age = $_POST['age'];
-    $goingTo = $_POST['goingTo'];
+    $page = $_POST['page'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $website = $_POST['website'];
     $phone = $_POST['phone'];
+    $TotalFee = $_POST['TotalFee'];
+    $WageFee = $_POST['WageFee'];
+    $price = $_POST['price'];
+    if ($price != '') {
+        $priceInfo ='price: '.$price .' WageFee: '.$WageFee .' TotalFee: '. $TotalFee ;
+    } else {
+        $priceInfo ='' ;
+    }
 
-    mysqli_query($db_connection,"INSERT INTO package (age, goingTo, phone, date) VALUES ('$age', '$goingTo', '$phone', '$datetime')");
+    mysqli_query($db_connection,"INSERT INTO customer (page, name, email, website, phone, priceInfo, date) VALUES ('$page', '$name', '$email','$website', '$phone', '$priceInfo', '$datetime')");
 
 
 
@@ -56,10 +64,16 @@ $parameters['isflash'] =false;
 echo $sms_client->SendSimpleSMS2($parameters)->SendSimpleSMS2Result;
 }
 function smscompiler($string){
-global $age,$goingTo,$phone,$datetime;
-$string=str_replace('{age}',$age,$string);
-$string=str_replace('{goingTo}',$goingTo,$string);
+global $page,$name,$email,$website,$phone,$TotalFee,$WageFee,$price,$priceInfo,$datetime;
+$string=str_replace('{page}',$page,$string);
+$string=str_replace('{name}',$name,$string);
+$string=str_replace('{email}',$email,$string);
+$string=str_replace('{website}',$website,$string);
 $string=str_replace('{phone}',$phone,$string);
+$string=str_replace('{TotalFee}',$TotalFee,$string);
+$string=str_replace('{WageFee}',$WageFee,$string);
+$string=str_replace('{price}',$price,$string);
+$string=str_replace('{priceInfo}',$priceInfo,$string);
 $string=str_replace('{datetime}',$datetime,$string);
 return $string;
 }

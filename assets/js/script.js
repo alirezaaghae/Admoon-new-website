@@ -185,6 +185,9 @@ function sendAjaxForm() {
             $('.thirdQS').removeClass('show');
             $('.successQS').addClass('show');
             $('.backbutton').hide();
+            $('.formPriceSubmiting').addClass('success');
+            $('#footerform').addClass('success');
+            $('.form.contactUs').addClass('success');
         }
     });
 

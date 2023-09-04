@@ -60,6 +60,9 @@
                     <button class="send_button">Submit</button>
                 </div>
             </form>
+            <div class="successQS">
+                <p>Thank you for ordering us! We will call you back</p>
+            </div>
         </div>
     </div>
     </div>

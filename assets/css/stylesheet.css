@@ -524,6 +524,19 @@ footer.site-footer>.footerContact>.container #footerform form>.footer-button but
     text-align: center;
 }
 footer.site-footer>.footerContact>.container #footerform form>.footer-button button:hover{background-color:#ffffff;color:#252e60;}
+footer.site-footer>.footerContact>.container #footerform .successQS{display:none;width: 100%;height: 100%;padding: 20px 0px;align-items: center;justify-content: center;}
+footer.site-footer>.footerContact>.container #footerform .successQS p{
+    color: #252e60;
+    font-family: Poppins;
+    font-size: 14px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.275px;
+}
+footer.site-footer>.footerContact>.container #footerform.success .customForm{display:none;}
+footer.site-footer>.footerContact>.container #footerform.success .successQS{display:flex;}
 footer.site-footer>.footerNav.desktop{
     border-radius: 40px;
     background: #252E60;
@@ -1916,6 +1929,20 @@ footer.site-footer>.footerNav.mobile>.logo img{
     letter-spacing: -0.198px;
 }
 #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.form>div.button button:hover{background: #fff;}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting.success .top{display: none;}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting.success .customForm{display: none;}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting .successQS{display: none;text-align: center;width: 100%;height: 100%;align-items: center;justify-content: center;top: -20px;position: relative;}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting .successQS p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.275px;
+}
+#ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting.success .successQS{display: flex;}
+
 
 #ServicesMain>#collaborating{}
 #ServicesMain>#collaborating .container{}
@@ -2260,6 +2287,7 @@ html.Ads.Management{scroll-snap-type: mandatory;scroll-snap-points-y: repeat(3re
     margin-right: 20px;
 }
 #AdsManage #ServicesMain>#WhyChooseOurService .container>.items>ul>li>.box>.text{}
+
 /* ------------------ /AdsManagment.php ------------ */
 
 /* ------------------- CaseStudy.php --------------- */
@@ -3353,4 +3381,22 @@ html.Ads.Management{scroll-snap-type: mandatory;scroll-snap-points-y: repeat(3re
     filter: brightness(0.5);
     transition: all .3s;
 }
+
+#ContactUs #mainForm .form.contactUs{}
+#ContactUs #mainForm .form.contactUs.success{}
+#ContactUs #mainForm .form.contactUs.success .customForm{display: none;}
+#ContactUs #mainForm .form.contactUs .successQS{display: none;width: 100%;border-radius: 20px;background-color: #252e60;text-align: center;align-items: center;justify-content: center;}
+#ContactUs #mainForm .form.contactUs .successQS p{
+    color: #fff;
+    font-family: Inter;
+    font-size: 18px;
+    padding: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: -0.198px;
+    text-align: center;
+}
+#ContactUs #mainForm .form.contactUs.success .successQS{display: flex;}
+.send_button.pending{opacity:0.1;}
 /* ------------------ /ContactUs.php --------------- */

@@ -78,7 +78,7 @@
                             <div class="selectItems">
                                 <ul>
                                     <li>
-                                        <div class="button selected" item="1" >
+                                        <div class="button" item="1" >
                                             <span>$1,000-$4,900</span>
                                             <b>Wage: <strong>%15</strong></b>
                                         </div>
@@ -140,6 +140,9 @@
                                     <button class="send_button">Start Now</button>
                                 </div>
                             </form>
+                            <div class="successQS">
+                                <p>Thank you for ordering us! We will call you back</p>
+                            </div>
                         </div>
                     </div>
                 </div>
