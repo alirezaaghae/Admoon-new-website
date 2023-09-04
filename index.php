@@ -167,7 +167,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="">Explore more <img src="assets/images/rightArrowIcon.svg"><img src="assets/images/rightArrowIcon2.svg"></a>
+                    <a href="CaseStudy.php">Explore more <img src="assets/images/rightArrowIcon.svg"><img src="assets/images/rightArrowIcon2.svg"></a>
                 </div>
             </section>
             <section id="ProvideForYou">

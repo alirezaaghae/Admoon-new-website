@@ -2,7 +2,7 @@
     global $title;
     global $description;
     global $colorTheme;
-?>
+?> 
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US" class="no-js <?php echo $title;?> ">
 <!-- include head setting -->

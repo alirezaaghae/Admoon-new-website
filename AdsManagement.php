@@ -69,7 +69,7 @@
                     <div class="boxs">
                         <div class="circleInput">
                             <div class="circle-range">
-                                <input id="priceInfo" pattern="[0-9]{32}" class="priceInfo" type="text" value="" placeholder="Enter your budget" onkeyup="addListAfterKeypress()">
+                                <input id="priceInfo" maxlength="7" pattern="[0-9]{32}" class="priceInfo" type="text" value="" placeholder="Enter your budget" onkeyup="addListAfterKeypress()">
                                 <span>Monthly Budget</span>
                                 <div class="slider"></div>
                             </div>
@@ -79,13 +79,13 @@
                                 <ul>
                                     <li>
                                         <div class="button selected" item="1" >
-                                            <span>$1,000-$5,000</span>
+                                            <span>$1,000-$4,900</span>
                                             <b>Wage: <strong>%15</strong></b>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="button" item="2">
-                                            <span>$5,000-$15,000</span>
+                                            <span>$5,000-$14,900</span>
                                             <b>Wage: <del>%12</del> <strong>%7</strong></b>
                                         </div>
                                     </li>

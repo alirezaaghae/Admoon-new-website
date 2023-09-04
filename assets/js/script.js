@@ -2,6 +2,7 @@ var emailValid = false;
 var nameValid = false;
 var phoneValid = false;
 var websiteValid = false;
+var page = '';
 
 // just get 11 number input
 var alireza = document.querySelectorAll(".alireza_validator input"),
@@ -44,8 +45,10 @@ for (i = 0; i < l; i++) {
   a.setAttribute("class", "select-selected");
   if (formPage != ''){
     a.innerHTML = formPage;
+    page = formPage;
   } else {
     a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+    page = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   }
 
   x[i].appendChild(a);
@@ -145,15 +148,17 @@ $('#homePage .owl-carousel').owlCarousel({
 
 
 function sendAjaxForm() {
-    var age, goingTo, phone;
+    var name, email, website, phone, page;
     var elm = $(this).parent();
     var a = 'ld';
-    age = $("input[name='age']:checked").val();
-    goingTo = $("input[name='goingTo']:checked").val();
-    phone = $('#phone').val();
+    name = $("input[name='name']:checked").val();
+    email = $("input[name='email']:checked").val();
+    website = $("input[name='website']:checked").val();
+    phone = $("input[name='phone']:checked").val();
+    page = '' ? $("body").getAttribute("id") : page;
 
-    $('.InputButton').addClass('pending');
-    $('.InputButton').prop('disabled', true);
+    $('.send_button').addClass('pending');
+    $('.send_button').prop('disabled', true);
 
     // disable all forms when fill the form :|
 //     [beforAjax] $('#next_button').addClass('pending');
@@ -164,12 +169,17 @@ function sendAjaxForm() {
         data: {
             'ajax': 'true',
             'in': '5' + a,
-            'age': age,
-            'goingTo': goingTo,
-            'phone': phone
+            'page': page,
+            'name': name,
+            'email': email,
+            'website': website,
+            'phone': phone,
+            'TotalFee': TotalFeeSum,
+            'WageFee': WageFeeSum,
+            'price': pricePerDot
         },
         success: function (result) {
-            $('.InputButton').addClass('disable');
+            $('.send_button').addClass('disable');
             elm.addClass('success');
             // console.log(result);
             $('.thirdQS').removeClass('show');
@@ -296,6 +306,7 @@ $('.next_button').click(function () {
       if(phoneValid){
         $('.form-input').attr("state", "website");
         $('.next_button').text('Send');
+        $('.next_button').addClass('send_button');
         $('.next_button').attr("state", "3");
       }
       break;
@@ -313,6 +324,10 @@ $('.next_button').click(function () {
   }
 });
 
+$('.send_button').click(function () {
+  sendAjaxForm();
+});
+
 $('.top-label label').click(function (e) {
   e.preventDefault();
   let radio = $(this).attr("value");
@@ -320,22 +335,26 @@ $('.top-label label').click(function (e) {
     case '0':
       $('.form-input').attr("state", "email");
       $('.next_button').text('Lets Start');
+      $('.next_button.send_button').removeClass('send_button');
       $('.next_button').attr("state", "0");
       break;
     case '1':
       $('.form-input').attr("state", "name");
       $('.next_button').text('Next');
+      $('.next_button.send_button').removeClass('send_button');
       $('.next_button').attr("state", "1");
       break;
     case '2':
       $('.form-input').attr("state", "phone");
       $('.next_button').text('Next');
+      $('.next_button.send_button').removeClass('send_button');
       $('.next_button').attr("state", "2");
       
       break;
     case '3':
       $('.form-input').attr("state", "website");
       $('.next_button').text('Send');
+      $('.next_button').addClass('send_button');
       $('.next_button').attr("state", "3");
       break;
     default: console.log('default');
@@ -443,13 +462,3 @@ document.addEventListener("DOMContentLoaded", function(){
       } 
   });
 }); 
-
-
-// open form Range
-$('.openFormButton').click(function () {
-  $('.formPriceSubmiting').addClass('open');
-});
-$('.formPriceSubmiting>.top button').click(function () {
-  $('.formPriceSubmiting').removeClass('open');
-});
-

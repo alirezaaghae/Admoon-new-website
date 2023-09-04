@@ -17,6 +17,8 @@ const Steps = document.querySelector('#Steps');
   const body = document.querySelector('#AdsManage #ServicesMain');
 const slider = document.querySelector('.slider');
   let isDragging;
+  let isChecked = false;
+  let isTruePrice = false;
 let angle ;
 let degree ;
 let pricePerDot ;
@@ -66,12 +68,12 @@ $('body').bind( "mouseup touchend", function() { isDragging = false; slider.styl
     selectItems(pricePerDot);
     degree = angle - 90;
     slider.style.transition = 'inherit';
-          slider.style.transform = `rotate(${degree}deg)`;
+    slider.style.transform = `rotate(${degree}deg)`;
           // priceInfo.textContent = angle ;
     // $('#priceInfo').val(pricePerDot);
     priceShow = '$'+ pricePerDot.toLocaleString('en');
     BudgetFee.text(priceShow);
-    TotalFeeSum = WageFeeSum + SetupFeeSum;
+    TotalFeeSum = isChecked ? (WageFeeSum + pricePerDot + SetupFeeSum) : (WageFeeSum + SetupFeeSum);
     TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
     $('#priceInfo').val(priceShow);
     // console.log(angle,priceInfo);
@@ -81,31 +83,44 @@ $('body').bind( "mouseup touchend", function() { isDragging = false; slider.styl
   });
  function addListAfterKeypress() {
   pricePerDot = $( "#priceInfo" ).val();
-  var thenum = pricePerDot.replace(/[^\d\.]*/g, ''); // Replace all leading non-digits with nothing
-  priceShow = '$'+ thenum.toLocaleString('en');
+  pricePerDot = pricePerDot.replace(/[^\d\.]*/g, ''); // Replace all leading non-digits with nothing
+  pricePerDot = Number(pricePerDot);
+  selectItems(pricePerDot);
+  priceShow = '$'+ pricePerDot.toLocaleString('en');
+  BudgetFee.text(priceShow);
+  TotalFeeSum = isChecked ? (WageFeeSum + pricePerDot + SetupFeeSum) : (WageFeeSum + SetupFeeSum);
+  TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
   $('#priceInfo').val(priceShow);
-  degree = (thenum/100)-90;
+  degree = (pricePerDot/100)-90;
   slider.style.transform = `rotate(${degree}deg)`;
-  console.log(thenum);
-  selectItems(thenum);
+  
 }
 
 function selectItems(price){
-  if (price < 5000){
+  if (1000 <= price && price < 5000){ 
     $('.selectItems>ul>li>.button').removeClass('selected');
     $('.selectItems>ul>li>.button[item="1"]').addClass('selected');
     WageFeeSum = (price*15)/100;
     WageFee.text('$'+WageFeeSum.toLocaleString('en'));
-  } else if (5001 < price < 15000){
+    isTruePrice = true;
+  } else if (5000 <= price && price < 15000){ 
     $('.selectItems>ul>li>.button').removeClass('selected');
     $('.selectItems>ul>li>.button[item="2"]').addClass('selected');
     WageFeeSum = (price*7)/100;
     WageFee.text('$'+WageFeeSum.toLocaleString('en'));
-  } if (15001 < price){
+    isTruePrice = true;
+  } else if (15000 <= price){  
     $('.selectItems>ul>li>.button').removeClass('selected');
     $('.selectItems>ul>li>.button[item="3"]').addClass('selected');
     WageFeeSum = (price*5)/100;
     WageFee.text('$'+WageFeeSum.toLocaleString('en'));
+    isTruePrice = true;
+  } else {
+    $('.selectItems>ul>li>.button').removeClass('selected');
+    WageFee.text('$0');
+    TotalFee.text('$0');
+    BudgetFee.text('$0');
+    isTruePrice = false;
   }
 }
 
@@ -113,13 +128,14 @@ function selectItems(price){
 $('.SelectPrices>.selectItems>ul>li>.button').click(function () {
   $('.SelectPrices>.selectItems>ul>li>.button').removeClass('selected');
   $(this).addClass('selected');
+  isTruePrice = true;
   let item = $(this).attr("item");
   switch (item) {
     case '1':
       pricePerDot = 1000;
       WageFeeSum = (pricePerDot*15)/100;
       WageFee.text('$'+WageFeeSum.toLocaleString('en'));
-      TotalFeeSum = WageFeeSum + SetupFeeSum;
+      TotalFeeSum = isChecked ? (WageFeeSum + pricePerDot + SetupFeeSum) : (WageFeeSum + SetupFeeSum);
       TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
       slider.style.transform = `rotate(-90deg)`;
       $('#priceInfo').val('$'+ pricePerDot.toLocaleString('en'));
@@ -128,7 +144,7 @@ $('.SelectPrices>.selectItems>ul>li>.button').click(function () {
       pricePerDot = 5000;
       WageFeeSum = (pricePerDot*7)/100;
       WageFee.text('$'+WageFeeSum.toLocaleString('en'));
-      TotalFeeSum = WageFeeSum + SetupFeeSum;
+      TotalFeeSum = isChecked ? (WageFeeSum + pricePerDot + SetupFeeSum) : (WageFeeSum + SetupFeeSum);
       TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
       slider.style.transform = `rotate(-50deg)`;
       $('#priceInfo').val('$'+ pricePerDot.toLocaleString('en'));
@@ -137,7 +153,7 @@ $('.SelectPrices>.selectItems>ul>li>.button').click(function () {
       pricePerDot = 15000;
       WageFeeSum = (pricePerDot*5)/100;
       WageFee.text('$'+WageFeeSum.toLocaleString('en'));
-      TotalFeeSum = WageFeeSum + SetupFeeSum;
+      TotalFeeSum = isChecked ? (WageFeeSum + pricePerDot + SetupFeeSum) : (WageFeeSum + SetupFeeSum);
       TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
       slider.style.transform = `rotate(50deg)`;
       $('#priceInfo').val('$'+ pricePerDot.toLocaleString('en'));
@@ -153,10 +169,34 @@ $('#payCheckbox').change(function() {
   if (this.checked) {
       $('.BudgetFeeLi').addClass('showww');
       TotalFeeSum = WageFeeSum + pricePerDot + SetupFeeSum;
+      console.log(WageFeeSum +'+'+ pricePerDot +'+'+ SetupFeeSum)
+      isChecked = true;
       TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
   } else {
       $('.BudgetFeeLi').removeClass('showww');
       TotalFeeSum = WageFeeSum + SetupFeeSum;
+      isChecked = false;
       TotalFee.text('$'+ TotalFeeSum.toLocaleString('en'));
   }
+});
+
+// open form Range
+$('.openFormButton').click(function () {
+  if(isTruePrice){
+    $('.formPriceSubmiting').addClass('open');
+  }else{
+    // $('#priceInfo').val('Choose above $1000');
+    $('#priceInfo').addClass('shake');
+    $('.circle-range>span').addClass('shake');
+    setTimeout(function(){ 
+      $('#priceInfo').removeClass('shake');
+      $('.circle-range>span').removeClass('shake');
+    },2000);
+    $('.circle-range>span').text('Choose above $1,000');
+    setTimeout(function(){ $('.circle-range>span').text('Monthly Budget')},2000);
+  }
+  
+});
+$('.formPriceSubmiting>.top button').click(function () {
+  $('.formPriceSubmiting').removeClass('open');
 });
