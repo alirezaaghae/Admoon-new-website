@@ -8,6 +8,28 @@
  
 <!-- page -->
 <body id="CaseStudy">
+    <div class="loading">
+        <div class="loading-text">
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">M</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">N</span>
+            <!--<span class="loading-text-words">.</span>-->
+            </br>
+            <span class="loading-text-words sec">C</span>
+            <span class="loading-text-words sec">A</span>
+            <span class="loading-text-words sec">S</span>
+            <span class="loading-text-words sec">E</span>
+            <span class="loading-text-words sec"> </span>
+            <span class="loading-text-words sec">S</span>
+            <span class="loading-text-words sec">T</span>
+            <span class="loading-text-words sec">U</span>
+            <span class="loading-text-words sec">D</span>
+            <span class="loading-text-words sec">Y</span>
+        </div>
+    </div>
     <div class="wrapper CaseStudy-page">
         <div class="container">
             <header id="WhiteMenu">
@@ -22,7 +44,7 @@
                     <div class="box customers">
                         <ul class="row">
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
-                                <a href="Single.php">
+                                <a href="single.php">
                                     <div class="img">
                                         <img src="assets/images/C1Home.png" alt="Zarifbar-img" title="Zarifbar-img">
                                         <img src="assets/images/C1Logo.svg" alt="Zarifbar-logo" title="Zarifbar-logo">
@@ -53,7 +75,7 @@
                                 </a>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
-                                <a href="Single.php">
+                                <a href="single.php">
                                     <div class="img">
                                         <img src="assets/images/C2Home.png" alt="spa-img" title="spa-img">
                                         <img src="assets/images/C2Logo.svg" alt="spa-logo" title="spa-logo">
@@ -84,7 +106,7 @@
                                 </a>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
-                                <a href="Single.php">
+                                <a href="single.php">
                                     <div class="img">
                                         <img src="assets/images/C3Home.png" alt="TourGasht-img" title="TourGasht-img">
                                         <img src="assets/images/C3Logo.svg" alt="TourGasht-logo" title="TourGasht-logo">

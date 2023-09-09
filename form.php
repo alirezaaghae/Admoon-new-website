@@ -1,5 +1,4 @@
 <?php
-
 ini_set("soap.wsdl_cache_enabled", "0");
 error_reporting(0);
 if($_POST['ajax']=='true'){
@@ -10,13 +9,12 @@ if(!empty($_SERVER['HTTP_CLIENT_IP'])){$ip = $_SERVER['HTTP_CLIENT_IP'];}elseif(
 
 // database details
     $host = "localhost";
-    $username = "admoon_alireza";
-    $password = "AW?e3HyTmv92";
-    $dbname = "admoon_alireza";
+    $username = "admoonagency_website";
+    $password = "wL(QZQS}j^{S";
+    $dbname = "admoonagency_website";
 
     // creating a connection
     $db_connection = mysqli_connect($host, $username, $password, $dbname);
-
     // to ensure that the connection is made
     if (!$db_connection)
     {
@@ -32,18 +30,25 @@ if(!empty($_SERVER['HTTP_CLIENT_IP'])){$ip = $_SERVER['HTTP_CLIENT_IP'];}elseif(
     $email = $_POST['email'];
     $website = $_POST['website'];
     $phone = $_POST['phone'];
-    $TotalFee = $_POST['TotalFee'];
+    $TotalFee = $_POST['TotalFee']; 
     $WageFee = $_POST['WageFee'];
     $price = $_POST['price'];
     if ($price != '') {
-        $priceInfo ='price: '.$price .' WageFee: '.$WageFee .' TotalFee: '. $TotalFee ;
+        $priceInfo ='price: '.$price.PHP_EOL.'WageFee: '.$WageFee.PHP_EOL.'TotalFee: '.$TotalFee ;
     } else {
         $priceInfo ='' ;
     }
-
     mysqli_query($db_connection,"INSERT INTO customer (page, name, email, website, phone, priceInfo, date) VALUES ('$page', '$name', '$email','$website', '$phone', '$priceInfo', '$datetime')");
 
 
+// send to Telegram
+$apiToken = "6137683138:AAFH4uhLrnFpb10luekk4qftSZIiyYaJEyY";
+$data = [
+    'chat_id' => '@admoon_agency_form', 
+    // 'text' => $_POST['message']
+    'text' => $page.PHP_EOL.'Name: '.$name.PHP_EOL.'Email: '.$email.PHP_EOL.'Website: '.$website.PHP_EOL.'Phone: '.$phone.PHP_EOL.$priceInfo.PHP_EOL.'ip: '.$ip.PHP_EOL.'Browser: '.$browser.PHP_EOL.'Time: '.$datetime
+];
+$response = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($data) );
 
 //sms config
 $smsconfigsql=mysqli_query($db_connection,"SELECT * FROM `variable` WHERE `type`='sms'");
@@ -78,7 +83,7 @@ $string=str_replace('{datetime}',$datetime,$string);
 return $string;
 }
     
-sendMessage($smsconfig['smsuser'],$smsconfig['smspass'],$smsconfig['smsfrom'],$smsconfig['smsadminphone'],smscompiler($smsconfig['smsadmintext']));
+// sendMessage($smsconfig['smsuser'],$smsconfig['smspass'],$smsconfig['smsfrom'],$smsconfig['smsadminphone'],smscompiler($smsconfig['smsadmintext']));
 // sendMessage($smsconfig['smsuser'],$smsconfig['smspass'],$smsconfig['smsfrom'],$phone,smscompiler($smsconfig['smstext']));    
 }
 ?>

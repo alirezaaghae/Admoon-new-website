@@ -8,6 +8,26 @@
  
 <!-- page -->
 <body id="Single">
+    <div class="loading">
+        <div class="loading-text">
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">M</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">N</span>
+            <!--<span class="loading-text-words">.</span>-->
+            </br>
+            <span class="loading-text-words sec">C</span>
+            <span class="loading-text-words sec">U</span>
+            <span class="loading-text-words sec">S</span>
+            <span class="loading-text-words sec">T</span>
+            <span class="loading-text-words sec">O</span>
+            <span class="loading-text-words sec">M</span>
+            <span class="loading-text-words sec">E</span>
+            <span class="loading-text-words sec">R</span>
+        </div>
+    </div>
     <div class="wrapper Single-page">
     <header id="WhiteMenu">
         <div class="container">

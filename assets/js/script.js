@@ -2,7 +2,26 @@ var emailValid = false;
 var nameValid = false;
 var phoneValid = false;
 var websiteValid = false;
+
+var nameInput = '';
+var emailInput = '';
+var websiteInput = '';
+var phoneInput = '';
+
 var page = '';
+var TotalFeeSum ;
+var WageFeeSum ;
+let pricePerDot ;
+
+// windows load
+$(window).on("load", function() {
+  // alert ("done");
+  $('.loading').css("top", "-100%");
+  
+  setTimeout(function() { 
+    $('.loading').css("display", "none");
+  }, 1000);
+});
 
 // just get 11 number input
 var alireza = document.querySelectorAll(".alireza_validator input"),
@@ -151,12 +170,15 @@ function sendAjaxForm() {
     var name, email, website, phone, page;
     var elm = $(this).parent();
     var a = 'ld';
-    name = $("input[name='name']:checked").val();
-    email = $("input[name='email']:checked").val();
-    website = $("input[name='website']:checked").val();
-    phone = $("input[name='phone']:checked").val();
-    page = '' ? $("body").getAttribute("id") : page;
+    name = nameInput;
+    email = emailInput;
+    website = websiteInput;
+    phone = phoneInput;
+    // page = '' ? $("body").attr('id') : page;
+    page = $("body").attr('id');
 
+    console.log(name,email,website,phone,page,TotalFeeSum,WageFeeSum,pricePerDot);
+    
     $('.send_button').addClass('pending');
     $('.send_button').prop('disabled', true);
 
@@ -164,7 +186,7 @@ function sendAjaxForm() {
 //     [beforAjax] $('#next_button').addClass('pending');
 //     [ajaxSuccess:] $('#next_button').removeClass('pending');$('form').addClass('success');
     $.ajax({
-        url: 'form.php',
+        url: 'form',
         method: "POST",
         data: {
             'ajax': 'true',
@@ -183,7 +205,7 @@ function sendAjaxForm() {
             elm.addClass('success');
             // console.log(result);
             $('.thirdQS').removeClass('show');
-            $('.successQS').addClass('show');
+            $('.successQS').addClass('showw');
             $('.backbutton').hide();
             $('.formPriceSubmiting').addClass('success');
             $('#footerform').addClass('success');
@@ -251,32 +273,35 @@ $('.list label').click(function (e) {
 });
 
 
-
-  $(".Email-input input").blur(function () {
+  $("input[name='email']").blur(function () {
     if ($(this).is(":invalid") || !$(this).val()) {
       emailValid = false;
     } else {
+      emailInput = $(this).val();
       emailValid = true;
     };
   });
-  $(".Name-input input").blur(function () {
+  $("input[name='name']").blur(function () {
     if ($(this).is(":invalid") || this.value.length < 2) {
       nameValid = false;
     } else {
+      nameInput = $(this).val();
       nameValid = true;
     };
   });
-  $(".phone-input input").blur(function () {
-    if ($(this).is(":invalid") || this.value.length != 10) {
+  $("input[name='phone']").blur(function () {
+    if ($(this).is(":invalid") || this.value.length < 2 || this.value.length > 15) {
       phoneValid = false;
     } else {
+      phoneInput = $(this).val();
       phoneValid = true;
     };
   });
-  $(".website-input input").blur(function () {
+  $("input[name='website']").blur(function () {
     if ($(this).is(":invalid") || this.value.length < 2) {
       websiteValid = false;
     } else {
+      websiteInput = $(this).val();
       websiteValid = true;
     };
   });
@@ -322,13 +347,17 @@ $('.next_button').click(function () {
       }
       websiteValid = false;
       break;
-    case '4':
-      console.log(state);
+    default: 
+      break;
   }
 });
 
 $('.send_button').click(function () {
-  sendAjaxForm();
+    if (emailValid && nameValid && phoneValid && websiteValid){
+        sendAjaxForm();
+    }else {
+        return false;
+    }
 });
 
 $('.top-label label').click(function (e) {

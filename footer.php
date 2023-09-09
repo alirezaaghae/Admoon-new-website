@@ -35,7 +35,7 @@
                 </div>
                 <div class="FullName footer-input">
                     <label>Full Name
-                        <input type="text" name="name" min="2" max="20">
+                        <input type="text" name="name" min="2" max="20" required>
                     </label>
                     <div class="bottom-line"><div class="fill-line"></div></div>
                 </div>
@@ -47,12 +47,12 @@
                 </div>
                 <div class="WebsiteAddress footer-input">
                     <label>Website URL
-                    <input type="text" name="Website"></label>
+                    <input type="text" name="website"></label>
                     <div class="bottom-line"><div class="fill-line"></div></div>
                 </div>
                 <div class="PhoneNumber footer-input">
                     <label>Phone Number
-                        <input type="tel" name="phone" maxlength="11">
+                        <input type="tel" name="phone" maxlength="15" required>
                     </label>
                     <div class="bottom-line"><div class="fill-line"></div></div>
                 </div>
@@ -75,10 +75,10 @@
                 <li>
                     <strong>Services</strong>
                     <ul>
-                        <li><a href="Audit.php">Audit</a></li>
-                        <li><a href="AdsManagement.php">Ads Management</a></li>
-                        <li><a href="TuneUp.php">Tune Up</a></li>
-                        <li><a href="AccountSuspension.php">Account Suspension</a></li>
+                        <li><a href="audit.php">Audit</a></li>
+                        <li><a href="adsManagement.php">Ads Management</a></li>
+                        <li><a href="tuneUp.php">Tune Up</a></li>
+                        <li><a href="accountSuspension.php">Account Suspension</a></li>
                     </ul>
                 </li>
                 <div class="vl"></div>
@@ -105,9 +105,9 @@
                 <li>
                     <strong>Resources</strong>
                     <ul>
-                        <li><a href="CaseStudy.php">Case Study</a></li>
-                        <li><a href="AboutUs.php">About Us</a></li>
-                        <li><a href="ContactUs.php">Contact Us</a></li>
+                        <li><a href="caseStudy.php">Case Study</a></li>
+                        <li><a href="aboutUs.php">About Us</a></li>
+                        <li><a href="contactUs.php">Contact Us</a></li>
                     </ul>
                 </li>
             </ul>
@@ -138,17 +138,17 @@
                     </div>
                     <div id="collapse101" class="panel-collapse collapse">
                         <ul class="list-group">
-                        <li class="list-group-item"><a href="Audit.php">Audit</a></li>
-                        <li class="list-group-item"><a href="AdsManagement.php">Ads Management</a></li>
-                        <li class="list-group-item"><a href="TuneUp.php">Tune Up</a></li>
-                        <li class="list-group-item"><a href="AccountSuspension.php">Account Suspension</a></li>
+                        <li class="list-group-item"><a href="audit.php">Audit</a></li>
+                        <li class="list-group-item"><a href="adsManagement.php">Ads Management</a></li>
+                        <li class="list-group-item"><a href="tuneUp.php">Tune Up</a></li>
+                        <li class="list-group-item"><a href="accountSuspension.php">Account Suspension</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                        <a href="CaseStudy.php">Case Study</a>
+                        <a href="caseStudy.php">Case Study</a>
                         </h4>
                     </div>
                 </div>
@@ -185,14 +185,14 @@
                 <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a href="AboutUs.php">About Us</a>
+                            <a href="aboutUs.php">About Us</a>
                         </h4>
                     </div>
                 </div>
                 <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                        <a href="ContactUs.php">Contact Us</a>
+                        <a href="contactUs.php">Contact Us</a>
                         </h4>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
             </div>
         </div>
         <div class="logo">
-            <img src="assets/images/admoonLogoWhite.svg" alt="admoon-logo" title="admoon-logo">
+            <a href="index.php"><img src="assets/images/admoonLogoWhite.svg" alt="admoon-logo" title="admoon-logo"></a>
         </div>
     </div>
 </footer>

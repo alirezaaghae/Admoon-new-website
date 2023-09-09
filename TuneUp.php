@@ -8,6 +8,25 @@
  
 <!-- page -->
 <body id="TuneUp">
+    <div class="loading">
+        <div class="loading-text">
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">M</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">N</span>
+            <!--<span class="loading-text-words">.</span>-->
+            </br>
+            <span class="loading-text-words sec">T</span>
+            <span class="loading-text-words sec">U</span>
+            <span class="loading-text-words sec">N</span>
+            <span class="loading-text-words sec">E</span>
+            <span class="loading-text-words sec"> </span>
+            <span class="loading-text-words sec">U</span>
+            <span class="loading-text-words sec">P</span>
+        </div>
+    </div>
     <div class="wrapper TuneUp-page">
         <header id="ServicesHeader">
             <div class="container">
@@ -95,10 +114,10 @@
                                         <input type="email" name="email" placeholder="Email">
                                     </div>
                                     <div class="Name-input">
-                                        <input type="text" name="name" placeholder="Full Name" min="2" max="20">
+                                        <input type="text" name="name" placeholder="Full Name" min="2" max="20" required>
                                     </div>
                                     <div class="phone-input alireza_validator">
-                                        <input type="tel" class="phone123" name="phone" placeholder="Phone Number" maxlength="11">
+                                        <input type="tel" class="phone123" name="phone" placeholder="Phone Number" maxlength="15" required>
                                     </div>
                                     <div class="website-input">
                                         <input type="url" name="website" placeholder="Website address" max="30">
@@ -221,10 +240,10 @@
                                         <input type="email" name="email" placeholder="Email">
                                     </div>
                                     <div class="Name-input">
-                                        <input type="text" name="name" placeholder="Full Name" min="2" max="20">
+                                        <input type="text" name="name" placeholder="Full Name" min="2" max="20" required>
                                     </div>
                                     <div class="phone-input alireza_validator">
-                                        <input type="tel" class="phone123" name="phone" placeholder="Phone Number" maxlength="11">
+                                        <input type="tel" class="phone123" name="phone" placeholder="Phone Number" maxlength="15" required>
                                     </div>
                                     <div class="website-input">
                                         <input type="url" name="website" placeholder="Website address" max="30">
@@ -333,7 +352,7 @@
             <section id="FinalIntro">
                 <div class="container">
                     <div class="content">
-                        <div class="img"><a href="AboutUs.php"><img src="assets/images/ceoProfile.png" alt="Ali-Hajizadeh(CEO-on-Admoon)" title="Ali-Hajizadeh(CEO-on-Admoon)"></a><div class="mobile"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div></div>
+                        <div class="img"><a href="aboutUs.php"><img src="assets/images/ceoProfile.png" alt="Ali-Hajizadeh(CEO-on-Admoon)" title="Ali-Hajizadeh(CEO-on-Admoon)"></a><div class="mobile"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div></div>
                         <div class="text"><div class="desktop"><strong>Ali Hajizadeh</strong><span>CEO on Admoon</span></div><p>Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns. No more guesswork; I'll let data-driven decisions and my expert guidance light the way to success. Together, we'll align your ads with your business objectives, ensuring every penny spent brings profitable returns.</p></div>
                     </div>
                 </div>

@@ -1774,15 +1774,16 @@
   border-radius: 0;
   min-height: 100vh;
   padding: 10px;
+  background-position: center;
 }
  #ServicesHeader .container{
   position: relative;
 }
  #ServicesHeader .container #MainNavBar{}
  #ServicesHeader .container>.content{
-  margin-top: 0;
+  /* margin-top: 0; */
   width: 100%;
-  margin-top: 90%;
+  margin-top: 42vh;
 }
  #ServicesHeader .container>.content>.text{
 }
@@ -1938,8 +1939,17 @@
  #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>button{
 }
  #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting{
-   width: 100%;
-   right: 110%;
+   width: 100% !important;
+   height: 63%;
+   z-index: 2;
+   right: -100%;
+   bottom: 0;
+   top: inherit;
+   border-radius: 20px;
+   padding: 60px 30px;
+}
+ #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting.open{
+    right: 0;
 }
  #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top{}
  #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top span{}
@@ -2995,7 +3005,7 @@
  #homePage>.wrapper>header>.container>.content{
   /* margin-top: 100%; */
   position: relative;
-  top: 36%;
+  top: 18vh;
 }
  #homePage>.wrapper>header>.container>.content>.text{
   text-align: center;
@@ -3251,7 +3261,7 @@
  
  /* ---------- Audit,TuneUp,AdsManagment ------------------- */
  #ServicesHeader{
-  background-position: 100% 2%;
+  background-position: center;
   background-size: cover;
   margin: 0;
   width: 100%;
@@ -3264,9 +3274,9 @@
 }
  #ServicesHeader .container #MainNavBar{}
  #ServicesHeader .container>.content{
-  margin-top: 0;
+  /* margin-top: 0; */
   width: 100%;
-  margin-top: 90%;
+  /* margin-top: 90%; */
 }
  #ServicesHeader .container>.content>.text{
 }
@@ -3417,8 +3427,14 @@
  #ServicesMain>#PricingForm .container>.boxs>.SelectPrices>button{
 }
  #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting{
-   width: 100%;
-   right: 110%;
+   width: 100% !important;
+   height: 63%;
+   z-index: 2;
+   right: -100%;
+   bottom: 0;
+   top: inherit;
+   border-radius: 20px;
+   padding: 60px 30px;
 }
  #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top{}
  #ServicesMain>#PricingForm .container>.boxs>.formPriceSubmiting>.top span{}

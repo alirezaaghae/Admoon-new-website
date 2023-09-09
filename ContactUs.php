@@ -8,6 +8,28 @@
  
 <!-- page -->
 <body id="ContactUs">
+    <div class="loading">
+        <div class="loading-text">
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">M</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">N</span>
+            <!--<span class="loading-text-words">.</span>-->
+            </br>
+            <span class="loading-text-words sec">C</span>
+            <span class="loading-text-words sec">O</span>
+            <span class="loading-text-words sec">N</span>
+            <span class="loading-text-words sec">T</span>
+            <span class="loading-text-words sec">A</span>
+            <span class="loading-text-words sec">C</span>
+            <span class="loading-text-words sec">T</span>
+            <span class="loading-text-words sec"> </span>
+            <span class="loading-text-words sec">U</span>
+            <span class="loading-text-words sec">S</span>
+        </div>
+    </div>
     <div class="wrapper ContactUs-page">
         <div class="container">
             <header id="WhiteMenu">
@@ -88,7 +110,7 @@
                             </div>
                             <div class="FullName">
                                 <label>Full Name
-                                    <input type="text" name="name" min="2" max="20">
+                                    <input type="text" name="name" min="2" max="20" required>
                                 </label>
                                 <div class="bottom-line"><div class="fill-line"></div></div>
                             </div>
@@ -100,12 +122,12 @@
                             </div>
                             <div class="WebsiteAddress">
                                 <label>Website URL
-                                <input type="text" name="Website"></label>
+                                <input type="text" name="website"></label>
                                 <div class="bottom-line"><div class="fill-line"></div></div>
                             </div>
                             <div class="PhoneNumber">
                                 <label>Phone Number
-                                    <input type="tel" name="phone" maxlength="11">
+                                    <input type="tel" name="phone" maxlength="15" required>
                                 </label>
                                 <div class="bottom-line"><div class="fill-line"></div></div>
                             </div>

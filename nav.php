@@ -11,11 +11,11 @@
             </li>
             <li>
                 <span>Case Study</span>
-                <a href="CaseStudy.php">Case Study</a>
+                <a href="caseStudy.php">Case Study</a>
             </li>
             <li>
                 <span>Solution for industry</span>
-                <a href="Industry.php">Solution for industry</a>
+                <a href="industry.php">Solution for industry</a>
             </li>
             <li class="navIcon" id="LearnAbout">
                 <span>Learn about</span>
@@ -23,11 +23,11 @@
             </li>
             <li>
                 <span id="AboutUs">About Us</span>
-                <a href="AboutUs.php">About Us</a>
+                <a href="aboutUs.php">About Us</a>
             </li>
             <li>
                 <span id="ContactUs">Contact Us</span>
-                <a href="ContactUs.php">Contact Us</a>
+                <a href="contactUs.php">Contact Us</a>
             </li>
         </ul>
     </nav>
@@ -36,16 +36,16 @@
   <div class="selectBox ServicesNav">
     <ul>
         <li>
-            <a href="Audit.php">Audit</a>
+            <a href="audit.php">Audit</a>
         </li>
         <li>
-            <a href="TuneUp.php">Tune Up</a>
+            <a href="tuneUp.php">Tune Up</a>
         </li>
         <li>
-            <a href="AdsManagement.php">Ads Management</a>
+            <a href="adsManagement.php">Ads Management</a>
         </li>
         <li>
-            <a href="AccountSuspension.php">Account Suspension</a>
+            <a href="accountSuspension.php">Account Suspension</a>
         </li>
     </ul>
   </div>
@@ -96,17 +96,17 @@
                     </div>
                     <div id="collapse201" class="panel-collapse collapse">
                         <ul class="list-group">
-                        <li class="list-group-item"><a href="Audit.php">Audit</a></li>
-                        <li class="list-group-item"><a href="AdsManagement.php">Ads Management</a></li>
-                        <li class="list-group-item"><a href="TuneUp.php">Tune Up</a></li>
-                        <li class="list-group-item"><a href="AccountSuspension.php">Account Suspension</a></li>
+                        <li class="list-group-item"><a href="audit.php">Audit</a></li>
+                        <li class="list-group-item"><a href="adsManagement.php">Ads Management</a></li>
+                        <li class="list-group-item"><a href="tuneUp.php">Tune Up</a></li>
+                        <li class="list-group-item"><a href="accountSuspension.php">Account Suspension</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                        <a href="CaseStudy.php">Case Study</a>
+                        <a href="caseStudy.php">Case Study</a>
                         </h4>
                     </div>
                 </div>
@@ -143,14 +143,14 @@
                 <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a href="AboutUs.php">About Us</a>
+                            <a href="aboutUs.php">About Us</a>
                         </h4>
                     </div>
                 </div>
                 <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                        <a href="ContactUs.php">Contact Us</a>
+                        <a href="contactUs.php">Contact Us</a>
                         </h4>
                     </div>
                 </div>

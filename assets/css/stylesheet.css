@@ -13,6 +13,97 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
 .wrapper{
     position: relative;
 }
+
+/* Loading */
+.loading {
+  transition: all .3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 40px;
+}
+.loading-text span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #252525;
+  font-family: 'Poppins', sans-serif;
+}
+.loading-text-words.sec{
+    font-weight: 100;
+    font-size: 22px;
+    margin: 0 3px;
+}
+.loading-text span:nth-child(1) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+          animation: blur-text 1.5s 0s infinite linear alternate;
+}
+.loading-text span:nth-child(2) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
+          animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+.loading-text span:nth-child(3) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
+          animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+.loading-text span:nth-child(4) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
+          animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+.loading-text span:nth-child(5) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
+          animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+.loading-text span:nth-child(6) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
+          animation: blur-text 1.5s 1s infinite linear alternate;
+}
+.loading-text span:nth-child(7) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
+          animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@-webkit-keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}
+/* End Loading */
+
 .wrapper>.container{}
 .wrapper>.container>header{position: relative;}
 /* input select Package */
@@ -72,12 +163,12 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
 .form-input.center form{}
 .form-input form{position: relative;display: flex;justify-content: space-between;height: 75px;}
 .form-input.center form .inputs{border: 1px solid #D0D6FA;border-radius: 12px;width: 67%;height: 100%;overflow: hidden;position: relative;background: linear-gradient(90deg, #252E60 0%, #252E60 100%);z-index: 1;}
-.form-input.center form .inputs .Email-input{position: absolute;height: 100%;width: 100%;transition: all .3s;top: 110%;}
+.form-input.center form .inputs .Email-input{position: absolute;height: 100%;width: 100%;transition: all .3s;bottom: 110%;}
 .form-input.center form .inputs .Email-input input{background: linear-gradient(90deg, #252E60 0%, #252E60 100%);color: #D0D6FA;}
 .form-input.center form .inputs input{width: 100%;height: 100%;text-indent: 20px;}
-.form-input.center form .inputs .Name-input{position: absolute;height: 100%;width: 100%;transition: all .3s;top: 110%;}
+.form-input.center form .inputs .Name-input{position: absolute;height: 100%;width: 100%;transition: all .3s;bottom: 110%;}
 /* .wrapper .form-input form .inputs .Name-input::after{content:'Full Name';} */
-.form-input.center form .inputs .phone-input{position: absolute;height: 100%;width: 100%;transition: all .3s;top: 110%;/* display: flex; */align-items: center;}
+.form-input.center form .inputs .phone-input{position: absolute;height: 100%;width: 100%;transition: all .3s;bottom: 110%;/* display: flex; */align-items: center;}
 .form-input.center form .inputs .successDiv{position: absolute;height: 100%;width: 100%;transition: all .3s;left: -110%;display: flex;background: linear-gradient(90deg, #2D0E86 -3.62%, #95E9F1 113.22%);justify-content: center;align-items: center;}
 .form-input.center form .inputs .successDiv p{font-family: 'Poppins';font-style: normal;font-weight: 500;font-size: 14px;line-height: 24px;color: #FFFFFF;text-align: center;}
 .form-input.center form .inputs .Email-input input::placeholder{color:#fff;}
@@ -92,8 +183,8 @@ body{font-family: 'Poppins';font-style: normal;font-weight: 300;font-size: 15px;
 .form-input.center form .inputs .website-input input::placeholder{color: #fff;}
 .form-input.center form .next_button{background: linear-gradient(90deg, #252E60 0%, #252E60 100%);color: #D0D6FA;}
 .form-input.center form .next_button:hover{}
-.wrapper .form-input form .inputs .website-input{position: absolute;height: 100%;width: 100%;transition: all .3s;top: 110%;}  
-.form-input[state='email'] form .inputs .Email-input, .form-input[state='name'] form .inputs .Name-input, .form-input[state='phone'] form .inputs .phone-input, .form-input[state='website'] form .inputs .website-input{top: 0;}
+.wrapper .form-input form .inputs .website-input{position: absolute;height: 100%;width: 100%;transition: all .3s;bottom: 110%;}  
+.form-input[state='email'] form .inputs .Email-input, .form-input[state='name'] form .inputs .Name-input, .form-input[state='phone'] form .inputs .phone-input, .form-input[state='website'] form .inputs .website-input{bottom: 0;}
 .wrapper .form-input[state='success'] form .inputs .successDiv{left:0;opacity: 1;}
 .wrapper .form-input form .next_button{background: #D0D6FA;border-radius: 12px;border: none;font-weight: 500;line-height: 33px;display: flex;padding: 20px 0;width: 30%;justify-content: center;align-items: center;position: relative;height: 100%;color: #252E60;font-family: Inter;font-size: 18px;}
 .wrapper .form-input[state='success'] form .next_button{display:none;}
@@ -2225,7 +2316,7 @@ footer.site-footer>.footerNav.mobile>.logo img{
 #TuneUp ::selection {color: #fff;background: #04574e;-webkit-text-fill-color: white;}
 #TuneUp #ServicesHeader{
     background-image: url(../images/tuneUpHeaderBG.jpg);
-    background-color: #09544b;
+    background-color: #045750;
 }
 #TuneUp #ServicesHeader .container>.content>.text>span{
     color: #90EFE4;

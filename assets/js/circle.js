@@ -21,7 +21,7 @@ const slider = document.querySelector('.slider');
   let isTruePrice = false;
 let angle ;
 let degree ;
-let pricePerDot ;
+// let pricePerDot ;
 let priceShow ;
 let topSections;
 let centerX ;

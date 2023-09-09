@@ -9,6 +9,24 @@
 
 <!-- page -->
 <body id="homePage">
+    <div class="loading">
+        <div class="loading-text">
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">M</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">N</span>
+            <!--<span class="loading-text-words">.</span>-->
+            </br>
+            <span class="loading-text-words sec">A</span>
+            <span class="loading-text-words sec">G</span>
+            <span class="loading-text-words sec">E</span>
+            <span class="loading-text-words sec">N</span>
+            <span class="loading-text-words sec">C</span>
+            <span class="loading-text-words sec">Y</span>
+        </div>
+    </div>
     <div class="wrapper index-page" id="main-page">
         <header>
             <div class="container">
@@ -59,7 +77,7 @@
                                 <li><strong>100</strong><span>Accounts Reactivated Monthly</span></li>
                                 <li><strong>10</strong><span>Account Managers & 5 Campaign Strategists</span></li>
                             </ul>
-                            <a href="AboutUs.php">Discover more</a>
+                            <a href="aboutUs.php">Discover more</a>
                         </div>
                         <div class="img">
                             <img src="assets/images/WRW-Image.png" alt="Who-are-we-image" title="Who-are-we-image">
@@ -73,7 +91,7 @@
                     <div class="box customers">
                         <ul class="row">
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
-                                <a href="Zarifbar.php">
+                                <a href="single.php">
                                     <div class="img">
                                         <img src="assets/images/C1Home.png" alt="Zarifbar-img" title="Zarifbar-img">
                                         <img src="assets/images/C1Logo.svg" alt="Zarifbar-logo" title="Zarifbar-logo">
@@ -104,7 +122,7 @@
                                 </a>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
-                                <a href="spa.php">
+                                <a href="single.php">
                                     <div class="img">
                                         <img src="assets/images/C2Home.png" alt="spa-img" title="spa-img">
                                         <img src="assets/images/C2Logo.svg" alt="spa-logo" title="spa-logo">
@@ -135,7 +153,7 @@
                                 </a>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-24">
-                                <a href="TourGasht.php">
+                                <a href="single.php">
                                     <div class="img">
                                         <img src="assets/images/C3Home.png" alt="TourGasht-img" title="TourGasht-img">
                                         <img src="assets/images/C3Logo.svg" alt="TourGasht-logo" title="TourGasht-logo">
@@ -167,7 +185,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="CaseStudy.php">Explore more <img src="assets/images/rightArrowIcon.svg"><img src="assets/images/rightArrowIcon2.svg"></a>
+                    <a href="caseStudy.php">Explore more <img src="assets/images/rightArrowIcon.svg"><img src="assets/images/rightArrowIcon2.svg"></a>
                 </div>
             </section>
             <section id="ProvideForYou">
@@ -216,7 +234,7 @@
                                             </div>
                                         </li>
                                     </ul>
-                                    <a class="moreButton" href="AdsManagement.php">Check Service</a>
+                                    <a class="moreButton" href="adsManagement.php">Check Service</a>
                                 </div>
                                </div>
                             </li>
@@ -236,7 +254,7 @@
                                         <span>Pricing</span><br>
                                         <strong><del>$200</del> $50</strong>
                                     </div>
-                                    <a class="moreButton" href="Audit.php">Check Service</a>
+                                    <a class="moreButton" href="audit.php">Check Service</a>
                                 </div>
                                </div>
                             </li>
@@ -256,7 +274,7 @@
                                         <span>Pricing</span><br>
                                         <strong>$1,500</strong>
                                     </div>
-                                    <a class="moreButton" href="TuneUp.php">Check Service</a>
+                                    <a class="moreButton" href="tuneUp.php">Check Service</a>
                                 </div>
                                </div>
                             </li>
@@ -276,7 +294,7 @@
                                         <span>Pricing</span><br>
                                         <strong>$1,500</strong>
                                     </div>
-                                    <a class="moreButton" href="AccountSuspension.php">Check Service</a>
+                                    <a class="moreButton" href="accountSuspension.php">Check Service</a>
                                 </div>
                                </div>
                             </li>
