@@ -2324,7 +2324,7 @@ footer.site-footer>.footerNav.mobile>.logo img{
 #TuneUp #ServicesHeader .container>.content>.text .price strong{
     color: #90EFE4;
 }
-
+#AdsManage #ServicesHeader .container>.content>.text .price a:hover{color:#04574e;}
 #TuneUp #ServicesMain>#collaborating .container>.items>ul>li:nth-child(1)>.content{background: #A3ECE3;}
 #TuneUp #ServicesMain>#collaborating .container>.items>ul>li:nth-child(2)>.content{background: #A3ECD2;}
 #TuneUp #ServicesMain>#collaborating .container>.items>ul>li:nth-child(3)>.content{background: #A3ECB3;}
@@ -2363,6 +2363,7 @@ html.Ads.Management{scroll-snap-type: mandatory;scroll-snap-points-y: repeat(3re
 }
 #AdsManage #ServicesHeader .container>.content>.text .price strong{}
 #AdsManage #ServicesHeader .container>.content>.text .price strong del{}
+#AdsManage #ServicesHeader .container>.content>.text .price a:hover{color:#212a61;}
 #AdsManage #ServicesMain>#WhyChooseOurService .container>.items>ul{}
 #AdsManage #ServicesMain>#WhyChooseOurService .container>.items>ul>li{
 }

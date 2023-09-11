@@ -114,8 +114,13 @@
  #WhiteMenu #MainNavBar>#navbar>.logo img{}
  #WhiteMenu #MainNavBar>#navbar>.logo{}
  #MainNavBar>#navbar>.logo img{}
- #MainNavBar>#navbar>nav{}
- #MainNavBar>#navbar>nav>ul{}
+ #MainNavBar>#navbar>nav{
+    width: 100%;
+}
+ #MainNavBar>#navbar>nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+}
  #MainNavBar>#navbar>nav>ul>li{
     margin: 0;
     margin-right: 15px;
@@ -128,12 +133,14 @@
  #MainNavBar>#navbar>nav>ul>li>span{}
  #MainNavBar>#navbar>nav>ul>li>a{}
  #MainNavBar>#navbar>nav>ul>li>a:hover{}
+ #MainNavBar>#navbar>nav>ul>li span{transform: translatey(-100%);}
+ #MainNavBar>#navbar>nav>ul>li a{transform: translatey(-100%);}
  
  #MainNavBar>.selectBox.ServicesNav{
     left: 0px;
 }
  #MainNavBar>.selectBox.LearnAbout{
-    right: 23%;
+    right: 26%;
 }
  #MainNavBar>.selectBox{}
  #MainNavBar>.selectBox>ul{}
